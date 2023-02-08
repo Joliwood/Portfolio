@@ -1,0 +1,29 @@
+.homeArea {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  margin: 100px 200px;
+  height: auto;
+}
+
+.homeDescription {
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.homeProfilePicture {
+  border-radius: 50%;
+  width: 400px;
+  object-fit: contain;
+}
+
+.homeLogosLinks {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}

@@ -1,0 +1,32 @@
+.headerBarArea {
+  display: flex;
+  height: 110px;
+  width: 100vw;
+  justify-content: space-between;
+  background-color: #a98b70;
+  align-items: center;
+}
+
+.headerBarArea > h2 {
+  font-size: 32pt;
+  color: white;
+  margin-left: 50px;
+}
+
+.headerBarButtonsEnsemble {
+  display: flex;
+  margin-right: 50px;
+  gap: 30px;
+}
+
+.headerBarButton {
+  border: none;
+  background-color: transparent;
+  color: white;
+  transition: scale 250ms;
+}
+
+.headerBarButton:hover {
+  cursor: pointer;
+  scale: 1.05;
+}

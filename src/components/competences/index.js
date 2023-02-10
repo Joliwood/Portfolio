@@ -5,62 +5,100 @@ import {
   toolsCompetence,
   backCompetence,
 } from "./listedCompetence";
+import "./styles.css";
+import CurlyBracket from "../svg/curlyBracket";
 
 function Competences() {
   return (
-    <div>
-      <div>
-        <div></div>
+    <div className="competencesArea">
+      <div className="competencesSeparationEnsemble">
+        <div className="competencesSeparationbar"></div>
         <h2>Compétences</h2>
-        <div></div>
+        <div className="competencesSeparationbar"></div>
       </div>
 
-      <div>
+      <div className="competencesContainer">
         <div>
-          <div>
-            {frontCompetence.map((item) => (
-              <div key={item.name}>
-                {item.svg ? item.svg : <img src={item.img} alt={item.name} />}
-                <h4>{item.name}</h4>
-              </div>
-            ))}
-            <div>{/* séparation CSS */}</div>
-            <h3>Front End</h3>
+          <div className="categoryCompetencesContainer">
+            <div className="individualCompetenceBlock">
+              {frontCompetence.map((item) => (
+                <div key={item.name}>
+                  {item.svg ? (
+                    <div className="competenceLogoContainer">{item.svg}</div>
+                  ) : (
+                    <div className="competenceLogoContainer">
+                      <img src={item.img} alt={item.name} />
+                    </div>
+                  )}
+                  <h4 className="competenceTitle">{item.name}</h4>
+                </div>
+              ))}
+            </div>
+            <CurlyBracket />
+            <h3 className="ensembleCompetencesTitle">Front End</h3>
           </div>
 
-          <div>
-            {backCompetence.map((item) => (
-              <div key={item.name}>
-                {item.svg ? item.svg : <img src={item.img} alt={item.name} />}
-                <h4>{item.name}</h4>
-              </div>
-            ))}
-            <div>{/* séparation CSS */}</div>
-            <h3>Back End</h3>
+          <div className="categoryCompetencesContainer">
+            <div className="individualCompetenceBlock">
+              {backCompetence.map((item) => (
+                <div key={item.name}>
+                  {item.svg ? (
+                    <div className="competenceLogoContainer">{item.svg}</div>
+                  ) : (
+                    <div className="competenceLogoContainer">
+                      <img src={item.img} alt={item.name} />
+                    </div>
+                  )}
+                  <h4 className="competenceTitle">{item.name}</h4>
+                </div>
+              ))}
+            </div>
+            <CurlyBracket />
+            <h3 className="ensembleCompetencesTitle">Back End</h3>
           </div>
         </div>
 
         <div>
-          <div>
-            {technoCompetence.map((item) => (
-              <div key={item.name}>
-                {item.svg ? item.svg : <img src={item.img} alt={item.name} />}
-                <h4>{item.name}</h4>
-              </div>
-            ))}
-            <div>{/* séparation CSS */}</div>
-            <h3>Les technos que j'ai travaillé</h3>
+          <div className="categoryCompetencesContainer">
+            <div className="individualCompetenceBlock">
+              {technoCompetence.map((item) => (
+                <div key={item.name}>
+                  {item.svg ? (
+                    <div className="competenceLogoContainer">{item.svg}</div>
+                  ) : (
+                    <div className="competenceLogoContainer">
+                      <img src={item.img} alt={item.name} />
+                    </div>
+                  )}
+                  <h4 className="competenceTitle">{item.name}</h4>
+                </div>
+              ))}
+            </div>
+            <CurlyBracket />
+            <h3 className="ensembleCompetencesTitle">
+              Les technos que j'ai travaillé
+            </h3>
           </div>
 
-          <div>
-            {toolsCompetence.map((item) => (
-              <div key={item.name}>
-                {item.svg ? item.svg : <img src={item.img} alt={item.name} />}
-                <h4>{item.name}</h4>
-              </div>
-            ))}
-            <div>{/* séparation CSS */}</div>
-            <h3>Les outils que j'ai utilisé</h3>
+          <div className="categoryCompetencesContainer">
+            <div className="individualCompetenceBlock">
+              {toolsCompetence.map((item) => (
+                <div key={item.name}>
+                  {item.svg ? (
+                    <div className="competenceLogoContainer">{item.svg}</div>
+                  ) : (
+                    <div className="competenceLogoContainer">
+                      <img src={item.img} alt={item.name} />
+                    </div>
+                  )}
+                  <h4 className="competenceTitle">{item.name}</h4>
+                </div>
+              ))}
+            </div>
+            <CurlyBracket />
+            <h3 className="ensembleCompetencesTitle">
+              Les outils que j'ai utilisé
+            </h3>
           </div>
         </div>
       </div>

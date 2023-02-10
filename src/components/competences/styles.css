@@ -1,0 +1,95 @@
+.competencesArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.competencesSeparationEnsemble > h2 {
+  color: #a98b70;
+  font-size: 24pt;
+}
+
+.competencesSeparationEnsemble {
+  width: 80vw;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.competencesSeparationbar {
+  height: 3px;
+  border-radius: 3px;
+  background-color: #a98b70;
+  width: 100%;
+}
+
+.competencesContainer {
+  width: 80vw;
+  min-width: 700px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.competencesContainer > div {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.categoryCompetencesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.individualCompetenceBlock {
+  display: flex;
+  gap: 50px 100px;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.individualCompetenceBlock > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.competenceTitle {
+  color: #a98b70;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.ensembleCompetencesTitle {
+  margin-top: -10px;
+  color: #a98b70;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+.competenceLogoContainer {
+  background-color: #fffcf9;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #efefee;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-sizing: border-box;
+}
+
+.otherCompetencesContainer {
+  display: flex;
+}

@@ -1,0 +1,57 @@
+.myProjectsArea {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+  margin-bottom: 100px;
+}
+
+.myProjectsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 75vw;
+  max-width: 1500px;
+}
+
+.myProjectIndividualContainer {
+  background-color: #efefee;
+  width: 30vw;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.myProjectsPicture {
+  width: 100%;
+  transition: scale 250ms;
+}
+
+.myProjectsPicture:hover {
+  scale: 1.05;
+}
+
+.myProjectsTitle {
+  font-weight: bold;
+  font-size: 20pt;
+  color: #483f38;
+  padding-top: 10px;
+  border-top: 2px solid #483f38;
+}
+
+.myProjectsProjectImgLink {
+  max-width: 30vw;
+  overflow: hidden;
+}
+
+.myProjectsProjectImgLink:hover {
+  filter: blur(0.7px);
+}
+
+.myProjectsProjectTitleLink {
+  text-decoration: none;
+}

@@ -3,11 +3,13 @@
   flex-direction: column;
   align-items: center;
   gap: 100px;
+  margin-bottom: 100px;
 }
 
 .competencesSeparationEnsemble > h2 {
   color: #a98b70;
   font-size: 24pt;
+  white-space: nowrap;
 }
 
 .competencesSeparationEnsemble {

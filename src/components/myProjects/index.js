@@ -16,6 +16,7 @@ function MyProjects() {
           <a
             href="https://storied-biscochitos-463f24.netlify.app/"
             className="myProjectsProjectImgLink"
+            target="blank"
           >
             <img
               src={NetflixProject}
@@ -26,6 +27,7 @@ function MyProjects() {
           <a
             href="https://storied-biscochitos-463f24.netlify.app/"
             className="myProjectsProjectTitleLink"
+            target="blank"
           >
             <h3 className="myProjectsTitle">
               Netflix Clone - React.js + API + Netlify
@@ -37,6 +39,7 @@ function MyProjects() {
           <a
             href="https://storied-biscochitos-463f24.netlify.app/"
             className="myProjectsProjectImgLink"
+            target="blank"
           >
             <img
               src={NetflixProject}
@@ -47,6 +50,7 @@ function MyProjects() {
           <a
             href="https://storied-biscochitos-463f24.netlify.app/"
             className="myProjectsProjectTitleLink"
+            target="blank"
           >
             <h3 className="myProjectsTitle">
               Spotify Clone - React.js + API + Netlify

@@ -1,0 +1,109 @@
+.myExperiencesArea {
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.myExperiencesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.myExperiencesCompetence {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: auto;
+  padding: 5px 15px;
+  background-color: #efefee;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.myExperiencesCompetence > p {
+  font-size: 18pt;
+  color: #483f38;
+}
+
+.myExperiencesCompetencesContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.myExperiencesBlockContainer {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 20px;
+  width: 70vw;
+  max-width: 1800px;
+  min-width: 700px;
+}
+
+.myExperiencesDescriptionContainer {
+  display: flex;
+  width: 70%;
+  gap: 30px;
+  flex-direction: column;
+  background-color: #efefee;
+  border: 3px solid #a98b70;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px 25px;
+}
+
+.myExperiencesTitleEnsemble {
+  display: flex;
+}
+
+.myExperiencesTitle {
+  font-size: 18pt;
+  line-height: 29px;
+  font-weight: bold;
+}
+
+.myExperiencesText {
+  font-size: 18pt;
+  line-height: 29px;
+}
+
+.myExperiencesLinksContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.myExperiencesLinkButton {
+  height: 35px;
+  background-color: #a98b70;
+  border: 2px solid #a98b70;
+  border-radius: 10px;
+  padding: 0 15px;
+  transition: background-color 250ms;
+}
+
+.myExperiencesLinkButtonText {
+  font-weight: normal;
+  font-size: 16pt;
+  color: #efefee;
+}
+
+.myExperiencesLinkButton:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.myExperiencesLinkButton:hover .myExperiencesLinkButtonText {
+  color: #a98b70;
+}
+
+.rightSide {
+  align-items: flex-end;
+}

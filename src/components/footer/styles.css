@@ -1,0 +1,17 @@
+.footerArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #a98b70;
+  height: 75px;
+}
+
+.footerText {
+  color: white;
+  text-decoration-color: transparent;
+}
+
+.footerLink:hover {
+  text-decoration-color: white;
+}

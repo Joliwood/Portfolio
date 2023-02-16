@@ -22,7 +22,7 @@ function Home() {
 
       <img
         src={ProfilePicture}
-        alt="profile photo"
+        alt="profile"
         className="homeProfilePicture unselectable"
       />
     </div>

@@ -47,7 +47,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 100%;
+  width: 25vw;
 }
 
 .individualCompetenceBlock {
@@ -94,4 +94,15 @@
 
 .otherCompetencesContainer {
   display: flex;
+}
+
+@media screen and (max-width: 1399px) {
+  .reverseResponsive {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .competencesContainer {
+    min-width: unset;
+  }
 }

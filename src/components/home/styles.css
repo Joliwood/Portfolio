@@ -2,12 +2,14 @@
   display: flex;
   gap: 150px;
   justify-content: center;
-  margin: 100px 200px;
+  align-items: center;
+  margin: 100px 10vw;
   height: auto;
 }
 
 .homeDescription {
   display: flex;
+  width: 15vw;
   max-width: 300px;
   flex-direction: column;
   gap: 30px;
@@ -18,7 +20,10 @@
 
 .homeProfilePicture {
   border-radius: 50%;
-  width: 400px;
+  width: 40vw;
+  height: 100%;
+  max-width: 400px;
+  min-width: 200px;
   object-fit: contain;
 }
 
@@ -26,4 +31,11 @@
   display: flex;
   justify-content: space-around;
   gap: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .homeArea {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }

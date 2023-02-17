@@ -10,7 +10,7 @@ import CurlyBracket from "../svg/curlyBracket";
 
 function Competences() {
   return (
-    <div className="competencesArea">
+    <div className="competencesArea" id="competencesArea">
       <div className="competencesSeparationEnsemble">
         <div className="competencesSeparationbar"></div>
         <h2>Compétences</h2>
@@ -59,7 +59,7 @@ function Competences() {
         </div>
 
         <div>
-          <div className="categoryCompetencesContainer">
+          <div className="categoryCompetencesContainer reverseResponsive">
             <div className="individualCompetenceBlock">
               {technoCompetence.map((item) => (
                 <div key={item.name}>
@@ -80,7 +80,7 @@ function Competences() {
             </h3>
           </div>
 
-          <div className="categoryCompetencesContainer">
+          <div className="categoryCompetencesContainer reverseResponsive">
             <div className="individualCompetenceBlock">
               {toolsCompetence.map((item) => (
                 <div key={item.name}>

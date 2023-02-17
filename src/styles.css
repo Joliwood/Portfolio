@@ -10,20 +10,33 @@ h1 {
   font-weight: bold;
   font-size: 40pt;
   color: #483f38;
+  text-align: center;
+  text-align-last: center;
 }
 
 h2 {
   font-weight: bold;
   font-size: 20pt;
   color: #483f38;
+  text-align: center;
+  text-align-last: center;
 }
 
 h3 {
   font-weight: normal;
   font-size: 16pt;
+  text-align: center;
+  text-align-last: center;
+}
+
+h4 {
+  text-align: center;
+  text-align-last: center;
 }
 
 p {
   font-size: 16pt;
   color: #483f38;
+  text-align: center;
+  text-align-last: center;
 }

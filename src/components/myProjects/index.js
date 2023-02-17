@@ -4,7 +4,7 @@ import NetflixProject from "../images/projects/netflixProject.png";
 
 function MyProjects() {
   return (
-    <div className="myProjectsArea">
+    <div className="myProjectsArea" id="myProjectsArea">
       <div className="competencesSeparationEnsemble">
         <div className="competencesSeparationbar"></div>
         <h2>My Projects</h2>

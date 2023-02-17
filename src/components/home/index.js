@@ -6,7 +6,7 @@ import "./styles.css";
 
 function Home() {
   return (
-    <div className="homeArea">
+    <div className="homeArea" id="homeArea">
       <div className="homeDescription">
         <h1>Guillaume Jolibois</h1>
         <h2>Développeur Front-End</h2>
@@ -15,8 +15,15 @@ function Home() {
           l’ergonomie.
         </p>
         <div className="homeLogosLinks">
-          <LinkedinLogo />
-          <GithubLogo />
+          <a
+            href="https://www.linkedin.com/in/guillaume-jolibois-430426119/"
+            target="blank"
+          >
+            <LinkedinLogo />
+          </a>
+          <a href="https://github.com/Joliwood" target="blank">
+            <GithubLogo />
+          </a>
         </div>
       </div>
 

@@ -18,6 +18,7 @@
 .myProjectIndividualContainer {
   background-color: #efefee;
   width: 30vw;
+  min-width: 450px;
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -44,7 +45,8 @@
 }
 
 .myProjectsProjectImgLink {
-  max-width: 30vw;
+  width: 30vw;
+  min-width: 450px;
   overflow: hidden;
 }
 

@@ -50,6 +50,7 @@
 .myExperiencesDescriptionContainer {
   display: flex;
   width: 70%;
+  min-width: 700px;
   gap: 30px;
   flex-direction: column;
   background-color: #efefee;
@@ -106,4 +107,17 @@
 
 .rightSide {
   align-items: flex-end;
+}
+
+@media screen and (max-width: 1100px) {
+  .myExperiencesBlockContainer {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .myExperiencesDescriptionContainer {
+    width: 100%;
+    width: -webkit-fill-available;
+    min-width: unset;
+  }
 }

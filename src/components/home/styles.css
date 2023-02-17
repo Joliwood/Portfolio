@@ -38,4 +38,10 @@
     flex-direction: column-reverse;
     gap: 20px;
   }
+
+  .homeDescription {
+    width: 70vw;
+    max-width: unset;
+    align-items: center;
+  }
 }

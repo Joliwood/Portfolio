@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { Link } from "react-scroll";
 
 function HeaderBar() {
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [largeur, setLargeur] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setLargeur(window.innerWidth);
+
+      if (window.innerWidth > 1024) {
+        setToggleMenu(false);
+      }
+    };
+
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
+
   return (
     <div className="headerBarArea">
       <h2>Mon portfolio</h2>

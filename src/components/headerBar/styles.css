@@ -30,3 +30,25 @@
   cursor: pointer;
   scale: 1.05;
 }
+
+.whiteIcon {
+  color: white;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .headerBarButtonsEnsemble {
+    flex-direction: column;
+    align-items: center;
+    top: 110px;
+    background-color: #a98b70;
+    position: absolute;
+    width: 100%;
+    gap: 0;
+  }
+
+  .headerBarButton {
+    padding: 15px;
+    border-top: 2px solid white;
+  }
+}

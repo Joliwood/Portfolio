@@ -26,47 +26,70 @@ function HeaderBar() {
     <div className="headerBarArea">
       <h2>Mon portfolio</h2>
 
-      <div className="headerBarButtonsEnsemble">
-        <Link
-          to="homeArea"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-          <button className="headerBarButton">
-            <h3>Accueil</h3>
-          </button>
-        </Link>
+      {largeur <= 1024 && (
+        <div className="">
+          {!toggleMenu && (
+            <span className="whiteIcon">
+              <i
+                class="fa-solid fa-bars fa-2xl"
+                onClick={() => setToggleMenu(!toggleMenu)}
+              ></i>
+            </span>
+          )}
+          {toggleMenu && (
+            <span className="whiteIcon">
+              <i
+                class="fa-solid fa-xmark fa-2xl"
+                onClick={() => setToggleMenu(!toggleMenu)}
+              ></i>
+            </span>
+          )}
+        </div>
+      )}
 
-        <Link
-          to="competencesArea"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <button className="headerBarButton">
-            <h3>Compétences</h3>
-          </button>
-        </Link>
+      {(toggleMenu || largeur > 1024) && (
+        <div className="headerBarButtonsEnsemble">
+          <Link
+            to="homeArea"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <button className="headerBarButton">
+              <h3>Accueil</h3>
+            </button>
+          </Link>
 
-        <Link
-          to="myProjectsArea"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <button className="headerBarButton">
-            <h3>Portfolio</h3>
-          </button>
-        </Link>
+          <Link
+            to="competencesArea"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <button className="headerBarButton">
+              <h3>Compétences</h3>
+            </button>
+          </Link>
 
-        <button className="headerBarButton">
-          <h3>Contact</h3>
-        </button>
-      </div>
+          <Link
+            to="myProjectsArea"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <button className="headerBarButton">
+              <h3>Portfolio</h3>
+            </button>
+          </Link>
+
+          <button className="headerBarButton">
+            <h3>Contact</h3>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

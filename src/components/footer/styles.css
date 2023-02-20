@@ -1,5 +1,6 @@
 .footerArea {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -14,4 +15,17 @@
 
 .footerLink:hover {
   text-decoration-color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .footerArea {
+    height: auto;
+    padding: 15px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 5px;
+  }
+  .footerText {
+    font-size: 12pt;
+  }
 }

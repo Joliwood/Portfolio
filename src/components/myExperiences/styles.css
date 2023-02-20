@@ -32,6 +32,7 @@
 
 .myExperiencesCompetencesContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -62,6 +63,7 @@
 
 .myExperiencesTitleEnsemble {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .myExperiencesTitle {
@@ -77,6 +79,7 @@
 
 .myExperiencesLinksContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
 }
@@ -113,11 +116,44 @@
   .myExperiencesBlockContainer {
     width: 100%;
     min-width: unset;
+    align-items: center;
   }
 
   .myExperiencesDescriptionContainer {
     width: 100%;
     width: -webkit-fill-available;
     min-width: unset;
+  }
+
+  .myExperiencesContainer {
+    width: 85vw;
+  }
+
+  .myExperiencesLinksContainer {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .myExperiencesCompetencesContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .myExperiencesCompetencesContainer {
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .myExperiencesBlockContainer {
+    gap: 20px;
+  }
+
+  .myExperiencesContainer {
+    gap: 70px;
+  }
+
+  .rightSide {
+    align-items: center;
   }
 }

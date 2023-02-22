@@ -1,10 +1,23 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { Link } from "react-scroll";
+import { Link as LinkBrowser } from "react-router-dom";
 
 function HeaderBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [largeur, setLargeur] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const closeBurgerMenu = () => {
+      setToggleMenu(false);
+    };
+
+    window.addEventListener("scroll", closeBurgerMenu);
+
+    return () => {
+      window.removeEventListener("scroll", closeBurgerMenu);
+    };
+  }, []);
 
   useEffect(() => {
     const changeWidth = () => {
@@ -53,7 +66,7 @@ function HeaderBar() {
             to="homeArea"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-170}
             duration={500}
           >
             <button className="headerBarButton">
@@ -86,7 +99,9 @@ function HeaderBar() {
           </Link>
 
           <button className="headerBarButton">
-            <h3>Contact</h3>
+            <LinkBrowser to="/contact">
+              <h3>Contact</h3>
+            </LinkBrowser>
           </button>
         </div>
       )}

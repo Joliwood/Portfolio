@@ -40,3 +40,8 @@ p {
   text-align: center;
   text-align-last: center;
 }
+
+a {
+  text-decoration: none;
+  color: unset;
+}

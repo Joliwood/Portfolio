@@ -6,6 +6,8 @@
   gap: 10px;
   background-color: #a98b70;
   height: 75px;
+  width: 100vw;
+  margin-top: auto;
 }
 
 .footerText {

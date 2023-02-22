@@ -1,0 +1,16 @@
+.contactArea {
+  display: flex;
+  min-height: calc(100vh - 50px);
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-top: 100px;
+}

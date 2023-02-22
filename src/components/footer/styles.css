@@ -6,7 +6,7 @@
   gap: 10px;
   background-color: #a98b70;
   height: 75px;
-  width: 100vw;
+  width: 100%;
   margin-top: auto;
 }
 
@@ -21,6 +21,7 @@
 
 @media screen and (max-width: 1100px) {
   .footerArea {
+    width: calc(100% - 40px);
     height: auto;
     padding: 15px 20px;
     padding-left: 20px;

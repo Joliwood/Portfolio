@@ -66,7 +66,7 @@ function HeaderBar() {
             to="homeArea"
             spy={true}
             smooth={true}
-            offset={-170}
+            offset={-250}
             duration={500}
           >
             <button className="headerBarButton">
@@ -78,7 +78,7 @@ function HeaderBar() {
             to="competencesArea"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-150}
             duration={500}
           >
             <button className="headerBarButton">
@@ -90,7 +90,7 @@ function HeaderBar() {
             to="myProjectsArea"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-150}
             duration={500}
           >
             <button className="headerBarButton">

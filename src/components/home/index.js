@@ -12,7 +12,7 @@ function Home() {
         <h2>Développeur Front-End</h2>
         <p>
           Autodidacte de 27 ans, avec une appetence pour le design et
-          l’ergonomie.
+          l’ergonomie. En région parisienne.
         </p>
         <div className="homeLogosLinks">
           <a

@@ -1,6 +1,10 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Portfolio de Guillaume Jolibois",
+  "name": "Portfolio de Guillaume Jolibois, développeur web",
+  "background_color": "#fffcf9",
+  "author": "Guillaume Jolibois",
+  "display": "fullscreen",
+  "lang": "fr-FR",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +23,5 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#000000"
 }

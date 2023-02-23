@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import NetflixProject from "../images/projects/netflixProject.png";
+import SpotifyProject from "../images/projects/spotifyProject.png";
 
 function MyProjects() {
   return (
@@ -14,7 +15,7 @@ function MyProjects() {
       <div className="myProjectsContainer">
         <div className="myProjectIndividualContainer">
           <a
-            href="https://storied-biscochitos-463f24.netlify.app/"
+            href="https://gj-netlix-clone.netlify.app/"
             className="myProjectsProjectImgLink"
             target="blank"
           >
@@ -25,7 +26,7 @@ function MyProjects() {
             />
           </a>
           <a
-            href="https://storied-biscochitos-463f24.netlify.app/"
+            href="https://gj-netlix-clone.netlify.app/"
             className="myProjectsProjectTitleLink"
             target="blank"
           >
@@ -37,18 +38,18 @@ function MyProjects() {
 
         <div className="myProjectIndividualContainer">
           <a
-            href="https://storied-biscochitos-463f24.netlify.app/"
+            href="https://gj-spotify-clone.netlify.app/"
             className="myProjectsProjectImgLink"
             target="blank"
           >
             <img
-              src={NetflixProject}
-              alt="Netflix project"
+              src={SpotifyProject}
+              alt="Spotify project"
               className="myProjectsPicture"
             />
           </a>
           <a
-            href="https://storied-biscochitos-463f24.netlify.app/"
+            href="https://gj-spotify-clone.netlify.app/"
             className="myProjectsProjectTitleLink"
             target="blank"
           >

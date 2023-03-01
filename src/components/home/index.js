@@ -9,10 +9,11 @@ function Home() {
     <div className="homeArea" id="homeArea">
       <div className="homeDescription">
         <h1>Guillaume Jolibois</h1>
-        <h2>Développeur Front-End</h2>
+        <h2>Développeur Javascript</h2>
         <p>
-          Autodidacte de 27 ans, avec une appetence pour le design et
-          l’ergonomie. En région parisienne.
+          Autodidacte de 28 ans, avec une appetence pour le design et
+          l’ergonomie. Je souhaite mettre mes compétences aux services des
+          entreprises. Disponible en région parisienne.
         </p>
         <div className="homeLogosLinks">
           <a

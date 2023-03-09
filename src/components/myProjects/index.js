@@ -36,7 +36,7 @@ function MyProjects() {
           </a>
         </div>
 
-        {/* <div className="myProjectIndividualContainer">
+        <div className="myProjectIndividualContainer">
           <a
             href="https://gj-spotify-clone.netlify.app/"
             className="myProjectsProjectImgLink"
@@ -57,7 +57,7 @@ function MyProjects() {
               Spotify Clone - React.js + API + Netlify
             </h3>
           </a>
-        </div> */}
+        </div>
       </div>
     </div>
   );

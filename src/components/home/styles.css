@@ -1,6 +1,6 @@
 .homeArea {
   display: flex;
-  gap: 150px;
+  gap: 10rem;
   justify-content: center;
   align-items: center;
   margin: 250px 10vw 200px 10vw;
@@ -9,8 +9,9 @@
 
 .homeDescription {
   display: flex;
-  width: 15vw;
-  max-width: 300px;
+  width: 25vw;
+  min-width: 300px;
+  max-width: 400px;
   flex-direction: column;
   gap: 30px;
   align-items: center;

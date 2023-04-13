@@ -12,10 +12,10 @@
 
 .footerText {
   color: white;
-  text-decoration-color: transparent;
 }
 
-.footerLink:hover {
+.footerArea > a:hover {
+  text-decoration: underline;
   text-decoration-color: white;
 }
 

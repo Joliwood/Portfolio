@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
-import NetflixProject from "../images/projects/netflixProject.png";
-import SpotifyProject from "../images/projects/spotifyProject.png";
+import { MyProjectsList } from "./myProjectsList";
 
 function MyProjects() {
   return (
@@ -13,51 +12,18 @@ function MyProjects() {
       </div>
 
       <div className="myProjectsContainer">
-        <div className="myProjectIndividualContainer">
-          <a
-            href="https://gj-netlix-clone.netlify.app/"
-            className="myProjectsProjectImgLink"
-            target="blank"
-          >
-            <img
-              src={NetflixProject}
-              alt="Netflix project"
-              className="myProjectsPicture"
-            />
+        {MyProjectsList.map((data, index) => (
+          <a href={data.link} target="blank">
+            <div className="myProjectIndividualContainer" key={index}>
+              <img
+                src={data.img}
+                alt={data.imgTag}
+                className="myProjectsPicture"
+              />
+              <h3 className="myProjectsTitle">{data.title}</h3>
+            </div>
           </a>
-          <a
-            href="https://gj-netlix-clone.netlify.app/"
-            className="myProjectsProjectTitleLink"
-            target="blank"
-          >
-            <h3 className="myProjectsTitle">
-              Netflix Clone - React.js + API + Netlify
-            </h3>
-          </a>
-        </div>
-
-        <div className="myProjectIndividualContainer">
-          <a
-            href="https://gj-spotify-clone.netlify.app/"
-            className="myProjectsProjectImgLink"
-            target="blank"
-          >
-            <img
-              src={SpotifyProject}
-              alt="Spotify project"
-              className="myProjectsPicture"
-            />
-          </a>
-          <a
-            href="https://gj-spotify-clone.netlify.app/"
-            className="myProjectsProjectTitleLink"
-            target="blank"
-          >
-            <h3 className="myProjectsTitle">
-              Spotify Clone - React.js + API + Netlify
-            </h3>
-          </a>
-        </div>
+        ))}
       </div>
     </div>
   );

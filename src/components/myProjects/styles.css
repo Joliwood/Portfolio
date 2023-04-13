@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 70px;
   margin-bottom: 100px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .myProjectsContainer {
@@ -11,47 +13,33 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  width: 75vw;
-  max-width: 1500px;
+  max-width: 80vw;
 }
 
 .myProjectIndividualContainer {
-  background-color: #efefee;
   width: 30vw;
-  min-width: 450px;
-  padding: 20px;
+  min-width: 270px;
+  max-width: 400px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(90, 90, 90, 0.1),
+    0 8px 10px -6px rgba(110, 110, 110, 0.1);
 }
 
 .myProjectsPicture {
   width: 100%;
-  transition: scale 250ms;
-}
-
-.myProjectsPicture:hover {
-  scale: 1.05;
 }
 
 .myProjectsTitle {
+  background-color: #efefee;
   font-weight: bold;
+  line-height: 3rem;
   font-size: 20pt;
   color: #483f38;
-  padding-top: 10px;
-  border-top: 2px solid #483f38;
-}
-
-.myProjectsProjectImgLink {
-  width: 30vw;
-  min-width: 450px;
-  overflow: hidden;
-}
-
-.myProjectsProjectImgLink:hover {
-  filter: blur(0.7px);
+  padding: 15px 20px;
 }
 
 .myProjectsProjectTitleLink {
@@ -63,22 +51,11 @@
     min-width: 250px;
     width: 100%;
   }
-
-  .myProjectsProjectImgLink {
-    width: 100%;
-    min-width: 250px;
-  }
-
-  
 }
 
 @media screen and (max-width: 500px) {
   .myProjectsContainer {
-    width: 85vw;
-  }
-
-  .myProjectIndividualContainer {
-    padding: 10px;
+    width: auto;
   }
 
   .myProjectsTitle {

@@ -7,7 +7,7 @@
 }
 
 .competencesSeparationEnsemble > h2 {
-  color: #a98b70;
+  color: var(--main-theme-light-color);
   font-size: 24pt;
   white-space: nowrap;
 }
@@ -22,8 +22,20 @@
 .competencesSeparationbar {
   height: 3px;
   border-radius: 3px;
-  background-color: #a98b70;
+  background: linear-gradient(
+    90deg,
+    var(--main-theme-special-color),
+    var(--main-theme-background-color)
+  );
   width: 100%;
+}
+
+.competencesSeparationbar:first-child {
+  background: linear-gradient(
+    90deg,
+    var(--main-theme-background-color),
+    var(--main-theme-special-color)
+  );
 }
 
 .competencesContainer {
@@ -67,14 +79,14 @@
 }
 
 .competenceTitle {
-  color: #a98b70;
+  color: var(--main-theme-light-color);
   font-weight: bold;
   font-size: 16pt;
 }
 
 .ensembleCompetencesTitle {
   margin-top: -10px;
-  color: #a98b70;
+  color: var(--main-theme-light-color);
   font-weight: bold;
   font-size: 18pt;
 }
@@ -87,7 +99,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid #efefee;
+  border: 2px solid var(--main-theme-light-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   box-sizing: border-box;
 }

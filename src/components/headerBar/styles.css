@@ -6,26 +6,32 @@
   height: 110px;
   width: 100vw;
   justify-content: space-between;
-  background-color: #a98b70;
+  background-image: linear-gradient(95deg, #000000 0%, #06080e 74%);
   align-items: center;
+  border-bottom: 1px solid var(--main-theme-special-color);
 }
 
 .headerBarArea > h2 {
   font-size: 32pt;
-  color: white;
+  color: var(--main-theme-special-color);
   margin-left: 50px;
 }
 
 .headerBarButtonsEnsemble {
   display: flex;
-  margin-right: 50px;
+  align-items: flex-end;
   gap: 30px;
+  /* border-bottom: 1px solid var(--main-theme-special-color); */
+}
+
+.headerBarButtonsEnsemble > * {
+  margin-right: 50px;
 }
 
 .headerBarButton {
   border: none;
   background-color: transparent;
-  color: white;
+  color: var(--main-theme-light-color);
   transition: scale 250ms;
 }
 
@@ -41,10 +47,9 @@
 
 @media screen and (max-width: 1024px) {
   .headerBarButtonsEnsemble {
+    background-image: linear-gradient(95deg, #000000 0%, #06080e 74%);
     flex-direction: column;
-    align-items: center;
     top: 110px;
-    background-color: #a98b70;
     position: absolute;
     width: 100%;
     gap: 0;
@@ -52,7 +57,7 @@
 
   .headerBarButton {
     padding: 15px;
-    border-top: 2px solid white;
+    border-top: 2px solid var(--main-theme-special-color);
   }
 }
 

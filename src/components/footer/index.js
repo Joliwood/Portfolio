@@ -4,6 +4,7 @@ import "./styles.css";
 function Footer() {
   return (
     <div className="footerArea">
+      <div></div>
       <p className="footerText">
         Site créé en React et hébergé par Netlify :&nbsp;
       </p>

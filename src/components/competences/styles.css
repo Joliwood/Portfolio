@@ -25,7 +25,7 @@
   background: linear-gradient(
     90deg,
     var(--main-theme-special-color),
-    var(--main-theme-background-color)
+    transparent
   );
   width: 100%;
 }
@@ -33,7 +33,7 @@
 .competencesSeparationbar:first-child {
   background: linear-gradient(
     90deg,
-    var(--main-theme-background-color),
+    transparent,
     var(--main-theme-special-color)
   );
 }

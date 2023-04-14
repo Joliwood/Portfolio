@@ -3,15 +3,26 @@
   top: 0;
   z-index: 2;
   display: flex;
-  height: 110px;
+
+  height: auto;
   width: 100vw;
   justify-content: space-between;
-  background-image: linear-gradient(95deg, #000000 0%, #06080e 74%);
+  background-color: #06080e77;
   align-items: center;
   border-bottom: 1px solid var(--main-theme-special-color);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
-.headerBarArea > h2 {
+.headerBarMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.headerBarMain > h2 {
   font-size: 32pt;
   color: var(--main-theme-special-color);
   margin-left: 50px;
@@ -21,10 +32,6 @@
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  /* border-bottom: 1px solid var(--main-theme-special-color); */
-}
-
-.headerBarButtonsEnsemble > * {
   margin-right: 50px;
 }
 
@@ -45,12 +52,21 @@
   margin-right: 50px;
 }
 
+.whiteIcon:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
-  .headerBarButtonsEnsemble {
-    background-image: linear-gradient(95deg, #000000 0%, #06080e 74%);
+  .headerBarButtonsEnsemble > * {
+    margin-right: 50px;
+  }
+
+  .headerBarArea {
     flex-direction: column;
-    top: 110px;
-    position: absolute;
+  }
+
+  .headerBarButtonsEnsemble {
+    flex-direction: column;
     width: 100%;
     gap: 0;
   }

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 0 10px;
-  background-image: linear-gradient(95deg, #000000 0%, #06080e 74%);
+  background-color: var(--main-theme-background-color);
   height: 75px;
   width: 100%;
   margin-top: auto;

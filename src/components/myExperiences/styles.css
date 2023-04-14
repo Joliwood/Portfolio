@@ -156,10 +156,28 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .myExperiencesTitleEnsemble {
+    justify-content: center;
+  }
+
+  .myExperiencesTitle {
+    margin: auto;
+  }
+
+  .myExperiencesLinksContainer {
+    justify-content: center;
+  }
+
+  .myExperiencesLinksContainer {
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .myExperiencesCompetencesContainer {
     align-items: center;
-    row-gap: 20px;
+    row-gap: 15px;
   }
 
   .myExperiencesBlockContainer {

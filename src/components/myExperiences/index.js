@@ -68,11 +68,13 @@ function MyExperiences() {
               Création site A à Z en react, méthode agile, traducteur EN / FR
             </p>
 
-            <a href="https://www.agartha.ch/" target="blank">
-              <button className="myExperiencesLinkButton">
-                <h4 className="myExperiencesLinkButtonText">Lien du site</h4>
-              </button>
-            </a>
+            <div className="myExperiencesLinksContainer">
+              <a href="https://www.agartha.ch/" target="blank">
+                <button className="myExperiencesLinkButton">
+                  <h4 className="myExperiencesLinkButtonText">Lien du site</h4>
+                </button>
+              </a>
+            </div>
           </div>
 
           <div className="myExperiencesCompetencesContainer">

@@ -37,28 +37,30 @@ function HeaderBar() {
 
   return (
     <div className="headerBarArea">
-      <h2>Mon portfolio</h2>
+      <div className="headerBarMain">
+        <h2>Mon portfolio</h2>
 
-      {largeur <= 1024 && (
-        <div className="">
-          {!toggleMenu && (
-            <span className="whiteIcon">
-              <i
-                class="fa-solid fa-bars fa-2xl"
-                onClick={() => setToggleMenu(!toggleMenu)}
-              ></i>
-            </span>
-          )}
-          {toggleMenu && (
-            <span className="whiteIcon">
-              <i
-                class="fa-solid fa-xmark fa-2xl"
-                onClick={() => setToggleMenu(!toggleMenu)}
-              ></i>
-            </span>
-          )}
-        </div>
-      )}
+        {largeur <= 1024 && (
+          <div className="">
+            {!toggleMenu && (
+              <span className="whiteIcon">
+                <i
+                  class="fa-solid fa-bars fa-2xl"
+                  onClick={() => setToggleMenu(!toggleMenu)}
+                ></i>
+              </span>
+            )}
+            {toggleMenu && (
+              <span className="whiteIcon">
+                <i
+                  class="fa-solid fa-xmark fa-2xl"
+                  onClick={() => setToggleMenu(!toggleMenu)}
+                ></i>
+              </span>
+            )}
+          </div>
+        )}
+      </div>
 
       {(toggleMenu || largeur > 1024) && (
         <div className="headerBarButtonsEnsemble">

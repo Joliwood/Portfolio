@@ -37,28 +37,30 @@ function HeaderBar() {
 
   return (
     <div className="headerBarArea">
-      <h2>Mon portfolio</h2>
+      <div className="headerBarMain">
+        <h2>Mon portfolio</h2>
 
-      {largeur <= 1024 && (
-        <div className="">
-          {!toggleMenu && (
-            <span className="whiteIcon">
-              <i
-                class="fa-solid fa-bars fa-2xl"
-                onClick={() => setToggleMenu(!toggleMenu)}
-              ></i>
-            </span>
-          )}
-          {toggleMenu && (
-            <span className="whiteIcon">
-              <i
-                class="fa-solid fa-xmark fa-2xl"
-                onClick={() => setToggleMenu(!toggleMenu)}
-              ></i>
-            </span>
-          )}
-        </div>
-      )}
+        {largeur <= 1024 && (
+          <div className="">
+            {!toggleMenu && (
+              <span className="whiteIcon">
+                <i
+                  class="fa-solid fa-bars fa-2xl"
+                  onClick={() => setToggleMenu(!toggleMenu)}
+                ></i>
+              </span>
+            )}
+            {toggleMenu && (
+              <span className="whiteIcon">
+                <i
+                  class="fa-solid fa-xmark fa-2xl"
+                  onClick={() => setToggleMenu(!toggleMenu)}
+                ></i>
+              </span>
+            )}
+          </div>
+        )}
+      </div>
 
       {(toggleMenu || largeur > 1024) && (
         <div className="headerBarButtonsEnsemble">
@@ -68,6 +70,7 @@ function HeaderBar() {
             smooth={true}
             offset={-250}
             duration={500}
+            href="#home-area"
           >
             <button className="headerBarButton">
               <h3>Accueil</h3>
@@ -80,6 +83,7 @@ function HeaderBar() {
             smooth={true}
             offset={-150}
             duration={500}
+            href="#competences-area"
           >
             <button className="headerBarButton">
               <h3>Compétences</h3>
@@ -92,6 +96,7 @@ function HeaderBar() {
             smooth={true}
             offset={-150}
             duration={500}
+            href="#my-projects-area"
           >
             <button className="headerBarButton">
               <h3>Portfolio</h3>

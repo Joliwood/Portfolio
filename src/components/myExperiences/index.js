@@ -22,10 +22,7 @@ function MyExperiences() {
 
             <div className="myExperiencesLinksContainer">
               <p className="myExperiencesText">Projects créés :</p>
-              <a
-                href="https://storied-biscochitos-463f24.netlify.app/"
-                target="blank"
-              >
+              <a href="https://gj-netlix-clone.netlify.app/" target="blank">
                 <button className="myExperiencesLinkButton">
                   <h4 className="myExperiencesLinkButtonText">Clone Netflix</h4>
                 </button>
@@ -57,8 +54,8 @@ function MyExperiences() {
           </div>
         </div>
 
-        <div className="myExperiencesBlockContainer rightSide">
-          <div className="myExperiencesDescriptionContainer rightSide">
+        <div className="myExperiencesBlockContainer">
+          <div className="myExperiencesDescriptionContainer">
             <div className="myExperiencesTitleEnsemble">
               <p className="myExperiencesText">06/2022 à aujourd’hui -&nbsp;</p>
               <h3 className="myExperiencesTitle">
@@ -71,11 +68,13 @@ function MyExperiences() {
               Création site A à Z en react, méthode agile, traducteur EN / FR
             </p>
 
-            <a href="https://www.agartha.ch/" target="blank">
-              <button className="myExperiencesLinkButton">
-                <h4 className="myExperiencesLinkButtonText">Lien du site</h4>
-              </button>
-            </a>
+            <div className="myExperiencesLinksContainer">
+              <a href="https://www.agartha.ch/" target="blank">
+                <button className="myExperiencesLinkButton">
+                  <h4 className="myExperiencesLinkButtonText">Lien du site</h4>
+                </button>
+              </a>
+            </div>
           </div>
 
           <div className="myExperiencesCompetencesContainer">

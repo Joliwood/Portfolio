@@ -3,10 +3,18 @@ import "./styles.css";
 import ProfilePicture from "../images/profilePicture.jpeg";
 import Footer from "../footer";
 import { Link as LinkBrowser } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   return (
     <div className="contactArea">
+      <Helmet>
+        <title>
+          Guillaume Jolibois - Full Stack JavaScript Developer Contact
+        </title>
+        <link rel="canonical" href="https://guillaume-jolibois.fr/contact/" />
+      </Helmet>
+
       <div className="competencesSeparationEnsemble">
         <div className="competencesSeparationbar"></div>
         <h2>Contact</h2>
@@ -47,6 +55,7 @@ function Contact() {
         <img
           src={ProfilePicture}
           alt="profile"
+          title="profile"
           className="homeProfilePicture unselectable"
         />
       </div>

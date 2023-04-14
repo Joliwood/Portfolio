@@ -31,6 +31,7 @@ function Home() {
       <img
         src={ProfilePicture}
         alt="profile"
+        title="profile"
         className="homeProfilePicture unselectable"
       />
     </div>

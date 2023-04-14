@@ -55,6 +55,7 @@ function Contact() {
         <img
           src={ProfilePicture}
           alt="profile"
+          title="profile"
           className="homeProfilePicture unselectable"
         />
       </div>

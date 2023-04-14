@@ -9,6 +9,7 @@ function GithubLogo() {
       viewBox="0 0 70 70"
       className="githubLogo"
     >
+      <title>Github SVG</title>
       <g clipPath="url(#clip0_1_15)">
         <path
           className="githubLogoColor"

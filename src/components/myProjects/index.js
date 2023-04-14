@@ -18,6 +18,7 @@ function MyProjects() {
               <img
                 src={data.img}
                 alt={data.imgTag}
+                title={data.imgTag}
                 className="myProjectsPicture"
               />
               <h3 className="myProjectsTitle">{data.title}</h3>

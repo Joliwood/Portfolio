@@ -70,6 +70,7 @@ function HeaderBar() {
             smooth={true}
             offset={-250}
             duration={500}
+            href="#home-area"
           >
             <button className="headerBarButton">
               <h3>Accueil</h3>
@@ -82,6 +83,7 @@ function HeaderBar() {
             smooth={true}
             offset={-150}
             duration={500}
+            href="#competences-area"
           >
             <button className="headerBarButton">
               <h3>Compétences</h3>
@@ -94,6 +96,7 @@ function HeaderBar() {
             smooth={true}
             offset={-150}
             duration={500}
+            href="#my-projects-area"
           >
             <button className="headerBarButton">
               <h3>Portfolio</h3>

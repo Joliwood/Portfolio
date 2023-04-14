@@ -28,7 +28,7 @@ function Competences() {
                   <div className="competenceLogoContainer">{item.svg}</div>
                 ) : (
                   <div className="competenceLogoContainer">
-                    <img src={item.img} alt={item.name} />
+                    <img src={item.img} alt={item.name} title={item.name} />
                   </div>
                 )}
                 <h4 className="competenceTitle">{item.name}</h4>
@@ -46,7 +46,7 @@ function Competences() {
                   <div className="competenceLogoContainer">{item.svg}</div>
                 ) : (
                   <div className="competenceLogoContainer">
-                    <img src={item.img} alt={item.name} />
+                    <img src={item.img} alt={item.name} title={item.name} />
                   </div>
                 )}
                 <h4 className="competenceTitle">{item.name}</h4>
@@ -66,7 +66,7 @@ function Competences() {
                   <div className="competenceLogoContainer">{item.svg}</div>
                 ) : (
                   <div className="competenceLogoContainer">
-                    <img src={item.img} alt={item.name} />
+                    <img src={item.img} alt={item.name} title={item.name} />
                   </div>
                 )}
                 <h4 className="competenceTitle">{item.name}</h4>
@@ -86,7 +86,7 @@ function Competences() {
                   <div className="competenceLogoContainer">{item.svg}</div>
                 ) : (
                   <div className="competenceLogoContainer">
-                    <img src={item.img} alt={item.name} />
+                    <img src={item.img} alt={item.name} title={item.name} />
                   </div>
                 )}
                 <h4 className="competenceTitle">{item.name}</h4>

@@ -9,6 +9,7 @@ function LinkedinLogo() {
       viewBox="0 0 70 70"
       className="linkedinLogo"
     >
+      <title>Linkedin SVG</title>
       <g clipPath="url(#clip0_1_19)">
         <path
           className="linkedinLogoColor"

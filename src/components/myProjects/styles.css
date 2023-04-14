@@ -17,10 +17,16 @@
 }
 
 .myProjectIndividualContainer {
+  position: relative;
   width: 30vw;
+  border-radius: 8px;
+  border: solid 1px transparent;
+  background-image: linear-gradient(transparent, white),
+    linear-gradient(0deg, var(--main-theme-special-color) 0%, transparent 60%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   min-width: 270px;
   max-width: 400px;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;

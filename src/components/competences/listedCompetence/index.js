@@ -1,6 +1,6 @@
 import reactLogo from "../../images/competence/reactLogo.png";
 import jsLogo from "../../images/competence/jsLogo.png";
-import mysqlLogo from "../../images/competence/mysqlLogo.png";
+// import mysqlLogo from "../../images/competence/mysqlLogo.png";
 import NodeLogo from "../../svg/nodeLogo";
 import reduxLogo from "../../images/competence/reduxLogo.png";
 import jqueryLogo from "../../images/competence/jqueryLogo.png";
@@ -8,7 +8,8 @@ import seoLogo from "../../images/competence/seoLogo.png";
 import gitLogo from "../../images/competence/gitLogo.png";
 import netlifyLogo from "../../images/competence/netlifyLogo.png";
 import figmaLogo from "../../images/competence/figmaLogo.png";
-import mangodbLogo from "../../images/competence/mangodbLogo.jpg"; // En JPG au lieu des PNG pour diversifier le code
+// import mangodbLogo from "../../images/competence/mangodbLogo.png";
+import firebaseLogo from "../../images/competence/firebaseLogo.png";
 
 export const frontCompetence = [
   {
@@ -22,10 +23,10 @@ export const frontCompetence = [
 ];
 
 export const backCompetence = [
-  {
-    name: "MySQL",
-    img: mysqlLogo,
-  },
+  // {
+  //   name: "MySQL",
+  //   img: mysqlLogo,
+  // },
   {
     name: "Node.js",
     svg: <NodeLogo />,
@@ -61,8 +62,12 @@ export const toolsCompetence = [
     name: "Figma",
     img: figmaLogo,
   },
+  // {
+  //   name: "MangoDB",
+  //   img: mangodbLogo,
+  // },
   {
-    name: "MangoDB",
-    img: mangodbLogo,
+    name: "Firebase",
+    img: firebaseLogo,
   },
 ];

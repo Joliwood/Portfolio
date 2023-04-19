@@ -4,25 +4,21 @@
   "private": true,
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "loader-utils": "^3.2.1",
+    "next": "^13.3.0",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    // "react-router-dom": "^6.8.1",
-    "react-scripts": "^5.0.1",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "react-snap": "^1.23.0"
   },
-  // "scripts": {
-  //   "start": "react-scripts start",
-  //   "build": "react-scripts build",
-  //   "test": "react-scripts test",
-  //   "eject": "react-scripts eject"
-  // },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "react-snap"
   },
   "browserslist": {
     "production": [
@@ -39,5 +35,9 @@
   "main": "./index.js",
   "repository": "https://github.com/Joliwood/Portfolio.git",
   "author": "Joliwood <jolibois.contact@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-next": "13.3.0"
+  }
 }

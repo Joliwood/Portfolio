@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "loader-utils": "^3.2.1",
     "next": "^13.3.0",
     "path": "^0.12.7",
     "react": "^18.2.0",
-    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-scroll": "^1.8.9",
     "react-snap": "^1.23.0"
   },

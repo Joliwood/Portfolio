@@ -43,11 +43,10 @@
 
 .headerBarButton:hover {
   cursor: pointer;
-  scale: 1.05;
 }
 
 .whiteIcon {
-  color: white;
+  color: var(--main-theme-light-color);
   margin-right: 5vw;
 }
 
@@ -55,7 +54,15 @@
   cursor: pointer;
 }
 
+.headerBarBurgerMenuIcons {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
+  .headerBarBurgerMenuIcons {
+    display: flex;
+  }
+
   .headerBarButtonsEnsemble > * {
     margin-right: 2vw;
   }
@@ -65,6 +72,7 @@
   }
 
   .headerBarButtonsEnsemble {
+    display: none;
     flex-direction: column;
     width: 100%;
     gap: 0;
@@ -74,6 +82,10 @@
     padding: 15px;
     border-top: 2px solid var(--main-theme-special-color);
   }
+}
+
+.headerBarBurgerMenuList {
+  display: none;
 }
 
 @media screen and (max-width: 500px) {

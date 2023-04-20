@@ -34,11 +34,6 @@ function App() {
         />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        <script
-          src="https://kit.fontawesome.com/74d0ac6493.js"
-          crossorigin="anonymous"
-          defer
-        ></script>
         <link rel="canonical" href="https://guillaume-jolibois.fr/" />
       </Head>
 

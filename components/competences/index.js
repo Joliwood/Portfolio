@@ -62,7 +62,7 @@ function Competences() {
 
         <div className={styles.individualCompetenceBlock}>
           <h3 className={styles.ensembleCompetencesTitle}>
-            Les technos que j&aposai travaillé
+            Les technos que j&apos;ai travaillé
           </h3>
           <div>
             {technoCompetence.map((item) => (
@@ -84,7 +84,7 @@ function Competences() {
 
         <div className={styles.individualCompetenceBlock}>
           <h3 className={styles.ensembleCompetencesTitle}>
-            Les outils que j&aposai utilisé
+            Les outils que j&apos;ai utilisé
           </h3>
           <div>
             {toolsCompetence.map((item) => (

@@ -61,6 +61,7 @@ function Contact() {
           alt="profile"
           title="profile"
           className={`${stylesHome.homeProfilePicture} ${stylesHome.unselectable}`}
+          priority
         />
       </div>
 

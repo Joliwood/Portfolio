@@ -1,7 +1,6 @@
 import React from "react";
 import stylesContact from "../../styles/contact.module.css";
 import stylesHome from "../../styles/home.module.css";
-import stylesCompetences from "../../styles/competences.module.css";
 import stylesMyExperiences from "../../styles/myExperiences.module.css";
 import ProfilePicture from "../../public/images/profilePicture.jpeg";
 import Footer from "../../components/footer";
@@ -19,10 +18,10 @@ function Contact() {
         <link rel="canonical" href="https://guillaume-jolibois.fr/contact/" />
       </Head>
 
-      <div className={stylesCompetences.competencesSeparationEnsemble}>
-        <div className={stylesCompetences.competencesSeparationbar}></div>
-        <h2>Contact</h2>
-        <div className={stylesCompetences.competencesSeparationbar}></div>
+      <div className="separationEnsemble">
+        <div className="separationbar"></div>
+        <h2>Compétences</h2>
+        <div className="separationbar"></div>
       </div>
 
       <div className={stylesContact.contactContainer}>

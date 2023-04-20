@@ -11,10 +11,10 @@ import Image from "next/image";
 function Competences() {
   return (
     <div className={styles.competencesArea} id="competencesArea">
-      <div className={styles.competencesSeparationEnsemble}>
-        <div className={styles.competencesSeparationbar}></div>
+      <div className="separationEnsemble">
+        <div className="separationbar"></div>
         <h2>Compétences</h2>
-        <div className={styles.competencesSeparationbar}></div>
+        <div className="separationbar"></div>
       </div>
 
       <div className={styles.competencesContainer}>

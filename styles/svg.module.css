@@ -1,14 +1,20 @@
-.githubLogo {
+.logoCompetence {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.logoHomeLogo {
   height: 70px;
   width: 70px;
   transition: scale 250ms;
 }
 
-.githubLogo:hover {
+.logoHomeLogo:hover {
   scale: 1.1;
   cursor: pointer;
 }
 
-.githubLogoColor {
+.logoHomeLogo > g > path {
   fill: var(--main-theme-special-color);
 }

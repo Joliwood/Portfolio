@@ -121,3 +121,37 @@ a {
   text-decoration: none;
   color: unset;
 }
+
+/* Shared designs */
+
+.separationEnsemble {
+  width: 80vw;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.separationEnsemble > h2 {
+  color: var(--main-theme-light-color);
+  font-size: 24pt;
+  white-space: nowrap;
+}
+
+.separationbar {
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--main-theme-special-color),
+    transparent
+  );
+  width: 100%;
+}
+
+.separationbar:first-child {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--main-theme-special-color)
+  );
+}

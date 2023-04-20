@@ -10,15 +10,20 @@ import netlifyLogo from "../../../public/images/competence/netlifyLogo.png";
 import figmaLogo from "../../../public/images/competence/figmaLogo.png";
 // import mangodbLogo from "../../../public/images/competence/mangodbLogo.png";
 import firebaseLogo from "../../../public/images/competence/firebaseLogo.png";
+import NextLogo from "../../svg/nextLogo";
 
 export const frontCompetence = [
+  {
+    name: "Javascript",
+    img: jsLogo,
+  },
   {
     name: "React.js",
     img: reactLogo,
   },
   {
-    name: "Javascript",
-    img: jsLogo,
+    name: "Next.js",
+    svg: <NextLogo />,
   },
 ];
 

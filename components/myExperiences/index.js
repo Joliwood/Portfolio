@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "../../styles/myExperiences.module.css";
-import stylesCompetences from "../../styles/competences.module.css";
 
 function MyExperiences() {
   return (
     <div className={styles.myExperiencesArea}>
-      <div className={stylesCompetences.competencesSeparationEnsemble}>
-        <div className={stylesCompetences.competencesSeparationbar}></div>
-        <h2>My Experiences</h2>
-        <div className={stylesCompetences.competencesSeparationbar}></div>
+      <div className="separationEnsemble">
+        <div className="separationbar"></div>
+        <h2>Compétences</h2>
+        <div className="separationbar"></div>
       </div>
 
       <div className={styles.myExperiencesContainer}>

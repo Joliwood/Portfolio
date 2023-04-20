@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "../../../styles/nodeLogo.module.css";
+import styles from "../../../styles/svg.module.css";
 
-function NodeLogo() {
+export default function NodeLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 74 82"
-      className={styles.nodeLogo}
+      className={styles.logoCompetence}
     >
       <title>Node SVG</title>
       <path
@@ -17,5 +17,3 @@ function NodeLogo() {
     </svg>
   );
 }
-
-export default NodeLogo;

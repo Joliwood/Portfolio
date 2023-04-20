@@ -34,6 +34,7 @@ function Home() {
         alt="profile"
         title="profile"
         className={`${styles.homeProfilePicture} ${styles.unselectable}`}
+        priority
       />
     </div>
   );

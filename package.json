@@ -9,15 +9,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "react-scroll": "^1.8.9",
-    "react-snap": "^1.23.0"
+    "react-scroll": "^1.8.9"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postbuild": "react-snap"
+    "lint": "next lint"
   },
   "browserslist": {
     "production": [

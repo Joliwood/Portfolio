@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/NodeLogo.module.css";
+import styles from "../../../styles/nodeLogo.module.css";
 
 function NodeLogo() {
   return (
@@ -7,7 +7,7 @@ function NodeLogo() {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 74 82"
-      className="nodeLogo"
+      className={styles.nodeLogo}
     >
       <title>Node SVG</title>
       <path

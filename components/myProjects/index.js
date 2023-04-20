@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "../../styles/myProjects.module.css";
+import stylesCompetences from "../../styles/competences.module.css";
 import { MyProjectsList } from "./myProjectsList";
 import Image from "next/image";
 
 function MyProjects() {
   return (
     <div className={styles.myProjectsArea} id="myProjectsArea">
-      <div className={styles.competencesSeparationEnsemble}>
-        <div className={styles.competencesSeparationbar}></div>
+      <div className={stylesCompetences.competencesSeparationEnsemble}>
+        <div className={stylesCompetences.competencesSeparationbar}></div>
         <h2>My Projects</h2>
-        <div className={styles.competencesSeparationbar}></div>
+        <div className={stylesCompetences.competencesSeparationbar}></div>
       </div>
 
       <div className={styles.myProjectsContainer}>

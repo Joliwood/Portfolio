@@ -1,5 +1,9 @@
 import React from "react";
-import "../../styles/Contact.module.css";
+import stylesContact from "../../styles/contact.module.css";
+import stylesHome from "../../styles/home.module.css";
+import stylesCompetences from "../../styles/competences.module.css";
+import stylesMyExperiences from "../../styles/myExperiences.module.css";
+import ProfilePicture from "../../public/images/profilePicture.jpeg";
 import Footer from "../../components/footer";
 import Head from "next/head";
 import Link from "next/link";
@@ -7,7 +11,7 @@ import Image from "next/image";
 
 function Contact() {
   return (
-    <div className="contactArea">
+    <div className={stylesContact.contactArea}>
       <Head>
         <title>
           Guillaume Jolibois - Full Stack JavaScript Developer Contact
@@ -15,36 +19,36 @@ function Contact() {
         <link rel="canonical" href="https://guillaume-jolibois.fr/contact/" />
       </Head>
 
-      <div className="competencesSeparationEnsemble">
-        <div className="competencesSeparationbar"></div>
+      <div className={stylesCompetences.competencesSeparationEnsemble}>
+        <div className={stylesCompetences.competencesSeparationbar}></div>
         <h2>Contact</h2>
-        <div className="competencesSeparationbar"></div>
+        <div className={stylesCompetences.competencesSeparationbar}></div>
       </div>
 
-      <div className="contactContainer">
-        <div className="homeDescription">
+      <div className={stylesContact.contactContainer}>
+        <div className={stylesHome.homeDescription}>
           <h1>Guillaume Jolibois</h1>
           <h2>Comment me contacter ?</h2>
 
-          <address className="contactLinks">
+          <address className={stylesContact.contactLinks}>
             <a
               href="https://www.linkedin.com/in/guillaume-jolibois-430426119/"
               target="blank"
             >
               <p>Linkedin</p>
             </a>
-            <a class="mailto" href="mailto:jolibois.contact@gmail.com">
+            <a href="mailto:jolibois.contact@gmail.com">
               <p>jolibois.contact@gmail.com</p>
             </a>
             <p>
-              <span className="phoneNumber">06 64 36 21 79</span>
+              <span className={stylesContact.phoneNumber}>06 64 36 21 79</span>
             </p>
           </address>
 
-          <div className="homeLogosLinks">
-            <button className="myExperiencesLinkButton">
+          <div className={stylesHome.homeLogosLinks}>
+            <button className={stylesMyExperiences.myExperiencesLinkButton}>
               <Link href="/">
-                <h4 className="myExperiencesLinkButtonText">
+                <h4 className={stylesMyExperiences.myExperiencesLinkButtonText}>
                   Retourner au site
                 </h4>
               </Link>
@@ -53,10 +57,10 @@ function Contact() {
         </div>
 
         <Image
-          src="../public/images/profilePicture.jpeg"
+          src={ProfilePicture}
           alt="profile"
           title="profile"
-          className="homeProfilePicture unselectable"
+          className={`${stylesHome.homeProfilePicture} ${stylesHome.unselectable}`}
         />
       </div>
 

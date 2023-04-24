@@ -4,6 +4,8 @@ import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
+import PortfolioLogo from "../../public/images/portfolio-logo.png";
+import Image from "next/image";
 
 const HeaderBar = function () {
   const [toggleMenu, setToggleMenu] = useState(true);
@@ -11,7 +13,8 @@ const HeaderBar = function () {
   return (
     <div className={styles.headerBarArea}>
       <div className={styles.headerBarMain}>
-        <h2>Mon portfolio</h2>
+        {/* <h2>Mon portfolio</h2> */}
+        <Image src={PortfolioLogo} alt="GJ" title="Logo" />
 
         <div className={styles.headerBarBurgerMenuIcons}>
           {toggleMenu && (

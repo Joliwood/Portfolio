@@ -2,7 +2,7 @@
 
 ## <h2 style="text-align: center;">Context</h2>
 
-<p style="text-align: center;">This portfolio had been created by myself in React JS, without CSS librairy or template. To see these skills, you will need to go to my repositories and check at my projects.</p>
+<p style="text-align: center;">This portfolio had been created by myself in React JS and Next js, without CSS librairy or template. To see these skills, you will need to go to my repositories and check at my projects.</p>
 
 ## <h2 style="text-align: center;">What is it for ?</h2>
 

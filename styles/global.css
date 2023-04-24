@@ -36,6 +36,12 @@ html {
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
+  background-color: #06080e;
+  background-image: linear-gradient(
+    95deg,
+    var(--main-theme-dark-color) 0%,
+    var(--main-theme-background-color) 74%
+  );
 }
 
 @font-face {
@@ -63,15 +69,6 @@ html {
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
-}
-
-body {
-  /* background-color: #06080e; */
-  background-image: linear-gradient(
-    95deg,
-    var(--main-theme-dark-color) 0%,
-    var(--main-theme-background-color) 74%
-  );
 }
 
 h1,

@@ -1,0 +1,33 @@
+.fadeInBlock {
+  margin: auto;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.fadeInBlock.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.competencesLineConnection {
+  width: 1px;
+  height: 100px;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.competencesLineConnection.active {
+  animation: 1s linearap 0.5s forwards;
+}
+
+@keyframes linearap {
+  0% {
+    background-size: 0 0, 0 0, 0% 0%;
+    background-image: var(--main-theme-color-B64);
+  }
+  100% {
+    background-size: 1px 100%, 100% 100%;
+    background-image: var(--main-theme-color-B64);
+  }
+}

@@ -27,11 +27,15 @@
   margin-left: 5vw;
 }
 
-.headerBarMain > img {
+.headerBarMain > a > img {
   margin-left: 5vw;
   height: 100%;
   object-fit: contain;
   width: auto;
+}
+
+.headerBarMain > a {
+  height: 100%;
 }
 
 .headerBarButtonsEnsemble {

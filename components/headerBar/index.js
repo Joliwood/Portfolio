@@ -14,7 +14,16 @@ const HeaderBar = function () {
     <div className={styles.headerBarArea}>
       <div className={styles.headerBarMain}>
         {/* <h2>Mon portfolio</h2> */}
-        <Image src={PortfolioLogo} alt="GJ" title="Logo" />
+        <ScrollLink
+          to="homeArea"
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={500}
+          href="#home-area"
+        >
+          <Image src={PortfolioLogo} alt="GJ" title="Logo" />
+        </ScrollLink>
 
         <div className={styles.headerBarBurgerMenuIcons}>
           {toggleMenu && (

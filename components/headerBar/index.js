@@ -55,7 +55,7 @@ const HeaderBar = function () {
         className={`${styles.headerBarButtonsEnsemble} ${
           animatedMenu
             ? stylesAnimations.headerBarAnimationOn
-            : !animatedMenu
+            : !animatedMenu && animatedMenu !== null
             ? stylesAnimations.headerBarAnimationOff
             : ""
         }`}

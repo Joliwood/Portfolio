@@ -99,35 +99,6 @@
     0px 8px 13px #ad8b611e, 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.animatedAppears {
-  display: flex;
-  opacity: 0;
-  animation: appear 250ms ease-in-out forwards;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animatedDisappears {
-  opacity: 1;
-  animation: disappear 250ms ease-in-out forwards;
-}
-
-@keyframes disappear {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .headerBarBurgerMenuIcons {
     display: flex;

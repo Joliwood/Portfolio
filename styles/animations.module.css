@@ -21,6 +21,92 @@
   animation: 1s linearap 0.5s forwards;
 }
 
+/* Animations of the burger menu when it is opened */
+
+.headerBarAnimationOn {
+  max-height: 0;
+  animation: 1s burgerMenuOpen forwards;
+}
+
+.headerBarAnimationOn > * {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.headerBarAnimationOn > *:nth-child(1) {
+  animation: 0.2s burgerMenuOpen 0s forwards;
+}
+
+.headerBarAnimationOn > *:nth-child(2) {
+  animation: 0.25s burgerMenuOpen 0.1s forwards;
+}
+
+.headerBarAnimationOn > *:nth-child(3) {
+  animation: 0.45s burgerMenuOpen 0.2s forwards;
+}
+
+.headerBarAnimationOn > *:nth-child(4) {
+  animation: 0.55s burgerMenuOpen 0.3s forwards;
+}
+
+@keyframes burgerMenuOpen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    max-height: 100vh;
+  }
+}
+
+/* Animations of the burger menu when it is closed */
+
+.headerBarAnimationOff {
+  display: flex;
+  animation: 0.7s burgerMenuClose cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+.headerBarAnimationOff > *:nth-child(1) {
+  animation: 0.55s burgerMenuItemClose 0.3s forwards;
+}
+
+.headerBarAnimationOff > *:nth-child(2) {
+  animation: 0.45s burgerMenuItemClose 0.2s forwards;
+}
+
+.headerBarAnimationOff > *:nth-child(3) {
+  animation: 0.25s burgerMenuItemClose 0.1s forwards;
+}
+
+.headerBarAnimationOff > *:nth-child(4) {
+  animation: 0.2s burgerMenuItemClose 0s forwards;
+}
+
+@keyframes burgerMenuItemClose {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes burgerMenuClose {
+  0% {
+    max-height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+
+/* All keyframes for others animations */
+
 @keyframes linearap {
   0% {
     background-size: 0 0, 0 0, 0% 0%;

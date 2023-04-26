@@ -12,13 +12,13 @@ import Image from "next/image";
 function Competences() {
   const refs = useRef([]);
 
-  // let bottomOfScreen = 0;
-  const [bottomOfScreen, setBottomOfScreen] = useState(0);
+  let bottomOfScreen = 0;
+  // const [bottomOfScreen, setBottomOfScreen] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      // bottomOfScreen = window.scrollY + window.innerHeight;
-      setBottomOfScreen(window.scrollY + window.innerHeight);
+      bottomOfScreen = window.scrollY + window.innerHeight;
+      // setBottomOfScreen(window.scrollY + window.innerHeight);
     };
 
     if (typeof window !== "undefined") {

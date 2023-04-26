@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../styles/headerBar.module.css";
+import stylesAnimations from "../../styles/animations.module.css";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link as ScrollLink } from "react-scroll";
@@ -9,6 +10,7 @@ import Image from "next/image";
 
 const HeaderBar = function () {
   const [toggleMenu, setToggleMenu] = useState(true);
+  const [animatedMenu, setAnimatedMenu] = useState(null);
 
   return (
     <div className={styles.headerBarArea}>
@@ -30,21 +32,33 @@ const HeaderBar = function () {
             <RxHamburgerMenu
               className={styles.whiteIcon}
               size="2em"
-              onClick={() => setToggleMenu(!toggleMenu)}
+              onClick={() => {
+                setToggleMenu(!toggleMenu);
+                setAnimatedMenu(true);
+              }}
             />
           )}
           {!toggleMenu && (
             <IoClose
               className={styles.whiteIcon}
               size="2em"
-              onClick={() => setToggleMenu(!toggleMenu)}
+              onClick={() => {
+                setToggleMenu(!toggleMenu);
+                setAnimatedMenu(false);
+              }}
             />
           )}
         </div>
       </div>
 
       <div
-        className={`${styles.headerBarButtonsEnsemble}`}
+        className={`${styles.headerBarButtonsEnsemble} ${
+          animatedMenu
+            ? stylesAnimations.headerBarAnimationOn
+            : !animatedMenu
+            ? stylesAnimations.headerBarAnimationOff
+            : ""
+        }`}
         style={!toggleMenu ? { display: "flex" } : {}}
       >
         <ScrollLink

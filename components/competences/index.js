@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import {
   frontCompetence,
   technoCompetence,
@@ -12,12 +12,39 @@ import Image from "next/image";
 function Competences() {
   const refs = useRef([]);
 
+  // let bottomOfScreen = 0;
+  const [bottomOfScreen, setBottomOfScreen] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // bottomOfScreen = window.scrollY + window.innerHeight;
+      setBottomOfScreen(window.scrollY + window.innerHeight);
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+    }
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     const handleIntersection = (entries, observer) => {
       entries.forEach((entry) => {
+        // Récupération de la position y de chaque élément entry, mais sans contexte
+        const rect = entry.target.getBoundingClientRect();
+
+        // Ajout du contexte, donc par rapport au document
+        const rectY = rect.top + window.pageYOffset;
+
         if (entry.isIntersecting) {
           entry.target.classList.add(stylesAnimations.active);
-          observer.unobserve(entry.target);
+          console.log(rectY);
+          console.log(bottomOfScreen);
+          // observer.unobserve(entry.target);
+        } else if (bottomOfScreen < rectY) {
+          entry.target.classList.remove(stylesAnimations.active);
         }
       });
     };

@@ -42,8 +42,7 @@
 .myProjectsTitle {
   background-color: var(--main-theme-dark-color);
   font-weight: bold;
-  line-height: 3rem;
-  font-size: 20pt;
+  line-height: 2rem;
   color: var(--main-theme-light-color);
   padding: 15px 20px;
 }
@@ -62,9 +61,5 @@
 @media screen and (max-width: 500px) {
   .myProjectsContainer {
     width: auto;
-  }
-
-  .myProjectsTitle {
-    font-size: 16pt;
   }
 }

@@ -215,6 +215,7 @@ h6 {
 p {
   font-family: GeneralSans-Regular;
   font-size: 1.1rem;
+  line-height: 1.3rem;
   text-align: center;
   text-align-last: center;
   color: var(--main-theme-light-color);
@@ -266,7 +267,7 @@ a {
 
 .separationEnsemble > h2 {
   color: var(--main-theme-light-color);
-  font-size: 24pt;
+  font-size: 1.8rem;
   white-space: nowrap;
 }
 

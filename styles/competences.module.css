@@ -50,14 +50,11 @@
 
 .competenceTitle {
   color: var(--main-theme-light-color);
-  font-weight: bold;
-  font-size: 16pt;
 }
 
 .ensembleCompetencesTitle {
   color: var(--main-theme-special-color);
   font-weight: bold;
-  font-size: 18pt;
   padding: 0 10px;
 }
 

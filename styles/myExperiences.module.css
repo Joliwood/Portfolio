@@ -35,7 +35,6 @@
 }
 
 .myExperiencesCompetence > p {
-  font-size: 18pt;
   color: var(--main-theme-light-color);
 }
 
@@ -47,7 +46,7 @@
 
 .myExperiencesBlockContainer {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-direction: column;
   justify-self: flex-end;
   border-radius: 20px;
@@ -68,7 +67,7 @@
   align-items: flex-start;
   width: 70%;
   min-width: 700px;
-  gap: 30px;
+  gap: 20px;
   flex-direction: column;
   background: radial-gradient(
     var(--main-theme-dark-color),
@@ -87,21 +86,18 @@
 }
 
 .myExperiencesTitle {
-  font-size: 18pt;
-  line-height: 29px;
   font-weight: bold;
   color: var(--main-theme-special-color);
 }
 
 .myExperiencesText {
-  font-size: 18pt;
-  line-height: 29px;
+  font-size: 1.2rem;
 }
 
 .myExperiencesLinksContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px 20px;
   align-items: center;
 }
 
@@ -109,6 +105,8 @@
   height: 40px;
   background-color: var(--main-theme-special-color);
   border: 1px solid var(--main-theme-semi-dark-color);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.151), 0px 8px 13px #ad8b6110,
+    0px 18px 23px rgba(0, 0, 0, 0.041);
   border-radius: 10px;
   padding: 0 15px;
   transition: background-color, border 250ms;
@@ -117,21 +115,16 @@
 
 .myExperiencesLinkButtonText {
   font-weight: bold;
-  font-size: 16pt;
   color: var(--main-theme-dark-color);
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.151), 0px 8px 13px #ad8b6110,
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.151), 0px 8px 13px #ad8b6110,
     0px 18px 23px rgba(0, 0, 0, 0.041);
   transition: color 250ms;
 }
 
 .myExperiencesLinkButton:hover {
-  background-color: transparent;
+  background-color: #cfaa7a;
   cursor: pointer;
   border: 1px solid var(--main-theme-special-color);
-}
-
-.myExperiencesLinkButton:hover .myExperiencesLinkButtonText {
-  color: var(--main-theme-special-color);
 }
 
 @media screen and (max-width: 1100px) {

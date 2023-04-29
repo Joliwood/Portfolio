@@ -8,7 +8,7 @@ function MyProjects() {
     <div className={styles.myProjectsArea} id="myProjectsArea">
       <div className="separationEnsemble">
         <div className="separationbar"></div>
-        <h2>Compétences</h2>
+        <h2>Mes projets</h2>
         <div className="separationbar"></div>
       </div>
 

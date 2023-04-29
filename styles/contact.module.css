@@ -11,7 +11,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 150px;
   margin-top: 100px;
 }
 
@@ -22,20 +21,19 @@
   gap: 20px;
 }
 
-.contactLinks > * {
-  font-size: 12pt;
-  font-weight: normal;
+.phoneNumber {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-.phoneNumber {
-  font-size: 16pt;
-  font-weight: bold;
+.descriptionContainer {
+  align-items: center;
+  width: auto;
 }
 
 @media screen and (max-width: 900px) {
   .contactContainer {
     flex-direction: column-reverse;
     margin-top: 10px;
-    gap: 30px;
   }
 }

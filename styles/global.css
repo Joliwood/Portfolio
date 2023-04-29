@@ -131,17 +131,7 @@ table {
   margin: 0;
 }
 
-/* Main theme */
-/* :root {
-  --main-theme-dark-color: #162c39;
-  --main-theme-semi-dark-color: #527c92;
-  --main-theme-special-color: #a98b70;
-  --main-theme-semi-light-color: #eed1af;
-  --main-theme-light-color: #fdfdf3;
-  --main-theme-background-color: #efefee;
-} */
-
-/* Experimental theme */
+/* Dark theme */
 :root {
   --main-theme-dark-color: #181619;
   --main-theme-semi-dark-color: #181b22;
@@ -152,12 +142,30 @@ table {
   --main-theme-light-color: #f8f4f1;
 
   --main-theme-background-color: #06080e;
+  --main-theme-semi-background-color: #181619;
 
   --main-theme-color-B64: /* Partie haute du background image */ url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACRJREFUOE9jWNud+J9SPKs28j9VDALhUYMI41GDCONha1DifwBTW17mV3/gLgAAAABJRU5ErkJggg=="),
     /* Partie G et D du background image */
       url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACRJREFUOE9jWNud+J9SPKs28j9VDALhUYMI41GDCONha1DifwBTW17mV3/gLgAAAABJRU5ErkJggg=="),
     /* Partie basse du background image */
       url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA6CAYAAAAA0F95AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAIVJREFUaEPt0DERADAMgMCq6DX+haYGcADDL4ycd2fNGkDRpAEUTRpA0aQBFE0aQNGkARRNGkDRpAEUTRpA0aQBFE0aQNGkARRNGkDRpAEUTRpA0aQBFE0aQNGkARRNGkDRpAEUTRpA0aQBFE0aQNGkARRNGkDRpAEUTRpA0aQBFE3kA2Y/f3x4D8uCWtEAAAAASUVORK5CYII=");
+}
+
+.lightTheme {
+  --main-theme-dark-color: #cdc7c7;
+  --main-theme-semi-dark-color: #cdc7c7;
+
+  --main-theme-special-color: #d19e6e;
+
+  --main-theme-semi-light-color: #e9e8de;
+  --main-theme-light-color: #2c2c3c;
+
+  --main-theme-background-color: #f0efec;
+  --main-theme-semi-background-color: #ebeae7;
+}
+
+.lightTheme * {
+  text-shadow: none;
 }
 
 html {
@@ -168,7 +176,7 @@ html {
   background-color: #06080e;
   background-image: linear-gradient(
     95deg,
-    var(--main-theme-dark-color) 0%,
+    var(--main-theme-semi-background-color) 0%,
     var(--main-theme-background-color) 74%
   );
 }

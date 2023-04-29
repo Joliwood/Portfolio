@@ -12,7 +12,7 @@
 }
 
 .footerText {
-  color: white;
+  color: var(--main-theme-light-color);
 }
 
 .footerArea > div {

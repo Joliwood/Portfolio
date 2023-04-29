@@ -36,6 +36,17 @@ const HeaderBar = function () {
           <Image src={PortfolioLogo} alt="GJ" title="Logo" />
         </ScrollLink>
 
+        <div className={styles.themeSwitchContainerSmallDevices}>
+          {lightTheme ? (
+            <MdOutlineNightsStay
+              className={styles.themeIcon}
+              onClick={changeTheme}
+            />
+          ) : (
+            <BsSun className={styles.themeIcon} onClick={changeTheme} />
+          )}
+        </div>
+
         <div className={styles.headerBarBurgerMenuIcons}>
           {toggleMenu && (
             <RxHamburgerMenu
@@ -111,14 +122,16 @@ const HeaderBar = function () {
             <h3>Contact</h3>
           </Link>
         </button>
-        {lightTheme ? (
-          <MdOutlineNightsStay
-            className={styles.themeIcon}
-            onClick={changeTheme}
-          />
-        ) : (
-          <BsSun className={styles.themeIcon} onClick={changeTheme} />
-        )}
+        <div className={styles.themeSwitchContainer}>
+          {lightTheme ? (
+            <MdOutlineNightsStay
+              className={styles.themeIcon}
+              onClick={changeTheme}
+            />
+          ) : (
+            <BsSun className={styles.themeIcon} onClick={changeTheme} />
+          )}
+        </div>
       </div>
     </div>
   );

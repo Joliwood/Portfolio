@@ -137,12 +137,15 @@ table {
   --main-theme-semi-dark-color: #181b22;
 
   --main-theme-special-color: #ad8b61;
+  --main-theme-special-enhanced-color: #cfaa7a;
   --main-theme-semi-special-color: #94816b50;
 
   --main-theme-light-color: #f8f4f1;
 
   --main-theme-background-color: #06080e;
   --main-theme-semi-background-color: #181619;
+
+  --main-theme-headerBar: #06080e77;
 
   --main-theme-color-B64: /* Partie haute du background image */ url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACRJREFUOE9jWNud+J9SPKs28j9VDALhUYMI41GDCONha1DifwBTW17mV3/gLgAAAABJRU5ErkJggg=="),
     /* Partie G et D du background image */
@@ -153,19 +156,32 @@ table {
 
 .lightTheme {
   --main-theme-dark-color: #cdc7c7;
-  --main-theme-semi-dark-color: #cdc7c7;
+  --main-theme-semi-dark-color: var(--main-theme-dark-color);
 
-  --main-theme-special-color: #d19e6e;
+  --main-theme-special-color: #778da9;
+  --main-theme-special-color: #e26d5c;
+  --main-theme-special-color: #a3a380;
+  --main-theme-special-color: #b58463;
+
+  /* ------------------------------------------- */
+  --main-theme-special-color: #b58463;
+  /* ------------------------------------------- */
+
+  --main-theme-special-enhanced-color: #b58463;
+  --main-theme-semi-special-color: #ebeae7;
 
   --main-theme-semi-light-color: #e9e8de;
   --main-theme-light-color: #2c2c3c;
 
   --main-theme-background-color: #f0efec;
   --main-theme-semi-background-color: #ebeae7;
+
+  --main-theme-headerBar: #f0efec77;
 }
 
 .lightTheme * {
   text-shadow: none;
+  box-shadow: none;
 }
 
 html {
@@ -179,6 +195,11 @@ html {
     var(--main-theme-semi-background-color) 0%,
     var(--main-theme-background-color) 74%
   );
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 @font-face {
@@ -236,7 +257,7 @@ h1 {
   font-size: 3rem;
   text-align: center;
   text-align-last: center;
-  color: var(--main-theme-special-color);
+  color: var(--main-theme-special-enhanced-color);
 }
 
 h2 {

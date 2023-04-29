@@ -114,15 +114,14 @@
 }
 
 .myExperiencesLinkButtonText {
-  font-weight: bold;
   color: var(--main-theme-dark-color);
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.151), 0px 8px 13px #ad8b6110,
     0px 18px 23px rgba(0, 0, 0, 0.041);
-  transition: color 250ms;
+  transition: background-color 150ms;
 }
 
 .myExperiencesLinkButton:hover {
-  background-color: #cfaa7a;
+  background-color: var(--main-theme-special-enhanced-color);
   cursor: pointer;
   border: 1px solid var(--main-theme-special-color);
 }

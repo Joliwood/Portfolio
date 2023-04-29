@@ -6,7 +6,7 @@
   height: auto;
   width: 100vw;
   justify-content: space-between;
-  background-color: #06080e77;
+  background-color: var(--main-theme-headerBar);
   align-items: center;
   border-bottom: 1px solid var(--main-theme-special-color);
   -webkit-backdrop-filter: blur(8px);
@@ -175,7 +175,21 @@
   }
 }
 
+.themeSwitchContainerSmallDevices {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
+  .themeSwitchContainerSmallDevices {
+    position: absolute;
+    display: unset;
+    left: calc(50vw - 20px);
+  }
+
+  .themeSwitchContainer {
+    display: none;
+  }
+
   .headerBarBurgerMenuIcons {
     display: flex;
   }

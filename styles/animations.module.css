@@ -108,12 +108,12 @@
 /* All keyframes for others animations */
 
 @keyframes linearap {
-  0% {
-    background-size: 0 0, 0 0, 0% 0%;
-    background-image: var(--main-theme-color-B64);
+  from {
+    background-size: 1px 0, 0% 0%;
+    background-image: var(--theme-color-B64);
   }
-  100% {
-    background-size: 1px 100%, 100% 100%;
-    background-image: var(--main-theme-color-B64);
+  to {
+    background-size: 100% 100%, 100% 100%;
+    background-image: var(--theme-color-B64);
   }
 }

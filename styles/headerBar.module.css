@@ -6,9 +6,9 @@
   height: auto;
   width: 100vw;
   justify-content: space-between;
-  background-color: var(--main-theme-headerBar);
+  background-color: var(--theme-headerBar);
   align-items: center;
-  border-bottom: 1px solid var(--main-theme-special-color);
+  border-bottom: 1px solid var(--theme-special-color);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
@@ -23,7 +23,7 @@
 
 .headerBarMain > h2 {
   font-size: 2.6rem;
-  color: var(--main-theme-special-color);
+  color: var(--theme-special-color);
   margin-left: 5vw;
 }
 
@@ -48,7 +48,7 @@
 .headerBarButton {
   border: none;
   background-color: transparent;
-  color: var(--main-theme-light-color);
+  color: var(--theme-light-color);
   transition: scale 250ms;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .whiteIcon {
-  color: var(--main-theme-light-color);
+  color: var(--theme-light-color);
   margin-right: 5vw;
 }
 
@@ -83,37 +83,37 @@
   width: 40px;
   height: 40px;
   background: radial-gradient(
-    var(--main-theme-dark-color),
-    var(--main-theme-semi-dark-color)
+    var(--theme-dark-color),
+    var(--theme-semi-dark-color)
   );
   box-shadow: 0 20px 25px -5px rgba(90, 90, 90, 0.1),
     0 8px 10px -6px hsla(0, 0%, 43%, 0.1);
-  border: 1px solid var(--main-theme-special-color);
+  border: 1px solid var(--theme-special-color);
   z-index: 1;
   border-radius: 8px;
 }
 
 .returnTopScrollContainer:hover {
   cursor: pointer;
-  box-shadow: 0px 4px 3px var(--main-theme-semi-dark-color),
-    0px 8px 13px #ad8b611e, 0px 18px 23px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 3px var(--theme-semi-dark-color), 0px 8px 13px #ad8b611e,
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .themeIcon {
-  color: var(--main-theme-special-color);
+  color: var(--theme-special-color);
   height: auto;
   width: 30px;
   padding: 5px;
   margin: auto;
   border-radius: 50%;
+  box-shadow: none;
   transition: background-color 250ms;
 }
 
 .themeIcon:hover {
   cursor: pointer;
-  background-color: var(--main-theme-light-color);
-  box-shadow: 0px 1px 3px var(--main-theme-light-color), 0px 8px 13px #ad8b611e,
-    0px 18px 23px rgba(0, 0, 0, 0.1);
+  background-color: var(--theme-light-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .headerBarBurgerMenuList {
@@ -130,20 +130,20 @@
   width: 40px;
   height: 40px;
   background: radial-gradient(
-    var(--main-theme-dark-color),
-    var(--main-theme-semi-dark-color)
+    var(--theme-dark-color),
+    var(--theme-semi-dark-color)
   );
   box-shadow: 0 20px 25px -5px rgba(90, 90, 90, 0.1),
     0 8px 10px -6px hsla(0, 0%, 43%, 0.1);
-  /* border: 1px solid var(--main-theme-special-color); */
+  /* border: 1px solid var(--theme-special-color); */
   z-index: 1;
   border-radius: 8px;
 }
 
 .returnTopScrollContainer:hover {
   cursor: pointer;
-  box-shadow: 0px 4px 3px var(--main-theme-semi-dark-color),
-    0px 8px 13px #ad8b611e, 0px 18px 23px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 3px var(--theme-semi-dark-color), 0px 8px 13px #ad8b611e,
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .animatedAppears {
@@ -212,7 +212,7 @@
 
   .headerBarButton {
     padding: 15px;
-    border-top: 2px solid var(--main-theme-special-color);
+    border-top: 2px solid var(--theme-special-color);
   }
 }
 

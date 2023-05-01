@@ -16,10 +16,10 @@
 }
 
 .logoHomeLogo > g > path {
-  fill: var(--main-theme-special-color);
+  fill: var(--theme-special-color);
 }
 
 .topAngle {
   height: 80%;
-  fill: var(--main-theme-light-color);
+  fill: var(--theme-light-color);
 }

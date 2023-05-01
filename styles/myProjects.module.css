@@ -22,7 +22,7 @@
   border-radius: 8px;
   border: solid 1px transparent;
   background-image: linear-gradient(transparent, white),
-    linear-gradient(0deg, var(--main-theme-special-color) 0%, transparent 60%);
+    linear-gradient(0deg, var(--theme-special-color) 0%, transparent 60%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   min-width: 270px;
@@ -40,10 +40,10 @@
 }
 
 .myProjectsTitle {
-  background-color: var(--main-theme-dark-color);
+  background-color: var(--theme-dark-color);
   font-weight: bold;
   line-height: 2rem;
-  color: var(--main-theme-light-color);
+  color: var(--theme-light-color);
   padding: 15px 20px;
 }
 

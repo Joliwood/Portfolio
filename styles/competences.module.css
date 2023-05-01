@@ -23,12 +23,12 @@
   margin: auto;
   padding-top: 20px;
   background: radial-gradient(
-    var(--main-theme-dark-color),
-    var(--main-theme-semi-dark-color)
+    var(--theme-dark-color),
+    var(--theme-semi-dark-color)
   );
   box-shadow: 0 20px 25px -5px rgba(90, 90, 90, 0.1),
     0 8px 10px -6px rgba(110, 110, 110, 0.1);
-  border: 1px solid var(--main-theme-special-color);
+  border: 1px solid var(--theme-special-color);
   border-radius: 30px;
 }
 
@@ -49,19 +49,19 @@
 }
 
 .competenceTitle {
-  color: var(--main-theme-light-color);
+  color: var(--theme-light-color);
 }
 
 .ensembleCompetencesTitle {
-  color: var(--main-theme-special-color);
+  color: var(--theme-special-color);
   font-weight: bold;
   padding: 0 10px;
 }
 
 .competenceLogoContainer {
   background: radial-gradient(
-    var(--main-theme-semi-special-color),
-    var(--main-theme-dark-color)
+    var(--theme-semi-special-color),
+    var(--theme-dark-color)
   );
   width: 100px;
   height: 100px;
@@ -69,7 +69,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid var(--main-theme-semi-dark-color);
+  border: 2px solid var(--theme-semi-dark-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   box-sizing: border-box;
 }

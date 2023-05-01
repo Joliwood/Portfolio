@@ -133,21 +133,21 @@ table {
 
 /* Dark theme */
 :root {
-  --main-theme-dark-color: #181619;
-  --main-theme-semi-dark-color: #181b22;
+  --theme-dark-color: #161919;
+  --theme-semi-dark-color: #181b22;
 
-  --main-theme-special-color: #ad8b61;
-  --main-theme-special-enhanced-color: #cfaa7a;
-  --main-theme-semi-special-color: #94816b50;
+  --theme-special-color: #ad8b61;
+  --theme-special-enhanced-color: #cfaa7a;
+  --theme-semi-special-color: #94816b50;
 
-  --main-theme-light-color: #f8f4f1;
+  --theme-light-color: #f8f4f1;
 
-  --main-theme-background-color: #06080e;
-  --main-theme-semi-background-color: #181619;
+  --theme-background-color: #161719;
 
-  --main-theme-headerBar: #06080e77;
+  --theme-headerBar: #16171977;
 
-  --main-theme-color-B64: /* Partie haute du background image */ url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACRJREFUOE9jWNud+J9SPKs28j9VDALhUYMI41GDCONha1DifwBTW17mV3/gLgAAAABJRU5ErkJggg=="),
+  --theme-color-B64: 
+  /* Partie haute du background image */ url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACRJREFUOE9jWNud+J9SPKs28j9VDALhUYMI41GDCONha1DifwBTW17mV3/gLgAAAABJRU5ErkJggg=="),
     /* Partie G et D du background image */
       url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACRJREFUOE9jWNud+J9SPKs28j9VDALhUYMI41GDCONha1DifwBTW17mV3/gLgAAAABJRU5ErkJggg=="),
     /* Partie basse du background image */
@@ -155,28 +155,34 @@ table {
 }
 
 .lightTheme {
-  --main-theme-dark-color: #cdc7c7;
-  --main-theme-semi-dark-color: var(--main-theme-dark-color);
+  --theme-dark-color: #cdc7c7;
+  --theme-semi-dark-color: var(--theme-dark-color);
 
-  --main-theme-special-color: #778da9;
-  --main-theme-special-color: #e26d5c;
-  --main-theme-special-color: #a3a380;
-  --main-theme-special-color: #b58463;
+  --theme-special-color: #778da9;
+  --theme-special-color: #e26d5c;
+  --theme-special-color: #a3a380;
+  --theme-special-color: #b58463;
 
   /* ------------------------------------------- */
-  --main-theme-special-color: #b58463;
+  --theme-special-color: #b58463;
   /* ------------------------------------------- */
 
-  --main-theme-special-enhanced-color: #b58463;
-  --main-theme-semi-special-color: #ebeae7;
+  --theme-special-enhanced-color: #b58463;
+  --theme-semi-special-color: #ebeae7;
 
-  --main-theme-semi-light-color: #e9e8de;
-  --main-theme-light-color: #2c2c3c;
+  --theme-semi-light-color: #e9e8de;
+  --theme-light-color: #2c2c3c;
 
-  --main-theme-background-color: #f0efec;
-  --main-theme-semi-background-color: #ebeae7;
+  --theme-background-color: #ebeae7;
 
-  --main-theme-headerBar: #f0efec77;
+  --theme-headerBar: #f0efec77;
+
+  --theme-color-B64: 
+  /* Partie haute du background image */ url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACRJREFUOE9jWNud+J9SPKs28j9VDALhUYMI41GDCONha1DifwBTW17mV3/gLgAAAABJRU5ErkJggg=="),
+    /* Partie G et D du background image */
+      url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAANCAYAAACkTj4ZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAACRJREFUOE9jWNud+J9SPKs28j9VDALhUYMI41GDCONha1DifwBTW17mV3/gLgAAAABJRU5ErkJggg=="),
+    /* Partie basse du background image */
+      url("data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA6CAYAAAAA0F95AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAIVJREFUaEPt0DERADAMgMCq6DX+haYGcADDL4ycd2fNGkDRpAEUTRpA0aQBFE0aQNGkARRNGkDRpAEUTRpA0aQBFE0aQNGkARRNGkDRpAEUTRpA0aQBFE0aQNGkARRNGkDRpAEUTRpA0aQBFE0aQNGkARRNGkDRpAEUTRpA0aQBFE3kA2Y/f3x4D8uCWtEAAAAASUVORK5CYII=");
 }
 
 .lightTheme * {
@@ -189,12 +195,7 @@ html {
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-  background-color: #06080e;
-  background-image: linear-gradient(
-    95deg,
-    var(--main-theme-semi-background-color) 0%,
-    var(--main-theme-background-color) 74%
-  );
+  background-color: var(--theme-background-color);
 }
 
 ::-webkit-scrollbar {
@@ -236,7 +237,7 @@ h4,
 h5,
 h6 {
   font-family: GeneralSans-Medium;
-  color: var(--main-theme-light-color);
+  color: var(--theme-light-color);
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px #ad8b611e,
     0px 18px 23px rgba(0, 0, 0, 0.1);
 }
@@ -247,7 +248,7 @@ p {
   line-height: 1.3rem;
   text-align: center;
   text-align-last: center;
-  color: var(--main-theme-light-color);
+  color: var(--theme-light-color);
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px #ad8b611e,
     0px 18px 23px rgba(0, 0, 0, 0.1);
 }
@@ -257,7 +258,7 @@ h1 {
   font-size: 3rem;
   text-align: center;
   text-align-last: center;
-  color: var(--main-theme-special-enhanced-color);
+  color: var(--theme-special-enhanced-color);
 }
 
 h2 {
@@ -295,7 +296,7 @@ a {
 }
 
 .separationEnsemble > h2 {
-  color: var(--main-theme-light-color);
+  color: var(--theme-light-color);
   font-size: 1.8rem;
   white-space: nowrap;
 }
@@ -303,18 +304,10 @@ a {
 .separationbar {
   height: 3px;
   border-radius: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--main-theme-special-color),
-    transparent
-  );
+  background: linear-gradient(90deg, var(--theme-special-color), transparent);
   width: 100%;
 }
 
 .separationbar:first-child {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--main-theme-special-color)
-  );
+  background: linear-gradient(90deg, transparent, var(--theme-special-color));
 }

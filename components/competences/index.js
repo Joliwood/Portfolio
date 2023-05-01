@@ -30,7 +30,7 @@ function Competences() {
   }, []);
 
   useEffect(() => {
-    const handleIntersection = (entries, observer) => {
+    const handleIntersection = (entries) => {
       entries.forEach((entry) => {
         // Récupération de la position y de chaque élément entry, mais sans contexte
         const rect = entry.target.getBoundingClientRect();
@@ -40,12 +40,15 @@ function Competences() {
 
         if (entry.isIntersecting) {
           entry.target.classList.add(stylesAnimations.active);
-          console.log(rectY);
-          console.log(bottomOfScreen);
-          // observer.unobserve(entry.target);
         } else if (bottomOfScreen < rectY) {
           entry.target.classList.remove(stylesAnimations.active);
         }
+
+        // if (rect.top - rect.height / 2 + 100 < window.innerHeight) {
+        //   entry.target.classList.add(stylesAnimations.active);
+        // } else if (rect.top >= window.innerHeight) {
+        //   entry.target.classList.remove(stylesAnimations.active);
+        // }
       });
     };
 

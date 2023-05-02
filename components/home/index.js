@@ -2,7 +2,7 @@ import React from "react";
 import GithubLogo from "../svg/githubLogo";
 import LinkedinLogo from "../svg/linkedinLogo";
 import ProfilePicture from "../../public/images/profilePicture.jpeg";
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/home.module.scss";
 import Image from "next/image";
 
 function Home() {

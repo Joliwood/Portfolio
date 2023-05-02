@@ -29,11 +29,11 @@
 .descriptionContainer {
   align-items: center;
   width: auto;
-}
 
-.descriptionContainer > * {
-  text-align: center;
-  text-align-last: center;
+  > * {
+    text-align: center;
+    text-align-last: center;
+  }
 }
 
 @media screen and (max-width: 900px) {

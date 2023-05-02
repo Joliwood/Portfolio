@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/myProjects.module.css";
+import styles from "../../styles/myProjects.module.scss";
 import { MyProjectsList } from "./myProjectsList";
 import Image from "next/image";
 

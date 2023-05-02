@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../../styles/headerBar.module.css";
+import styles from "../../styles/headerBar.module.scss";
 import TopAngle from "../svg/topAngle";
 import { Link as ScrollLink } from "react-scroll";
 

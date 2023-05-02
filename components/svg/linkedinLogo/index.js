@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../styles/svg.module.css";
+import styles from "../../../styles/svg.module.scss";
 
 function LinkedinLogo() {
   return (

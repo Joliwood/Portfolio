@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/myExperiences.module.css";
+import styles from "../../styles/myExperiences.module.scss";
 
 function MyExperiences() {
   return (

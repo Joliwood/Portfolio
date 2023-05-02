@@ -5,8 +5,8 @@ import {
   toolsCompetence,
   backCompetence,
 } from "./listedCompetence";
-import styles from "../../styles/competences.module.css";
-import stylesAnimations from "../../styles/animations.module.css";
+import styles from "../../styles/competences.module.scss";
+import stylesAnimations from "../../styles/animations.module.scss";
 import Image from "next/image";
 
 function Competences() {
@@ -20,6 +20,7 @@ function Competences() {
 
       <div className={styles.competencesContainer}>
         <div
+          className={styles.apparitionContainer}
           data-aos="fade-up"
           data-aos-offset="100"
           data-aos-anchor-placement="top-bottom"

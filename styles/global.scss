@@ -290,12 +290,12 @@ a {
   display: flex;
   gap: 30px;
   align-items: center;
-}
 
-.separationEnsemble > h2 {
-  color: var(--theme-light-color);
-  font-size: 1.8rem;
-  white-space: nowrap;
+  > h2 {
+    color: var(--theme-light-color);
+    font-size: 1.8rem;
+    white-space: nowrap;
+  }
 }
 
 .separationbar {
@@ -303,10 +303,10 @@ a {
   border-radius: 3px;
   background: linear-gradient(90deg, var(--theme-special-color), transparent);
   width: 100%;
-}
 
-.separationbar:first-child {
-  background: linear-gradient(90deg, transparent, var(--theme-special-color));
+  &:first-child {
+    background: linear-gradient(90deg, transparent, var(--theme-special-color));
+  }
 }
 
 [data-aos="lineGrowing"] {

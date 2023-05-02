@@ -1,24 +1,8 @@
-.fadeInBlock {
-  margin: auto;
-  opacity: 0;
-  transform: translateY(50%);
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
-
-.fadeInBlock.active {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.competencesLineConnection {
+.sectionsLineConnection {
   width: 1px;
   height: 100px;
   margin: auto;
   background-repeat: no-repeat;
-}
-
-.competencesLineConnection.active {
-  animation: 1s linearap 0.5s forwards;
 }
 
 /* Animations of the burger menu when it is opened */
@@ -102,18 +86,5 @@
   100% {
     opacity: 0;
     max-height: 0;
-  }
-}
-
-/* All keyframes for others animations */
-
-@keyframes linearap {
-  from {
-    background-size: 1px 0, 0% 0%;
-    background-image: var(--theme-color-B64);
-  }
-  to {
-    background-size: 100% 100%, 100% 100%;
-    background-image: var(--theme-color-B64);
   }
 }

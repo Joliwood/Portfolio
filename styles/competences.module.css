@@ -6,6 +6,10 @@
   margin-bottom: 100px;
 }
 
+.apparitionContainer {
+  margin: auto;
+}
+
 .competencesContainer {
   position: relative;
   width: 80vw;

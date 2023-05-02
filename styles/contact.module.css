@@ -3,7 +3,7 @@
   min-height: calc(100vh - 50px);
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px 5vw auto 5vw;
   gap: 50px;
 }
 
@@ -29,6 +29,11 @@
 .descriptionContainer {
   align-items: center;
   width: auto;
+}
+
+.descriptionContainer > * {
+  text-align: center;
+  text-align-last: center;
 }
 
 @media screen and (max-width: 900px) {

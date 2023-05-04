@@ -17,7 +17,7 @@
 .contactLinks {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
@@ -27,12 +27,11 @@
 }
 
 .descriptionContainer {
-  align-items: center;
+  align-items: flex-start;
   width: auto;
 
-  > * {
-    text-align: center;
-    text-align-last: center;
+  > h1 {
+    width: min-content;
   }
 }
 

@@ -11,7 +11,10 @@ function MyExperiences() {
       </div>
 
       <div className={styles.myExperiencesContainer}>
-        <div className={styles.myExperiencesBlockContainer}>
+        <div
+          className={styles.myExperiencesBlockContainer}
+          data-aos="fade-right"
+        >
           <div className={styles.myExperiencesDescriptionContainer}>
             <div className={styles.myExperiencesTitleEnsemble}>
               <h3 className={styles.myExperiencesTitle}>
@@ -62,7 +65,10 @@ function MyExperiences() {
           </div>
         </div>
 
-        <div className={styles.myExperiencesBlockContainer}>
+        <div
+          className={styles.myExperiencesBlockContainer}
+          data-aos="fade-left"
+        >
           <div className={styles.myExperiencesDescriptionContainer}>
             <div className={styles.myExperiencesTitleEnsemble}>
               <p className={styles.myExperiencesText}>

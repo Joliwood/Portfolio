@@ -175,8 +175,13 @@
   }
 }
 
+.themeSwitchContainer {
+  user-select: none;
+}
+
 .themeSwitchContainerSmallDevices {
   display: none;
+  user-select: none;
 }
 
 @media screen and (max-width: 1024px) {

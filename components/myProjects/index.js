@@ -14,7 +14,7 @@ function MyProjects() {
 
       <div className={styles.myProjectsContainer}>
         {MyProjectsList.map((data, index) => (
-          <a href={data.link} target="blank" key={index}>
+          <a href={data.link} target="blank" key={index} data-aos="fade-up">
             <div className={styles.myProjectIndividualContainer}>
               <Image
                 src={data.img}

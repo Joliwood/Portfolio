@@ -88,6 +88,7 @@ const HeaderBar = function () {
           offset={-250}
           duration={500}
           href="#home-area"
+          onClick={() => setToggleMenu(true)}
         >
           <button className={styles.headerBarButton}>
             <h3>Accueil</h3>
@@ -100,6 +101,7 @@ const HeaderBar = function () {
           offset={-150}
           duration={500}
           href="#competences-area"
+          onClick={() => setToggleMenu(true)}
         >
           <button className={styles.headerBarButton}>
             <h3>Compétences</h3>
@@ -112,6 +114,7 @@ const HeaderBar = function () {
           offset={-150}
           duration={500}
           href="#my-projects-area"
+          onClick={() => setToggleMenu(true)}
         >
           <button className={styles.headerBarButton}>
             <h3>Portfolio</h3>

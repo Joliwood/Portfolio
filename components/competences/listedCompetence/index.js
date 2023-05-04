@@ -10,6 +10,7 @@ import netlifyLogo from "../../../public/images/competence/netlifyLogo.png";
 import figmaLogo from "../../../public/images/competence/figmaLogo.png";
 // import mangodbLogo from "../../../public/images/competence/mangodbLogo.png";
 import firebaseLogo from "../../../public/images/competence/firebaseLogo.png";
+import SassLogo from "../../svg/sassLogo";
 import NextLogo from "../../svg/nextLogo";
 
 export const frontCompetence = [
@@ -51,6 +52,10 @@ export const technoCompetence = [
   {
     name: "SEO",
     img: seoLogo,
+  },
+  {
+    name: "Sass",
+    svg: <SassLogo />,
   },
 ];
 

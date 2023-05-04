@@ -1,17 +1,20 @@
 import React from "react";
-import styles from "../../styles/myExperiences.module.css";
+import styles from "../../styles/myExperiences.module.scss";
 
 function MyExperiences() {
   return (
     <div className={styles.myExperiencesArea}>
       <div className="separationEnsemble">
         <div className="separationbar"></div>
-        <h2>Compétences</h2>
+        <h2>Mon parcours</h2>
         <div className="separationbar"></div>
       </div>
 
       <div className={styles.myExperiencesContainer}>
-        <div className={styles.myExperiencesBlockContainer}>
+        <div
+          className={styles.myExperiencesBlockContainer}
+          data-aos="fade-right"
+        >
           <div className={styles.myExperiencesDescriptionContainer}>
             <div className={styles.myExperiencesTitleEnsemble}>
               <h3 className={styles.myExperiencesTitle}>
@@ -62,7 +65,10 @@ function MyExperiences() {
           </div>
         </div>
 
-        <div className={styles.myExperiencesBlockContainer}>
+        <div
+          className={styles.myExperiencesBlockContainer}
+          data-aos="fade-left"
+        >
           <div className={styles.myExperiencesDescriptionContainer}>
             <div className={styles.myExperiencesTitleEnsemble}>
               <p className={styles.myExperiencesText}>

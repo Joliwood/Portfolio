@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/myProjects.module.css";
+import styles from "../../styles/myProjects.module.scss";
 import { MyProjectsList } from "./myProjectsList";
 import Image from "next/image";
 
@@ -8,13 +8,13 @@ function MyProjects() {
     <div className={styles.myProjectsArea} id="myProjectsArea">
       <div className="separationEnsemble">
         <div className="separationbar"></div>
-        <h2>Compétences</h2>
+        <h2>Mes projets</h2>
         <div className="separationbar"></div>
       </div>
 
       <div className={styles.myProjectsContainer}>
         {MyProjectsList.map((data, index) => (
-          <a href={data.link} target="blank" key={index}>
+          <a href={data.link} target="blank" key={index} data-aos="fade-up">
             <div className={styles.myProjectIndividualContainer}>
               <Image
                 src={data.img}

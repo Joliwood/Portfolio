@@ -6,6 +6,7 @@ import MyProjects from "../components/myProjects";
 import MyExperiences from "../components/myExperiences";
 import Footer from "../components/footer";
 import Head from "next/head";
+import ReturnTopScroller from "../components/returnTopScroller";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         </title>
         <link rel="canonical" href="https://guillaume-jolibois.fr/" />
       </Head>
+
+      <ReturnTopScroller />
 
       <HeaderBar />
       <Home />

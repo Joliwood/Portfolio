@@ -1,0 +1,45 @@
+.footerArea {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  background-color: var(--theme-background-color);
+  height: 75px;
+  width: 100%;
+  margin-top: auto;
+
+  > div {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      var(--theme-background-color) 5%,
+      var(--theme-special-color) 50%,
+      var(--theme-background-color) 95%
+    );
+  }
+
+  > a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--theme-special-color);
+  }
+}
+
+.footerText {
+  color: var(--theme-light-color);
+}
+
+@media screen and (max-width: 1100px) {
+  .footerArea {
+    width: calc(100% - 40px);
+    height: auto;
+    padding: 15px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,333 @@
+/* Reset CSS Part */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Up -> Reset CSS Part */
+
+* {
+  margin: 0;
+}
+
+/* Dark theme */
+:root {
+  --theme-dark-color: #161919;
+  --theme-semi-dark-color: #181b22;
+
+  --theme-special-color: #ad8b61;
+  --theme-special-enhanced-color: #cfaa7a;
+  --theme-semi-special-color: #94816b50;
+
+  --theme-light-color: #f8f4f1;
+
+  --theme-background-color: #161719;
+
+  --theme-headerBar: #16171977;
+
+  --theme-color-B64: 
+    /* --theme-special-color in base 64 image */ url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjWNud+B8ABhsCmY7eXlAAAAAASUVORK5CYII="),
+    /* --theme-special-color in base 64 image */
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjWNud+B8ABhsCmY7eXlAAAAAASUVORK5CYII="),
+    /* Must be like background */
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjEBOX/A8AAdMBRlnf4dMAAAAASUVORK5CYII=");
+}
+
+.lightTheme {
+  --theme-dark-color: #cdc7c7;
+  --theme-semi-dark-color: var(--theme-dark-color);
+
+  --theme-special-color: #778da9;
+  --theme-special-color: #e26d5c;
+  --theme-special-color: #a3a380;
+  --theme-special-color: #b58463;
+
+  /* ------------------------------------------- */
+  --theme-special-color: #b58463;
+  /* ------------------------------------------- */
+
+  --theme-special-enhanced-color: #b58463;
+  --theme-semi-special-color: #ebeae7;
+
+  --theme-semi-light-color: #e9e8de;
+  --theme-light-color: #2c2c3c;
+
+  --theme-background-color: #ebeae7;
+
+  --theme-headerBar: #f0efec77;
+
+  --theme-color-B64: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdj2NqS/B8ABioCnAcMDoUAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdj2NqS/B8ABioCnAcMDoUAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjeP3q+X8ACTwDvA8An/sAAAAASUVORK5CYII=");
+}
+
+.lightTheme * {
+  text-shadow: none;
+  box-shadow: none;
+}
+
+html {
+  font-family: GeneralSans-Regular, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  background-color: var(--theme-background-color);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+@font-face {
+  font-family: "GeneralSans-Medium";
+  src: local("GeneralSans-Medium"),
+    url("../asset/GeneralSans-Medium.otf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-Regular";
+  src: local("GeneralSans-Regular"),
+    url("../asset/GeneralSans-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-Variable";
+  src: local("GeneralSans-Variable"),
+    url("../asset/GeneralSans-Variable.ttf") format("opentype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: GeneralSans-Medium;
+  color: var(--theme-light-color);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px #ad8b611e,
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-family: GeneralSans-Regular;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  text-align: center;
+  text-align-last: center;
+  color: var(--theme-light-color);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px #ad8b611e,
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  text-align-last: center;
+  color: var(--theme-special-enhanced-color);
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  text-align-last: center;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: center;
+  text-align-last: center;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  text-align-last: center;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* Shared designs */
+
+.separationEnsemble {
+  width: 80vw;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  > h2 {
+    color: var(--theme-light-color);
+    font-size: 1.8rem;
+    white-space: nowrap;
+  }
+}
+
+.separationbar {
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--theme-special-color), transparent);
+  width: 100%;
+
+  &:first-child {
+    background: linear-gradient(90deg, transparent, var(--theme-special-color));
+  }
+}
+
+[data-aos="lineGrowing"] {
+  background-size: 1px 0, 0% 0%;
+  background-image: var(--theme-color-B64);
+  transition-duration: 10s;
+  &.aos-animate {
+    background-size: 100% 100%, 100% 100%;
+    background-image: var(--theme-color-B64);
+  }
+}
+
+/* animation: 1s linearap 0.5s forwards; */
+
+@keyframes linearap {
+  from {
+    background-size: 1px 0, 0% 0%;
+    background-image: var(--theme-color-B64);
+  }
+  to {
+    background-size: 100% 100%, 100% 100%;
+    background-image: var(--theme-color-B64);
+  }
+}

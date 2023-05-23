@@ -1,6 +1,7 @@
 import NetflixProject from "../../../public/images/projects/netflixProject.png";
 import SpotifyProject from "../../../public/images/projects/spotifyProject.png";
 import LinkedinProject from "../../../public/images/projects/linkedinProject.png";
+import BacklistProject from "../../../public/images/projects/backlistProject.png";
 
 export const MyProjectsList = [
   {
@@ -25,5 +26,12 @@ export const MyProjectsList = [
     img: SpotifyProject,
     imgTag: "Spotify project",
     link: "https://gj-spotify-clone.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "BackList - Node.js + Ejs + Express + Tailwindcss",
+    img: BacklistProject,
+    imgTag: "BackList project",
+    link: "https://backlist.onrender.com/",
   },
 ];

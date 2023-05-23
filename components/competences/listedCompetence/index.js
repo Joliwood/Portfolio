@@ -12,6 +12,9 @@ import figmaLogo from "../../../public/images/competence/figmaLogo.png";
 import firebaseLogo from "../../../public/images/competence/firebaseLogo.png";
 import SassLogo from "../../svg/sassLogo";
 import NextLogo from "../../svg/nextLogo";
+import ExpressLogo from "../../svg/expressLogo";
+import renderLogo from "../../../public/images/competence/renderLogo.png";
+import tailwindcssLogo from "../../../public/images/competence/tailwindcssLogo.png";
 
 export const frontCompetence = [
   {
@@ -26,6 +29,10 @@ export const frontCompetence = [
     name: "Next.js",
     svg: <NextLogo />,
   },
+  {
+    name: "Tailwindcss",
+    img: tailwindcssLogo,
+  },
 ];
 
 export const backCompetence = [
@@ -37,6 +44,10 @@ export const backCompetence = [
     name: "Node.js",
     svg: <NodeLogo />,
     // Même avec un svg, le map fonctionne, voir fichier src/components/competences/index.js
+  },
+  {
+    name: "Express",
+    svg: <ExpressLogo />,
   },
 ];
 
@@ -79,5 +90,9 @@ export const toolsCompetence = [
   {
     name: "Firebase",
     img: firebaseLogo,
+  },
+  {
+    name: "Render.com",
+    img: renderLogo,
   },
 ];

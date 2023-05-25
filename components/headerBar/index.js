@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import styles from "../../styles/headerBar.module.scss";
 import stylesAnimations from "../../styles/animations.module.scss";
+import stylesSvg from "../../styles/svg.module.scss";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineNightsStay } from "react-icons/md";
 import { BsSun } from "react-icons/bs";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
-import PortfolioLogo from "../../public/images/portfolio-logo.png";
-import Image from "next/image";
+// import PortfolioLogo from "../../public/images/portfolio-logo.png";
+// import Image from "next/image";
+import Logo from "../svg/logo/index.js";
 
 const HeaderBar = function () {
   const [toggleMenu, setToggleMenu] = useState(true);
@@ -33,7 +35,9 @@ const HeaderBar = function () {
           duration={500}
           href="#home-area"
         >
-          <Image src={PortfolioLogo} alt="GJ" title="Logo" />
+          {/* <Image src={PortfolioLogo} alt="GJ" title="Logo" /> */}
+          {/* <Image src={LogoWebsite} alt="GJ" title="Logo" /> */}
+          <Logo />
         </ScrollLink>
 
         <div className={styles.themeSwitchContainerSmallDevices}>

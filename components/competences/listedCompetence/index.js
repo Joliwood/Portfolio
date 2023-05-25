@@ -11,10 +11,13 @@ import figmaLogo from "../../../public/images/competence/figmaLogo.png";
 // import mangodbLogo from "../../../public/images/competence/mangodbLogo.png";
 import firebaseLogo from "../../../public/images/competence/firebaseLogo.png";
 import SassLogo from "../../svg/sassLogo";
-import NextLogo from "../../svg/nextLogo";
-import ExpressLogo from "../../svg/expressLogo";
+import nextLogo from "../../../public/images/competence/nextLogo.png";
+import expressLogo from "../../../public/images/competence/expressLogo.png";
 import renderLogo from "../../../public/images/competence/renderLogo.png";
 import tailwindcssLogo from "../../../public/images/competence/tailwindcssLogo.png";
+import sqlLogo from "../../../public/images/competence/sqlLogo.png";
+import ejsLogo from "../../../public/images/competence/ejsLogo.png";
+import psqlLogo from "../../../public/images/competence/psqlLogo.png";
 
 export const frontCompetence = [
   {
@@ -27,7 +30,7 @@ export const frontCompetence = [
   },
   {
     name: "Next.js",
-    svg: <NextLogo />,
+    img: nextLogo,
   },
   {
     name: "Tailwindcss",
@@ -47,7 +50,19 @@ export const backCompetence = [
   },
   {
     name: "Express",
-    svg: <ExpressLogo />,
+    img: expressLogo,
+  },
+  {
+    name: "SQL",
+    img: sqlLogo,
+  },
+  {
+    name: "Ejs",
+    img: ejsLogo,
+  },
+  {
+    name: "Postgres",
+    img: psqlLogo,
   },
 ];
 

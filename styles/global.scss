@@ -155,7 +155,7 @@ table {
 }
 
 .lightTheme {
-  --theme-dark-color: #cdc7c7;
+  --theme-dark-color: #f1efea;
   --theme-semi-dark-color: var(--theme-dark-color);
 
   --theme-special-color: #778da9;
@@ -312,7 +312,6 @@ a {
 [data-aos="lineGrowing"] {
   background-size: 1px 0, 0% 0%;
   background-image: var(--theme-color-B64);
-  transition-duration: 10s;
   &.aos-animate {
     background-size: 100% 100%, 100% 100%;
     background-image: var(--theme-color-B64);

@@ -51,7 +51,7 @@
   left: 0;
   position: relative;
   background-repeat: no-repeat;
-  animation: 1s linearap 2.5s forwards;
+  animation: 1s lineHorizontalGrow 2.5s forwards;
 }
 
 .homeProfilePicture {
@@ -81,7 +81,7 @@
   .homeLine {
     width: 1px;
     height: 70px;
-    animation: 1s linearap 0.5s forwards;
+    animation: 1s lineHorizontalGrow 0.5s forwards;
   }
 
   .homeDescriptionContainer {
@@ -139,12 +139,23 @@
   }
 }
 
-@keyframes linearap {
-  0% {
+@keyframes lineVerticalGrow {
+  from {
     background-size: 1px 0, 0% 0%;
-    background-color: var(--theme-color-B64);
+    background-image: var(--theme-color-B64);
   }
-  100% {
+  to {
+    background-size: 100% 100%, 100% 100%;
+    background-image: var(--theme-color-B64);
+  }
+}
+
+@keyframes lineHorizontalGrow {
+  from {
+    background-size: 1px 0, 0% 0%;
+    background-image: var(--theme-color-B64);
+  }
+  to {
     background-size: 100% 100%, 100% 100%;
     background-image: var(--theme-color-B64);
   }

@@ -9,67 +9,49 @@ function Logo() {
       version="1.1"
       xmlSpace="preserve"
       className={styles.logo}
-      viewBox="0 0 33.374 32.808"
+      viewBox="0 0 178.479 175.454"
     >
       <defs>
-        <clipPath id="clipPath25292" clipPathUnits="userSpaceOnUse">
-          <path d="M347.9 426.183c23.507-2.745 50.487-11.173 48.04-38.987-1.704-19.369-15.987-31.306-31.559-28.006-18.303 3.878-23.992 24.65-11.461 37.067 13.421 13.295 30.643.548 30.643.548-9.327 12.393-30.245 12.158-40.526-.548-9.996-12.356-10.519-38.181 13.511-51.345 26.733-14.644 64.534 12.579 55.124 49.424-7.331 28.704-28.617 34.493-44.595 34.492-10.801 0-19.177-2.645-19.177-2.645"></path>
-        </clipPath>
-        <linearGradient
-          id="linearGradient25302"
-          x1="0"
-          x2="1"
-          y1="0"
-          y2="0"
-          gradientTransform="matrix(76.58887 0 0 -76.58887 336.554 384.854)"
-          gradientUnits="userSpaceOnUse"
-          spreadMethod="pad"
-        >
-          <stop offset="0" stopColor="#cfaa7a" stopOpacity="1"></stop>
-          <stop offset="1" stopColor="#ad8b61" stopOpacity="1"></stop>
-        </linearGradient>
-        <clipPath id="clipPath25312" clipPathUnits="userSpaceOnUse">
-          <path d="M318.992 373.193c3.512-31.026 36.203-37.365 36.203-37.365-30.371 9.729-38.472 42.133-23.285 63.723 13.899 19.763 35.985 17.298 35.985 17.298-8.647 4.118-24.046 6.316-24.046 6.316-10.672-4.641-28.368-18.946-24.857-49.972"></path>
-        </clipPath>
         <linearGradient
           id="linearGradient25322"
           x1="0"
           x2="1"
           y1="0"
           y2="0"
-          gradientTransform="matrix(49.35547 0 0 -49.35547 318.54 379.496)"
+          gradientTransform="matrix(93.11385 0 0 93.11385 14.185 145.15)"
           gradientUnits="userSpaceOnUse"
           spreadMethod="pad"
         >
           <stop offset="0" stopColor="#414042" stopOpacity="1"></stop>
           <stop offset="1" stopColor="#a6a8ab" stopOpacity="1"></stop>
         </linearGradient>
+        <linearGradient
+          id="linearGradient25302"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="0"
+          gradientTransform="translate(48.171 135.042) scale(144.49228)"
+          gradientUnits="userSpaceOnUse"
+          spreadMethod="pad"
+        >
+          <stop offset="0" stopColor="#cfaa7a" stopOpacity="1"></stop>
+          <stop offset="1" stopColor="#ad8b61" stopOpacity="1"></stop>
+        </linearGradient>
       </defs>
-      <g transform="matrix(.35278 0 0 -.35278 -112.373 151.281)">
-        <g clipPath="url(#clipPath25292)">
-          <g>
-            <g>
-              <path
-                fill="url(#linearGradient25302)"
-                stroke="none"
-                d="M347.9 426.183c23.507-2.745 50.487-11.173 48.04-38.987-1.704-19.369-15.987-31.306-31.559-28.006-18.303 3.878-23.992 24.65-11.461 37.067 13.421 13.295 30.643.548 30.643.548-9.327 12.393-30.245 12.158-40.526-.548-9.996-12.356-10.519-38.181 13.511-51.345 26.733-14.644 64.534 12.579 55.124 49.424-7.331 28.704-28.617 34.493-44.595 34.492-10.801 0-19.177-2.645-19.177-2.645"
-              ></path>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g transform="matrix(.35278 0 0 -.35278 -112.373 151.281)">
-        <g clipPath="url(#clipPath25312)">
-          <g>
-            <g>
-              <path
-                fill="url(#linearGradient25322)"
-                stroke="none"
-                d="M318.992 373.193c3.512-31.026 36.203-37.365 36.203-37.365-30.371 9.729-38.472 42.133-23.285 63.723 13.899 19.763 35.985 17.298 35.985 17.298-8.647 4.118-24.046 6.316-24.046 6.316-10.672-4.641-28.368-18.946-24.857-49.972"
-              ></path>
-            </g>
-          </g>
-        </g>
+      <g
+        stroke="none"
+        strokeWidth="1.887"
+        transform="translate(-14.184 -52.08)"
+      >
+        <path
+          fill="url(#linearGradient25302)"
+          d="M69.577 57.07c44.348 5.178 95.249 21.079 90.632 73.553-3.215 36.541-30.16 59.061-59.539 52.836-34.53-7.317-45.263-46.505-21.622-69.931 25.32-25.082 57.81-1.034 57.81-1.034-17.596-23.38-57.06-22.937-76.455 1.034-18.859 23.31-19.846 72.032 25.49 96.867 50.434 27.628 121.749-23.731 103.996-93.243C176.06 63 135.9 52.078 105.756 52.08c-20.377 0-36.179 4.99-36.179 4.99"
+        ></path>
+        <path
+          fill="url(#linearGradient25322)"
+          d="M15.04 157.04c6.625 58.534 68.3 70.493 68.3 70.493-57.298-18.355-72.581-79.488-43.93-120.22C65.632 70.03 107.3 74.68 107.3 74.68 90.986 66.91 61.934 62.763 61.934 62.763 41.801 71.52 8.416 98.507 15.04 157.041"
+        ></path>
       </g>
     </svg>
   );

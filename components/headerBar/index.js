@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../styles/headerBar.module.scss";
 import stylesAnimations from "../../styles/animations.module.scss";
+import stylesSvg from "../../styles/svg.module.scss";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineNightsStay } from "react-icons/md";

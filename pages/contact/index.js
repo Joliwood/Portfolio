@@ -2,7 +2,7 @@ import React from "react";
 import stylesHome from "../../styles/home.module.scss";
 import stylesContact from "../../styles/contact.module.scss";
 import stylesMyExperiences from "../../styles/myExperiences.module.scss";
-import ProfilePicture from "../../public/images/profilePicture.jpeg";
+import ProfilePicture from "../../public/images/profilePicture.png";
 import Footer from "../../components/footer";
 import Head from "next/head";
 import Link from "next/link";

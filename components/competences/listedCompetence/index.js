@@ -18,6 +18,8 @@ import tailwindcssLogo from "../../../public/images/competence/tailwindcssLogo.p
 import sqlLogo from "../../../public/images/competence/sqlLogo.png";
 import ejsLogo from "../../../public/images/competence/ejsLogo.png";
 import psqlLogo from "../../../public/images/competence/psqlLogo.png";
+import dbeaverLogo from "../../../public/images/competence/dbeaverLogo.png";
+import sequelizeLogo from "../../../public/images/competence/sequelizeLogo.png";
 
 export const frontCompetence = [
   {
@@ -64,6 +66,10 @@ export const backCompetence = [
     name: "Postgres",
     img: psqlLogo,
   },
+  {
+    name: "Sequelize",
+    img: sequelizeLogo,
+  },
 ];
 
 export const technoCompetence = [
@@ -109,5 +115,9 @@ export const toolsCompetence = [
   {
     name: "Render.com",
     img: renderLogo,
+  },
+  {
+    name: "Dbeaver",
+    img: dbeaverLogo,
   },
 ];

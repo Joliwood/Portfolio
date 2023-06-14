@@ -3,6 +3,7 @@ import SpotifyProject from "../../../public/images/projects/spotifyProject.png";
 import LinkedinProject from "../../../public/images/projects/linkedinProject.png";
 import BacklistProject from "../../../public/images/projects/backlistProject.png";
 import SqlShowcaseProject from "../../../public/images/projects/sqlShowcaseProject.png";
+import mvcArchitectureProject from "../../../public/images/projects/mvcArchitectureProject.png";
 
 export const MyProjectsList = [
   {
@@ -51,5 +52,24 @@ export const MyProjectsList = [
     link: "https://sql-showcase.onrender.com/",
     github: "https://github.com/Joliwood/sql-showcase",
     stacks: ["node", "ejs", "express", "sql", "psql", "render", "bootstrap"],
+  },
+  {
+    id: 6,
+    title: "MVC Architecture",
+    img: mvcArchitectureProject,
+    imgTag: "MVC Architecture",
+    link: "https://mvc-architecture.onrender.com/",
+    github: "https://github.com/Joliwood/MVC-Architecture",
+    stacks: [
+      "node",
+      "ejs",
+      "express",
+      "sql",
+      "psql",
+      "sequelize",
+      "tailwindcss",
+      "daisyui",
+      "render",
+    ],
   },
 ];

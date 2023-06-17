@@ -20,12 +20,10 @@ import ejsLogo from "../../../public/images/competence/ejsLogo.png";
 import psqlLogo from "../../../public/images/competence/psqlLogo.png";
 import dbeaverLogo from "../../../public/images/competence/dbeaverLogo.png";
 import sequelizeLogo from "../../../public/images/competence/sequelizeLogo.png";
+import webpackLogo from "../../../public/images/competence/webpackLogo.png";
+import typescriptLogo from "../../../public/images/competence/typescriptLogo.png";
 
 export const frontCompetence = [
-  {
-    name: "Javascript",
-    img: jsLogo,
-  },
   {
     name: "React.js",
     img: reactLogo,
@@ -35,8 +33,17 @@ export const frontCompetence = [
     img: nextLogo,
   },
   {
+    name: "Sass",
+    svg: <SassLogo />,
+  },
+  {
     name: "Tailwindcss",
     img: tailwindcssLogo,
+  },
+
+  {
+    name: "Webpack",
+    img: webpackLogo,
   },
 ];
 
@@ -74,6 +81,10 @@ export const backCompetence = [
 
 export const technoCompetence = [
   {
+    name: "Javascript",
+    img: jsLogo,
+  },
+  {
     name: "Redux",
     img: reduxLogo,
   },
@@ -86,8 +97,8 @@ export const technoCompetence = [
     img: seoLogo,
   },
   {
-    name: "Sass",
-    svg: <SassLogo />,
+    name: "TypeScript",
+    img: typescriptLogo,
   },
 ];
 

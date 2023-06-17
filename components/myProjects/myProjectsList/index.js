@@ -4,6 +4,7 @@ import LinkedinProject from "../../../public/images/projects/linkedinProject.png
 import BacklistProject from "../../../public/images/projects/backlistProject.png";
 import SqlShowcaseProject from "../../../public/images/projects/sqlShowcaseProject.png";
 import mvcArchitectureProject from "../../../public/images/projects/mvcArchitectureProject.png";
+import coffeeTimeProject from "../../../public/images/projects/coffeeTimeProject.png";
 
 export const MyProjectsList = [
   {
@@ -70,6 +71,22 @@ export const MyProjectsList = [
       "tailwindcss",
       "daisyui",
       "render",
+    ],
+  },
+  {
+    id: 7,
+    title: "Coffee Time",
+    img: coffeeTimeProject,
+    imgTag: "MVC Architecture",
+    link: "https://gj-coffee-time.netlify.app/",
+    github: "https://github.com/Joliwood/coffee-time",
+    stacks: [
+      "react",
+      "redux",
+      "webpack",
+      "typescript",
+      "materialUi",
+      "netlify",
     ],
   },
 ];

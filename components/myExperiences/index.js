@@ -21,7 +21,7 @@ function MyExperiences() {
                 Formation en autodidacte
               </h3>
               <p className={styles.myExperiencesText}>
-                &nbsp;- 11/2021 à aujourd’hui
+                &nbsp;- Nov 2021 à aujourd’hui
               </p>
             </div>
 

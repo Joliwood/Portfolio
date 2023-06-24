@@ -1,5 +1,4 @@
 import NetflixProject from "../../../public/images/projects/netflixProject.png";
-import SpotifyProject from "../../../public/images/projects/spotifyProject.png";
 import LinkedinProject from "../../../public/images/projects/linkedinProject.png";
 import BacklistProject from "../../../public/images/projects/backlistProject.png";
 import SqlShowcaseProject from "../../../public/images/projects/sqlShowcaseProject.png";
@@ -26,18 +25,8 @@ export const MyProjectsList = [
     github: "https://github.com/Joliwood/linkedinClone",
     stacks: ["react", "firebase", "netlify"],
   },
-
   {
     id: 3,
-    title: "Clone Spotify",
-    img: SpotifyProject,
-    imgTag: "Spotify project",
-    link: "https://gj-spotify-clone.netlify.app/",
-    github: "https://github.com/Joliwood/Spotify-clone",
-    stacks: ["react", "api", "netlify"],
-  },
-  {
-    id: 4,
     title: "BackList",
     img: BacklistProject,
     imgTag: "BackList project",
@@ -46,7 +35,7 @@ export const MyProjectsList = [
     stacks: ["node", "ejs", "express", "render", "tailwindcss"],
   },
   {
-    id: 5,
+    id: 4,
     title: "SQL Showcase",
     img: SqlShowcaseProject,
     imgTag: "SQL Showcase",
@@ -55,7 +44,7 @@ export const MyProjectsList = [
     stacks: ["node", "ejs", "express", "sql", "psql", "render", "bootstrap"],
   },
   {
-    id: 6,
+    id: 5,
     title: "MVC Architecture",
     img: mvcArchitectureProject,
     imgTag: "MVC Architecture",
@@ -74,7 +63,7 @@ export const MyProjectsList = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     title: "Coffee Time",
     img: coffeeTimeProject,
     imgTag: "MVC Architecture",

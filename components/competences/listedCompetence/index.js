@@ -1,6 +1,5 @@
 import reactLogo from "../../../public/images/competence/reactLogo.png";
 import jsLogo from "../../../public/images/competence/jsLogo.png";
-// import mysqlLogo from "../../../public/images/competence/mysqlLogo.png";
 import NodeLogo from "../../svg/nodeLogo";
 import reduxLogo from "../../../public/images/competence/reduxLogo.png";
 import jqueryLogo from "../../../public/images/competence/jqueryLogo.png";
@@ -8,7 +7,6 @@ import seoLogo from "../../../public/images/competence/seoLogo.png";
 import gitLogo from "../../../public/images/competence/gitLogo.png";
 import netlifyLogo from "../../../public/images/competence/netlifyLogo.png";
 import figmaLogo from "../../../public/images/competence/figmaLogo.png";
-// import mangodbLogo from "../../../public/images/competence/mangodbLogo.png";
 import firebaseLogo from "../../../public/images/competence/firebaseLogo.png";
 import SassLogo from "../../svg/sassLogo";
 import nextLogo from "../../../public/images/competence/nextLogo.png";
@@ -22,6 +20,9 @@ import dbeaverLogo from "../../../public/images/competence/dbeaverLogo.png";
 import sequelizeLogo from "../../../public/images/competence/sequelizeLogo.png";
 import webpackLogo from "../../../public/images/competence/webpackLogo.png";
 import typescriptLogo from "../../../public/images/competence/typescriptLogo.png";
+// import mangodbLogo from "../../../public/images/competence/mangodbLogo.png";
+// import redisLogo from "../../../public/images/competence/redisLogo.png";
+// import graphqlLogo from "../../../public/images/competence/graphqlLogo.png";
 
 export const frontCompetence = [
   {
@@ -48,10 +49,6 @@ export const frontCompetence = [
 ];
 
 export const backCompetence = [
-  // {
-  //   name: "MySQL",
-  //   img: mysqlLogo,
-  // },
   {
     name: "Node.js",
     svg: <NodeLogo />,
@@ -66,6 +63,10 @@ export const backCompetence = [
     img: sqlLogo,
   },
   {
+    name: "Firebase",
+    img: firebaseLogo,
+  },
+  {
     name: "Ejs",
     img: ejsLogo,
   },
@@ -77,6 +78,18 @@ export const backCompetence = [
     name: "Sequelize",
     img: sequelizeLogo,
   },
+  // {
+  //   name: "MangoDB",
+  //   img: mangodbLogo,
+  // },
+  // {
+  //   name: "Redis",
+  //   img: redisLogo,
+  // },
+  // {
+  //   name: "GraphQL",
+  //   img: graphqlLogo,
+  // },
 ];
 
 export const technoCompetence = [
@@ -114,14 +127,6 @@ export const toolsCompetence = [
   {
     name: "Figma",
     img: figmaLogo,
-  },
-  // {
-  //   name: "MangoDB",
-  //   img: mangodbLogo,
-  // },
-  {
-    name: "Firebase",
-    img: firebaseLogo,
   },
   {
     name: "Render.com",

@@ -13,7 +13,7 @@ export const MyProjectsList = [
     imgTag: "Netflix project",
     link: "https://gj-netlix-clone.netlify.app/",
     github: "https://github.com/Joliwood/Netflix-clone",
-    stacks: ["react", "api", "netlify"],
+    stacks: ["react", "api", "netlify", "jest"],
   },
 
   {
@@ -23,7 +23,7 @@ export const MyProjectsList = [
     imgTag: "Linkedin project",
     link: "https://gj-linkedin-clone.netlify.app/",
     github: "https://github.com/Joliwood/linkedinClone",
-    stacks: ["react", "firebase", "netlify"],
+    stacks: ["react", "firebase", "netlify", "styledComponents"],
   },
   {
     id: 3,

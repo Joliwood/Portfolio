@@ -1,7 +1,49 @@
 import React from "react";
 import styles from "../../styles/myExperiences.module.scss";
+import { MyExperiencesList } from "./myExperiencesList";
+import Image from "next/image";
 
 function MyExperiences() {
+  const dateCalculator = (
+    date_start_month,
+    date_start_year,
+    date_end_month,
+    date_end_year
+  ) => {
+    let date_start = new Date(date_start_year, date_start_month, 1);
+    let date_end;
+
+    if (date_end_month === "now" || date_end_year === "now") {
+      date_end = new Date();
+    } else {
+      date_end = new Date(date_end_year, date_end_month, 1);
+    }
+
+    let date_diff = date_end.getTime() - date_start.getTime();
+    let nb_days = Math.round(date_diff / (1000 * 60 * 60 * 24));
+    let nb_months = Math.round(nb_days / 30);
+    let nb_years = Math.floor(nb_months / 12);
+
+    if (nb_years < 1) {
+      return nb_months + " mois";
+    } else if (date_end_month === "now" || date_end_year === "now") {
+      let currentDate = new Date();
+      let current_diff = currentDate.getTime() - date_start.getTime();
+      let current_nb_days = Math.round(current_diff / (1000 * 60 * 60 * 24));
+      let current_nb_months = Math.round(current_nb_days / 30);
+      let current_nb_years = Math.floor(current_nb_months / 12);
+      if (current_nb_months > 12) {
+        current_nb_months = current_nb_months - current_nb_years * 12;
+      }
+      if (current_nb_months == 12) {
+        return current_nb_years + " an";
+      }
+      return current_nb_years + " ans " + current_nb_months + " mois";
+    }
+
+    return nb_years + " ans " + nb_months + " mois";
+  };
+
   return (
     <div className={styles.myExperiencesArea}>
       <div className="separationEnsemble">
@@ -11,104 +53,60 @@ function MyExperiences() {
       </div>
 
       <div className={styles.myExperiencesContainer}>
-        <div
-          className={styles.myExperiencesBlockContainer}
-          data-aos="fade-right"
-        >
-          <div className={styles.myExperiencesDescriptionContainer}>
-            <div className={styles.myExperiencesTitleEnsemble}>
-              <h3 className={styles.myExperiencesTitle}>
-                Formation en autodidacte
-              </h3>
-              <p className={styles.myExperiencesText}>
-                &nbsp;- Nov 2021 à aujourd’hui
+        {MyExperiencesList.map((item, index) => (
+          <div
+            className={styles.myExperiencesBlockContainer}
+            data-aos="fade-right"
+            key={index}
+          >
+            <div className={styles.myExperiencesDescriptionContainer}>
+              <div className={styles.myExperiencesTitleEnsemble}>
+                <h3 className={styles.myExperiencesTitle}>{item.title}</h3>
+              </div>
+
+              <p>
+                Début : {item.date_start_month}/{item.date_start_year}
+                {item.date_end_month === "now" || item.date_end_year === "now"
+                  ? " - En cours "
+                  : " - Fin " + item.date_end_month + "/" + item.date_end_year}
+                (
+                {dateCalculator(
+                  item.date_start_month,
+                  item.date_start_year,
+                  item.date_end_month,
+                  item.date_end_year
+                )}
+                )
               </p>
+
+              <p>{item.description}</p>
+
+              <div className={styles.myExperiencesLinksContainer}>
+                {item.project_created.map((item, index) => (
+                  <a href={item.link} target="blank" key={index}>
+                    <button className={styles.myExperiencesLinkButton}>
+                      <h4 className={styles.myExperiencesLinkButtonText}>
+                        {item.title}
+                      </h4>
+                    </button>
+                  </a>
+                ))}
+              </div>
             </div>
-
-            <p>Supports utilisés : Freecodecamp, Graphikart, Codacademy </p>
-
-            <div className={styles.myExperiencesLinksContainer}>
-              <p className={styles.myExperiencesText}>Projects créés :</p>
-              <a href="https://gj-netlix-clone.netlify.app/" target="blank">
-                <button className={styles.myExperiencesLinkButton}>
-                  <h4 className={styles.myExperiencesLinkButtonText}>
-                    Clone Netflix
-                  </h4>
-                </button>
-              </a>
-
-              <a
-                href="https://storied-biscochitos-463f24.netlify.app/"
-                target="blank"
-              >
-                <button className={styles.myExperiencesLinkButton}>
-                  <h4 className={styles.myExperiencesLinkButtonText}>
-                    Clone Spotify
-                  </h4>
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div className={styles.myExperiencesCompetencesContainer}>
-            <div className={styles.myExperiencesCompetence}>
-              <p>Html / css</p>
-            </div>
-
-            <div className={styles.myExperiencesCompetence}>
-              <p>Javascript</p>
-            </div>
-
-            <div className={styles.myExperiencesCompetence}>
-              <p>React</p>
+            <div className={styles.myExperiencesCompetencesContainer}>
+              {item.stacks.map((stack, index) => (
+                <Image
+                  src={"/images/competence/" + stack + "Logo.png"}
+                  alt={stack}
+                  title={stack}
+                  width={35}
+                  height={35}
+                  key={index}
+                />
+              ))}
             </div>
           </div>
-        </div>
-
-        <div
-          className={styles.myExperiencesBlockContainer}
-          data-aos="fade-left"
-        >
-          <div className={styles.myExperiencesDescriptionContainer}>
-            <div className={styles.myExperiencesTitleEnsemble}>
-              <p className={styles.myExperiencesText}>
-                06/2022 à aujourd’hui -&nbsp;
-              </p>
-              <h3 className={styles.myExperiencesTitle}>
-                Développeur web front end junior
-              </h3>
-            </div>
-
-            <h3 className={styles.myExperiencesTitle}>Agartha - Freelance</h3>
-            <p>
-              Création site A à Z en react, méthode agile, traducteur EN / FR
-            </p>
-
-            <div className={styles.myExperiencesLinksContainer}>
-              <a href="https://www.agartha.ch/" target="blank">
-                <button className={styles.myExperiencesLinkButton}>
-                  <h4 className={styles.myExperiencesLinkButtonText}>
-                    Lien du site
-                  </h4>
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div className={styles.myExperiencesCompetencesContainer}>
-            <div className={styles.myExperiencesCompetence}>
-              <p>Html / css</p>
-            </div>
-
-            <div className={styles.myExperiencesCompetence}>
-              <p>Javascript</p>
-            </div>
-
-            <div className={styles.myExperiencesCompetence}>
-              <p>React</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

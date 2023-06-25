@@ -69,6 +69,7 @@
 
 .myProjectStacksContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   background-color: var(--theme-dark-color);

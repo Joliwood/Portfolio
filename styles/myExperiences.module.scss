@@ -43,7 +43,14 @@
 .myExperiencesCompetencesContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 15px 30px;
+  width: 70%;
+  margin-left: 25px;
+  margin-right: 25px;
+
+  > * {
+    object-fit: contain;
+  }
 }
 
 .myExperiencesBlockContainer {
@@ -61,6 +68,11 @@
 
     > div {
       align-items: flex-end;
+      text-align: end;
+    }
+
+    > .myExperiencesCompetencesContainer {
+      justify-content: flex-end;
     }
   }
 }
@@ -81,6 +93,11 @@
   box-shadow: 0 20px 25px -5px rgba(90, 90, 90, 0.1),
     0 8px 10px -6px rgba(110, 110, 110, 0.1);
   padding: 30px 25px;
+
+  > p {
+    text-align: unset;
+    text-align-last: unset;
+  }
 }
 
 .myExperiencesTitleEnsemble {
@@ -90,6 +107,8 @@
 
 .myExperiencesTitle {
   font-weight: bold;
+  text-align: unset;
+  text-align-last: unset;
   color: var(--theme-special-color);
 }
 
@@ -147,7 +166,7 @@
   }
 
   .myExperiencesCompetencesContainer {
-    justify-content: center;
+    width: calc(100% - 50px);
   }
 }
 
@@ -157,14 +176,6 @@
   }
 
   .myExperiencesTitle {
-    margin: auto;
-  }
-
-  .myExperiencesLinksContainer {
-    justify-content: center;
-  }
-
-  .myExperiencesLinksContainer {
     margin: auto;
   }
 }

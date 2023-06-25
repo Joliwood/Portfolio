@@ -7,7 +7,7 @@ function SimpleArray() {
         <g>
           <path
             fill="transparent"
-            stroke="#fff"
+            stroke="var(--theme-light-color)"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"

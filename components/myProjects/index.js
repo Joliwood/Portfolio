@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "../../styles/myProjects.module.scss";
-import stylesExperiences from "../../styles/myExperiences.module.scss";
 import { MyProjectsList } from "./myProjectsList";
 import Image from "next/image";
-import GithubLogo from "../svg/githubLogo";
 
 function MyProjects() {
   return (

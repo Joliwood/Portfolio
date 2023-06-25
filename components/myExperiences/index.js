@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styles from "../../styles/myExperiences.module.scss";
 import { MyExperiencesList } from "./myExperiencesList";
 import Image from "next/image";
+import SimpleArray from "../svg/simpleArray";
 
 function MyExperiences() {
   const dateCalculator = (
@@ -44,6 +45,20 @@ function MyExperiences() {
     return nb_years + " ans " + nb_months + " mois";
   };
 
+  const [showStacks, setShowStacks] = useState(false);
+  const [stacks, setStacks] = useState(
+    Array(MyExperiencesList.length).fill(false)
+  );
+
+  const itemRefs = useRef([]);
+
+  const handleToggleStacks = (index) => {
+    const updatedStacks = [...stacks];
+    updatedStacks[index] = !updatedStacks[index];
+    setStacks(updatedStacks);
+    setShowStacks(!showStacks);
+  };
+
   return (
     <div className={styles.myExperiencesArea}>
       <div className="separationEnsemble">
@@ -56,7 +71,7 @@ function MyExperiences() {
         {MyExperiencesList.map((item, index) => (
           <div
             className={styles.myExperiencesBlockContainer}
-            data-aos="fade-right"
+            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             key={index}
           >
             <div className={styles.myExperiencesDescriptionContainer}>
@@ -92,8 +107,23 @@ function MyExperiences() {
                   </a>
                 ))}
               </div>
+
+              <div
+                className={styles.stacksToggler}
+                onClick={() => handleToggleStacks(index)}
+              >
+                <SimpleArray />
+                {showStacks ? "Voir " : "Cacher "}
+                les stacks
+              </div>
             </div>
-            <div className={styles.myExperiencesCompetencesContainer}>
+            <div
+              className={`${styles.myExperiencesCompetencesContainer} ${
+                stacks[index] ? styles.fadeInAnimation : ""
+              }`}
+              style={stacks[index] ? { display: "flex" } : { display: "none" }}
+              ref={(ref) => (itemRefs.current[index] = ref)}
+            >
               {item.stacks.map((stack, index) => (
                 <Image
                   src={"/images/competence/" + stack + "Logo.png"}

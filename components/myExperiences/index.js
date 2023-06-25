@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import styles from "../../styles/myExperiences.module.scss";
+import stylesAnimations from "../../styles/animations.module.scss";
 import { MyExperiencesList } from "./myExperiencesList";
 import Image from "next/image";
 import SimpleArray from "../svg/simpleArray";
@@ -112,9 +113,12 @@ function MyExperiences() {
                 className={styles.stacksToggler}
                 onClick={() => handleToggleStacks(index)}
               >
-                <SimpleArray />
-                {showStacks ? "Voir " : "Cacher "}
-                les stacks
+                <div className={showStacks ? stylesAnimations.rotate90deg : ""}>
+                  <SimpleArray />
+                </div>
+                <p style={{ marginLeft: "5px" }}>
+                  {showStacks ? "Voir" : "Cacher"} les stacks
+                </p>
               </div>
             </div>
             <div

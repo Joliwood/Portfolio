@@ -117,7 +117,7 @@ function MyExperiences() {
                   <SimpleArray />
                 </div>
                 <p style={{ marginLeft: "5px" }}>
-                  {showStacks ? "Voir" : "Cacher"} les stacks
+                  {showStacks ? "Cacher" : "Voir"} les stacks
                 </p>
               </div>
             </div>

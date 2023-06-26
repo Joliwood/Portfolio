@@ -22,17 +22,26 @@ function DetailsProject({
       onHide={closeModal}
     >
       <h3>{selectedProject.title}</h3>
-      <img
+      {/* <img
         src="/images/projects/coffeeTimeProject.png"
         alt={selectedProject.title}
       />
-      <img src={imageUrl} alt={selectedProject.title} />
+      <img src={imageUrl} alt={selectedProject.title} /> */}
+      <Image
+        src={imageUrl}
+        alt={selectedProject.title}
+        title={selectedProject.title}
+        width={500}
+        height={500}
+        unoptimized={true}
+      />
       <Image
         src={imageGif}
         alt={selectedProject.title}
         title={selectedProject.title}
         width={500}
         height={500}
+        unoptimized={true}
       />
       <p className={styles.detailsProjectSeparationLine}>
         {selectedProject.description}

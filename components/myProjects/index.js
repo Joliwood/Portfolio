@@ -37,6 +37,8 @@ function MyProjects() {
                   src={data.img}
                   alt={data.imgTag}
                   title={data.imgTag}
+                  width={500}
+                  height={500}
                   className={styles.myProjectsPicture}
                 />
 
@@ -77,7 +79,7 @@ function MyProjects() {
         showModal={showModal}
         closeModal={closeModal}
         title={selectedProject ? selectedProject.title : ""}
-        overview={selectedProject ? selectedProject.overview : ""}
+        imageUrl={selectedProject ? selectedProject.img : ""}
         stacks={selectedProject ? selectedProject.stacks : ""}
       />
     </div>

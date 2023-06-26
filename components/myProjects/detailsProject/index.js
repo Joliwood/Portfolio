@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function DetailsProject({
   stacks,
-  overview,
+  imageUrl,
   selectedProject,
   showModal,
   closeModal,
@@ -22,17 +22,17 @@ function DetailsProject({
     >
       <h3>{selectedProject.title}</h3>
       <img
-        src={overview ? overview : selectedProject.img}
+        src="/images/projects/coffeeTimeProject.png"
         alt={selectedProject.title}
       />
-      {/* <Image
-        src={overview ? overview : selectedProject.img}
-        // src="https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif"
+      <img src={imageUrl} alt={selectedProject.title} />
+      <Image
+        src={imageUrl}
         alt={selectedProject.title}
         title={selectedProject.title}
         width={500}
         height={500}
-      /> */}
+      />
       <p className={styles.detailsProjectSeparationLine}>
         {selectedProject.description}
       </p>

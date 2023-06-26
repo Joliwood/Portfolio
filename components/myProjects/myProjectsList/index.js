@@ -1,9 +1,9 @@
-import NetflixProject from "../../../public/images/projects/netflixProject.png";
-import LinkedinProject from "../../../public/images/projects/linkedinProject.png";
-import BacklistProject from "../../../public/images/projects/backlistProject.png";
-import SqlShowcaseProject from "../../../public/images/projects/sqlShowcaseProject.png";
-import mvcArchitectureProject from "../../../public/images/projects/mvcArchitectureProject.png";
-import coffeeTimeProject from "../../../public/images/projects/coffeeTimeProject.png";
+const NetflixProject = "/images/projects/netflixProject.png";
+const LinkedinProject = "/images/projects/linkedinProject.png";
+const BacklistProject = "/images/projects/backlistProject.png";
+const SqlShowcaseProject = "/images/projects/sqlShowcaseProject.png";
+const mvcArchitectureProject = "/images/projects/mvcArchitectureProject.png";
+const coffeeTimeProject = "/images/projects/coffeeTimeProject.png";
 
 export const MyProjectsList = [
   {
@@ -16,7 +16,7 @@ export const MyProjectsList = [
     link: "https://gj-netlix-clone.netlify.app/",
     github: "https://github.com/Joliwood/Netflix-clone",
     overview:
-      "https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif",
+      "https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif?raw=true",
     stacks: ["react", "api", "netlify", "jest"],
   },
 

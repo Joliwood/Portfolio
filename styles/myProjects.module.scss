@@ -126,7 +126,7 @@
   right: 0;
   z-index: 2;
   display: flex !important;
-  padding: 100px 0;
+  padding: 10vh 0;
   overflow: hidden;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -136,7 +136,7 @@
     width: auto;
     position: relative;
     overflow: auto;
-    max-width: 700px;
+    max-width: min(700px, 90vw);
     background: radial-gradient(
       var(--theme-dark-color),
       var(--theme-semi-dark-color)
@@ -154,10 +154,12 @@
       padding: 30px 25px;
 
       > img {
-        width: auto;
-        height: 370px;
+        width: 100%;
+        max-height: 370px;
+        height: auto;
         margin: 20px auto;
-        object-fit: contain;
+        object-fit: cover;
+        object-position: top;
         border: 1px solid var(--theme-semi-special-color);
       }
     }

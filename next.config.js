@@ -6,7 +6,6 @@ module.exports = {
         protocol: "https",
         hostname: "github.com",
         pathname: "/_next/image",
-        loader: "default",
       },
     ],
   },

@@ -152,7 +152,7 @@
 
 @keyframes lineHorizontalGrow {
   from {
-    background-size: 1px 0, 0% 0%;
+    background-size: 1px 1px, 0% 0%;
     background-image: var(--theme-color-B64);
   }
   to {

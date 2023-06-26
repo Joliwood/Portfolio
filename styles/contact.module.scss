@@ -8,6 +8,11 @@
 }
 
 .contactContainer {
+  position: relative;
+  gap: 0;
+  width: fit-content;
+  height: auto;
+  // here test
   display: flex;
   justify-content: center;
   align-items: center;

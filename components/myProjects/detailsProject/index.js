@@ -45,6 +45,7 @@ function DetailsProject({
               title={stack}
               width={35}
               height={35}
+              unoptimized={true}
             />
             <p>{stack}</p>
           </div>

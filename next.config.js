@@ -1,12 +1,14 @@
 module.exports = {
   reactStrictMode: true,
   images: {
+    // domains: ["github.com"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "github.com",
+        port: "",
+        pathname: "/Joliwood/**",
       },
     ],
-    domains: ["github.com"],
   },
 };

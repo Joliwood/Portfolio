@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Button, Modal } from "react-bootstrap";
 import styles from "../../../styles/myProjects.module.scss";
 import Image from "next/image";
@@ -14,10 +14,6 @@ function DetailsProject({
     return null;
   }
 
-  const loaderProp = ({ src }) => {
-    return src;
-  };
-
   return (
     <Modal
       className={styles.detailsProjectContainer}
@@ -26,7 +22,8 @@ function DetailsProject({
     >
       <h3>{selectedProject.title}</h3>
       <Image
-        src={overview ? `${overview}` : `${selectedProject.img}`}
+        src={overview ? overview : selectedProject.img}
+        // src="https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif"
         alt={selectedProject.title}
         title={selectedProject.title}
         width={500}

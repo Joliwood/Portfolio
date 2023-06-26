@@ -6,7 +6,7 @@ function Footer() {
     <div className={styles.footerArea}>
       <div></div>
       <p className={styles.footerText}>
-        Site créé en React et hébergé par Netlify :&nbsp;
+        Site créé en React et Next, hébergé par Netlify :&nbsp;
       </p>
       <a
         href="https://github.com/Joliwood/Portfolio"

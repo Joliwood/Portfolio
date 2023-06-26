@@ -53,6 +53,7 @@
 
 .myProjectIndividualContainer:hover .projectGithubButtons {
   display: flex;
+  animation: fadeIn ease-in-out 0.15s forwards;
 }
 
 .myProjectsTitle {
@@ -86,14 +87,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  top: calc(50% - 20px);
-  right: 50%;
-  transform: translateX(50%);
-  transform: rotateY(50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 40%;
   display: none;
+  opacity: 0;
 
-  > a {
+  > a,
+  button {
     background-color: var(--theme-dark-color);
     border-radius: 8px;
     border: solid 1px var(--theme-special-color);
@@ -102,13 +104,162 @@
     align-items: center;
     justify-content: center;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     > * {
       border-radius: 0 0 8px 8px;
-      font-size: 1.1rem;
+
       &:hover {
         color: var(--theme-special-color);
       }
     }
+  }
+}
+
+.detailsProjectContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: flex !important;
+  padding: 100px 0;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+
+  > div {
+    width: auto;
+    position: relative;
+    overflow: auto;
+    max-width: 700px;
+    background: radial-gradient(
+      var(--theme-dark-color),
+      var(--theme-semi-dark-color)
+    );
+    border-radius: 20px;
+    border: 1px solid var(--theme-special-color);
+    padding: 0 !important;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px 25px;
+
+      > img {
+        width: auto;
+        height: 370px;
+        margin: 20px auto;
+        object-fit: contain;
+        border: 1px solid var(--theme-semi-special-color);
+      }
+    }
+  }
+
+  > * {
+    color: var(--theme-light-color);
+  }
+}
+
+.detailsProjectSeparationLine {
+  position: relative;
+  padding-bottom: 30px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    width: 80%;
+    border-bottom: 3px solid var(--theme-semi-special-color);
+    border-radius: 1.5px;
+  }
+}
+
+.detailsProjectStacksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--theme-semi-special-color);
+    border-radius: 8px;
+    padding: 7px 10px;
+
+    > img {
+      object-fit: contain;
+    }
+  }
+}
+
+.detailsProjectCloseModalButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--theme-dark-color);
+  border-radius: 10px;
+  border: solid 1px var(--theme-semi-special-color);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--theme-light-color);
+  font-size: 1.3rem;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--theme-special-color);
+  }
+}
+
+.detailsProjectLinksContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  > a,
+  button {
+    background-color: var(--theme-dark-color);
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--theme-special-color);
+    border-radius: 8px;
+    padding: 16px 10px;
+
+    > h4 {
+      line-height: 1rem;
+      font-size: 1.1rem;
+      font-weight: normal;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      > * {
+        color: var(--theme-special-color);
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

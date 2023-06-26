@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/myProjects.module.scss";
 import { MyProjectsList } from "./myProjectsList";
 import Image from "next/image";
+import { Button } from "react-bootstrap";
+import ProjectModal from "./detailsProject";
+
+const reversedProjectsList = MyProjectsList.reverse();
 
 function MyProjects() {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+  function openModal(project) {
+    setSelectedProject(project);
+    setShowModal(true);
+  }
+
+  function closeModal() {
+    setShowModal(false);
+  }
+
   return (
     <div className={styles.myProjectsArea} id="myProjectsArea">
       <div className="separationEnsemble">
@@ -13,7 +29,7 @@ function MyProjects() {
       </div>
 
       <div className={styles.myProjectsContainer}>
-        {MyProjectsList.reverse().map((data, index) => (
+        {reversedProjectsList.map((data, index) => (
           <div key={index} data-aos="fade-up">
             <div className={styles.myProjectIndividualContainer}>
               <div>
@@ -31,6 +47,9 @@ function MyProjects() {
                   <a href={data.link} target="blank">
                     <h4>Voir le Projet</h4>
                   </a>
+                  <Button onClick={() => openModal(data)}>
+                    <h4>Détails</h4>
+                  </Button>
                 </div>
               </div>
               <div>
@@ -52,6 +71,15 @@ function MyProjects() {
           </div>
         ))}
       </div>
+
+      <ProjectModal
+        selectedProject={selectedProject}
+        showModal={showModal}
+        closeModal={closeModal}
+        title={selectedProject ? selectedProject.title : ""}
+        overview={selectedProject ? selectedProject.overview : ""}
+        stacks={selectedProject ? selectedProject.stacks : ""}
+      />
     </div>
   );
 }

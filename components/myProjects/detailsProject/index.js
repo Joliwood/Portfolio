@@ -22,21 +22,8 @@ function DetailsProject({
       onHide={closeModal}
     >
       <h3>{selectedProject.title}</h3>
-      {/* <img
-        src="/images/projects/coffeeTimeProject.png"
-        alt={selectedProject.title}
-      />
-      <img src={imageUrl} alt={selectedProject.title} /> */}
       <Image
-        src={imageUrl}
-        alt={selectedProject.title}
-        title={selectedProject.title}
-        width={500}
-        height={500}
-        unoptimized={true}
-      />
-      <Image
-        src={imageGif}
+        src={imageGif ? imageGif : imageUrl}
         alt={selectedProject.title}
         title={selectedProject.title}
         width={500}

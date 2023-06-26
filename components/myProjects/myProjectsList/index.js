@@ -15,8 +15,7 @@ export const MyProjectsList = [
       "Clone Front de Netflix version Web, en React. Utilisation de l'API de TMDB pour les données. Axios pour les requêtes. Il est possible de créer une liste partagée dans toute l'application grâce à Redux. Jest + Enzyme ont été implantés pour tester quelques composants.",
     link: "https://gj-netlix-clone.netlify.app/",
     github: "https://github.com/Joliwood/Netflix-clone",
-    overview:
-      "https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif?raw=true",
+    gif: "https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif?raw=true",
     stacks: ["react", "api", "netlify", "jest"],
   },
 
@@ -40,8 +39,7 @@ export const MyProjectsList = [
       "Application Back-end de type To-do list, gérée avec Node.js + Express. Les rendus html sont dynamiques avec Ejs, chaque modification de la liste génère une requête post pour la mettre à jour dans une session faisant office de Cookie (elle sera stockée pendant 1 heure). Le design est géré avec Tailwindcss.",
     link: "https://backlist.onrender.com/",
     github: "https://github.com/Joliwood/todo-list-back",
-    overview:
-      "https://github.com/Joliwood/todo-list-back/raw/main/docs/backlist.gif?raw=true",
+    gif: "https://github.com/Joliwood/todo-list-back/raw/main/docs/backlist.gif?raw=true",
     stacks: ["node", "ejs", "express", "render", "tailwindcss"],
   },
   {

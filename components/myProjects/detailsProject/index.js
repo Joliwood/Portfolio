@@ -9,6 +9,7 @@ function DetailsProject({
   selectedProject,
   showModal,
   closeModal,
+  imageGif,
 }) {
   if (!selectedProject) {
     return null;
@@ -27,7 +28,7 @@ function DetailsProject({
       />
       <img src={imageUrl} alt={selectedProject.title} />
       <Image
-        src={imageUrl}
+        src={imageGif}
         alt={selectedProject.title}
         title={selectedProject.title}
         width={500}

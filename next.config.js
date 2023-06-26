@@ -5,7 +5,8 @@ module.exports = {
       {
         protocol: "https",
         hostname: "github.com",
-        pathname: "/_next/image",
+        port: "",
+        pathname: "/Joliwood/**/*.*",
       },
     ],
   },

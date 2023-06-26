@@ -80,6 +80,7 @@ function MyProjects() {
         closeModal={closeModal}
         title={selectedProject ? selectedProject.title : ""}
         imageUrl={selectedProject ? selectedProject.img : ""}
+        imageGif={selectedProject ? selectedProject.gif : ""}
         stacks={selectedProject ? selectedProject.stacks : ""}
       />
     </div>

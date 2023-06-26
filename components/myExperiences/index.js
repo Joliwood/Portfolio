@@ -47,6 +47,9 @@ function MyExperiences() {
   };
 
   const [showStacks, setShowStacks] = useState(false);
+  const [stacksVisibility, setStacksVisibility] = useState(
+    Array(MyExperiencesList.length).fill(false)
+  );
   const [stacks, setStacks] = useState(
     Array(MyExperiencesList.length).fill(false)
   );
@@ -58,6 +61,10 @@ function MyExperiences() {
     updatedStacks[index] = !updatedStacks[index];
     setStacks(updatedStacks);
     setShowStacks(!showStacks);
+
+    const updatedStacksVisibility = [...stacksVisibility];
+    updatedStacksVisibility[index] = !updatedStacksVisibility[index];
+    setStacksVisibility(updatedStacksVisibility);
   };
 
   return (
@@ -117,7 +124,7 @@ function MyExperiences() {
                   <SimpleArray />
                 </div>
                 <p style={{ marginLeft: "5px" }}>
-                  {showStacks ? "Cacher" : "Voir"} les stacks
+                  {stacksVisibility[index] ? "Cacher" : "Voir"} les stacks
                 </p>
               </div>
             </div>

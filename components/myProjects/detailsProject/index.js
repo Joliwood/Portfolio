@@ -22,7 +22,7 @@ function DetailsProject({
     >
       <h3>{selectedProject.title}</h3>
       <Image
-        src={"" + overview ? overview : selectedProject.img}
+        src={overview ? "" + overview : selectedProject.img}
         alt={selectedProject.title}
         title={selectedProject.title}
         width={500}

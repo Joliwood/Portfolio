@@ -46,11 +46,13 @@ function MyExperiences() {
     return nb_years + " ans " + nb_months + " mois";
   };
 
-  const [showStacks, setShowStacks] = useState(false);
   const [stacksVisibility, setStacksVisibility] = useState(
     Array(MyExperiencesList.length).fill(false)
   );
   const [stacks, setStacks] = useState(
+    Array(MyExperiencesList.length).fill(false)
+  );
+  const [rotatedStates, setRotatedStates] = useState(
     Array(MyExperiencesList.length).fill(false)
   );
 
@@ -60,11 +62,16 @@ function MyExperiences() {
     const updatedStacks = [...stacks];
     updatedStacks[index] = !updatedStacks[index];
     setStacks(updatedStacks);
-    setShowStacks(!showStacks);
 
     const updatedStacksVisibility = [...stacksVisibility];
     updatedStacksVisibility[index] = !updatedStacksVisibility[index];
     setStacksVisibility(updatedStacksVisibility);
+
+    setRotatedStates((prevStates) => {
+      const newStates = [...prevStates];
+      newStates[index] = !newStates[index];
+      return newStates;
+    });
   };
 
   return (
@@ -120,7 +127,11 @@ function MyExperiences() {
                 className={styles.stacksToggler}
                 onClick={() => handleToggleStacks(index)}
               >
-                <div className={showStacks ? stylesAnimations.rotate90deg : ""}>
+                <div
+                  className={
+                    rotatedStates[index] ? stylesAnimations.rotate90deg : ""
+                  }
+                >
                   <SimpleArray />
                 </div>
                 <p style={{ marginLeft: "5px" }}>

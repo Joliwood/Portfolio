@@ -18,4 +18,12 @@
 
 <p align=center>The repository will be updated as needed to continue to show my skills and learning throughout my career.</p>
 
+## <p align="center">How to read commits in this project
+
+<p align="center">:zap: = Minor correction / debug
+<p align="center">:construction: = Work in progress
+<p align="center">:hammer: = New functionnality / component
+<p align="center">:memo: = Readme / Code comments / Documentations
+<p align="center">:sparkles: = Clean code
+
 <div align=center><a href="https://guillaume-jolibois.fr/" target="blank">Link to my portfolio website</a></div>

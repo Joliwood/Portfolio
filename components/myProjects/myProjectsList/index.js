@@ -4,6 +4,7 @@ const BacklistProject = "/images/projects/backlistProject.png";
 const SqlShowcaseProject = "/images/projects/sqlShowcaseProject.png";
 const mvcArchitectureProject = "/images/projects/mvcArchitectureProject.png";
 const coffeeTimeProject = "/images/projects/coffeeTimeProject.png";
+const restApiTournamentProject = "/images/projects/restApiTournamentProject.png";
 
 export const MyProjectsList = [
   {
@@ -51,6 +52,7 @@ export const MyProjectsList = [
       "Application Back-end CRUD créée avec Node.js + Express. Les rendus html sont dynamiques avec Ejs. Vous pourez ici visualiser une base de donnée créée en Postgresql (hébergée sur le cloud Render.com) et intéragir avec, créer des articles, les modifier, les supprimer, réinitialiser la DB si besoin, ou la trier par différents critères. Le design, lui est géré avec Bootstrap.",
     link: "https://sql-showcase.onrender.com/",
     github: "https://github.com/Joliwood/sql-showcase",
+    gif: "https://github.com/Joliwood/sql-showcase/blob/main/docs/sql-showcase.gif?raw=true",
     stacks: ["node", "ejs", "express", "sql", "psql", "render", "bootstrap"],
   },
   {
@@ -62,6 +64,7 @@ export const MyProjectsList = [
       "Application Back-end créée avec Node.js + Express. Les rendus html sont dynamiques avec Ejs. L'entièreté de l'application est faite en POO (Programmation Orientée Objet), avec une architecture MVC (Modèle Vue Contrôleur) et suivant la méthodologie Merise (MCD & MLD). Les échanges avec la DB (hébergée sur le cloud Neon.tech) sont possibles grâce à Sequelize. Les designs sont gérés avec Tailwindcss et DaisyUI.",
     link: "https://mvc-architecture.onrender.com/",
     github: "https://github.com/Joliwood/MVC-Architecture",
+    gif: "https://github.com/Joliwood/MVC-Architecture/blob/main/docs/mvc-architecture.gif?raw=true",
     stacks: [
       "node",
       "ejs",
@@ -80,9 +83,10 @@ export const MyProjectsList = [
     img: coffeeTimeProject,
     imgTag: "MVC Architecture",
     description:
-      "Application Front créée avec React 18 + Typescript + Webpack 5 + Babel. Sur ce site, vous aurez la possibilité de prendre différents types de café qui vous apporteront des quantité de caféine différentes, elles viendront remplir votre jauge d'énergie (gérée avec Redux). Le design est géré avec Material UI.",
+      "Application Front créée avec React 18 + Typescript + Webpack 5 + Babel. Sur ce site, vous aurez la possibilité de prendre différents types de café qui vous apporteront des quantité de caféine différentes, elles viendront remplir votre jauge d'énergie (gérée avec Redux). Le design est géré avec Material UI, avec un night / light mod.",
     link: "https://gj-coffee-time.netlify.app/",
     github: "https://github.com/Joliwood/coffee-time",
+    gif: "https://github.com/Joliwood/coffee-time/blob/main/docs/coffee-time.gif?raw=true",
     stacks: [
       "react",
       "redux",
@@ -90,6 +94,24 @@ export const MyProjectsList = [
       "typescript",
       "materialUi",
       "netlify",
+    ],
+  },
+  {
+    id: 7,
+    title: "REST API Tournament",
+    img: restApiTournamentProject,
+    imgTag: "REST API Tournament",
+    description:
+      "CRUD REST API qui fonctionne avec typescript. La base de données est la même que celle du projet appelé \"MVC-Architecture\". Il suit également cette architecture. La liste des requêtes disponibles sont sur le readme Github.",
+    link: "https://rest-api-tournaments.onrender.com/",
+    github: "https://github.com/Joliwood/REST-API-Tournaments",
+    stacks: [
+      "node",
+      "express",
+      "api",
+      "sequelize",
+      "typescript",
+      "render",
     ],
   },
 ];

@@ -40,6 +40,7 @@ function MyProjects() {
                   width={500}
                   height={500}
                   className={styles.myProjectsPicture}
+                  key={index}
                 />
 
                 <div className={styles.projectGithubButtons}>

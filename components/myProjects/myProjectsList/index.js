@@ -102,8 +102,8 @@ export const MyProjectsList = [
     img: restApiTournamentProject,
     imgTag: "REST API Tournament",
     description:
-      "CRUD REST API qui fonctionne avec typescript. La base de données est la même que celle du projet appelé \"MVC-Architecture\". Il suit également cette architecture. La liste des requêtes disponibles sont sur le readme Github.",
-    link: "https://rest-api-tournaments.onrender.com/",
+      "CRUD REST API qui fonctionne avec typescript. La base de données est la même que celle du projet appelé \"MVC-Architecture\". Il suit également cette architecture. La liste des requêtes disponibles sont sur le readme Github. API hébergée sur Railway.app",
+    link: "https://rest-api-tournaments.up.railway.app/",
     github: "https://github.com/Joliwood/REST-API-Tournaments",
     stacks: [
       "node",
@@ -111,7 +111,7 @@ export const MyProjectsList = [
       "api",
       "sequelize",
       "typescript",
-      "render",
+      "railway",
     ],
   },
 ];

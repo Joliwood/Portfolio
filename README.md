@@ -1,29 +1,27 @@
-# <h1 align=center>Welcome to my portfolio</h1>
+# Welcome to my portfolio
 
-<br />
-<p align=center ><img src="https://github.com/Joliwood/Portfolio/blob/main/docs/portfolio.gif?raw=true" /></p>
-<br />
+![Gif of presentation](https://github.com/Joliwood/Portfolio/blob/main/docs/portfolio.gif?raw=true)
 
-## <h2 align=center>Context</h2>
+## Context
 
-<p align=center>This portfolio had been created by myself in React JS and Next js, without CSS librairy or template. To see these skills, you will need to go to my repositories and check at my projects.</p>
+This portfolio had been created by myself in React JS and Next js, without CSS librairy or template. To see these skills, you will need to go to my repositories and check at my projects.</p>
 
-## <h2 align=center>What is it for ?</h2>
+## What is it for ?
 
-<p align=center>The website is to show a basic website, but well made, in ergonomy, responsivness, design and SEO.</p>
+The website is to show a basic website, but well made, in ergonomy, responsivness, design and SEO.
 
-<p align=center>The repository will be updated as needed to continue to show my skills and learning throughout my career.</p>
+The repository will be updated as needed to continue to show my skills and learning throughout my career.
 
-## <p align="center">How to read commits in this project
+## How to read commits in this project
 
-<p align="center">:zap: = Minor correction / debug
-<p align="center">:construction: = Work in progress
-<p align="center">:hammer: = New functionnality / component
-<p align="center">:memo: = Readme / Code comments / Documentations
-<p align="center">:sparkles: = Clean code
+:zap: = Minor correction / debug \
+:construction: = Work in progress \
+:card_file_box: = Datas or contents updated \
+:hammer: = New functionnality / component \
+:memo: = Readme / Code comments / Documentations \
+:rotating_light: = Security \
+:sparkles: = Clean code
 
-<br />
-<hr>
-<br />
+## How to access to this project
 
-<div align=center><a href="https://guillaume-jolibois.fr/" target="blank">Link to my portfolio website</a></div>
+[Link to my portfolio website](https://guillaume-jolibois.fr/)

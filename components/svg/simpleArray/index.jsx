@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function SimpleArray() {
   return (
@@ -12,7 +12,7 @@ function SimpleArray() {
             strokeLinejoin="round"
             strokeWidth="2"
             d="M8.5 5L15.5 12 8.5 19"
-          ></path>
+          />
         </g>
       </g>
     </svg>

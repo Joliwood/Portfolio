@@ -1,15 +1,3 @@
-<<<<<<< Updated upstream:components/headerBar/index.js
-import React, { useState } from "react";
-import styles from "../../styles/headerBar.module.scss";
-import stylesAnimations from "../../styles/animations.module.scss";
-import stylesSvg from "../../styles/svg.module.scss";
-import { IoClose } from "react-icons/io5";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { MdOutlineNightsStay } from "react-icons/md";
-import { BsSun } from "react-icons/bs";
-import { Link as ScrollLink } from "react-scroll";
-import Link from "next/link";
-=======
 import React, { useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
@@ -20,19 +8,18 @@ import Link from 'next/link';
 // import stylesSvg from '../../styles/svg.module.scss';
 import stylesAnimations from '../../styles/animations.module.scss';
 import styles from '../../styles/headerBar.module.scss';
->>>>>>> Stashed changes:components/headerBar/index.jsx
 // import PortfolioLogo from "../../public/images/portfolio-logo.png";
 // import Image from "next/image";
-import Logo from "../svg/logo/index.js";
+import Logo from '../svg/logo/index';
 
-const HeaderBar = function () {
+function HeaderBar() {
   const [toggleMenu, setToggleMenu] = useState(true);
   const [animatedMenu, setAnimatedMenu] = useState(null);
   const [lightTheme, setLightTheme] = useState(false);
 
   const changeTheme = () => {
-    const rootTheme = document.querySelector(":root");
-    rootTheme.classList.toggle("lightTheme");
+    const rootTheme = document.querySelector(':root');
+    rootTheme.classList.toggle('lightTheme');
     setLightTheme(!lightTheme);
   };
 
@@ -42,8 +29,8 @@ const HeaderBar = function () {
         {/* <h2>Mon portfolio</h2> */}
         <ScrollLink
           to="homeArea"
-          spy={true}
-          smooth={true}
+          spy
+          smooth
           offset={-250}
           duration={500}
           href="#home-area"
@@ -89,64 +76,65 @@ const HeaderBar = function () {
       </div>
 
       <div
-<<<<<<< Updated upstream:components/headerBar/index.js
-        className={`${styles.headerBarButtonsEnsemble} ${
-          animatedMenu
-            ? stylesAnimations.headerBarAnimationOn
-            : !animatedMenu && animatedMenu !== null
-            ? stylesAnimations.headerBarAnimationOff
-            : ""
-        }`}
-        style={!toggleMenu ? { display: "flex" } : {}}
-=======
         className={`
           ${styles.headerBarButtonsEnsemble}
           ${animatedMenu ? stylesAnimations.headerBarAnimationOn : ''}
           ${!animatedMenu && animatedMenu !== null ? stylesAnimations.headerBarAnimationOff : ''}
         `}
         style={!toggleMenu ? { display: 'flex' } : {}}
->>>>>>> Stashed changes:components/headerBar/index.jsx
       >
         <ScrollLink
           to="homeArea"
-          spy={true}
-          smooth={true}
+          spy
+          smooth
           offset={-250}
           duration={500}
           href="#home-area"
           onClick={() => setToggleMenu(true)}
         >
-          <button className={styles.headerBarButton}>
+          <button
+            type="button"
+            className={styles.headerBarButton}
+          >
             <h3>Accueil</h3>
           </button>
         </ScrollLink>
         <ScrollLink
           to="competencesArea"
-          spy={true}
-          smooth={true}
+          spy
+          smooth
           offset={-150}
           duration={500}
           href="#competences-area"
           onClick={() => setToggleMenu(true)}
         >
-          <button className={styles.headerBarButton}>
+          <button
+            type="button"
+            className={styles.headerBarButton}
+          >
             <h3>Compétences</h3>
           </button>
         </ScrollLink>
         <ScrollLink
           to="myProjectsArea"
-          spy={true}
-          smooth={true}
+          spy
+          smooth
           offset={-150}
           duration={500}
           href="#my-projects-area"
           onClick={() => setToggleMenu(true)}
         >
-          <button className={styles.headerBarButton}>
+          <button
+            type="button"
+            className={styles.headerBarButton}
+          >
             <h3>Portfolio</h3>
           </button>
         </ScrollLink>
-        <button className={styles.headerBarButton}>
+        <button
+          type="button"
+          className={styles.headerBarButton}
+        >
           <Link href="/contact">
             <h3>Contact</h3>
           </Link>
@@ -164,6 +152,6 @@ const HeaderBar = function () {
       </div>
     </div>
   );
-};
+}
 
 export default HeaderBar;

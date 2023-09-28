@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import styles from "../../styles/myProjects.module.scss";
-import { MyProjectsList } from "./myProjectsList";
-import Image from "next/image";
-import { Button } from "react-bootstrap";
-import ProjectModal from "./detailsProject";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { Button } from 'react-bootstrap';
+import styles from '../../styles/myProjects.module.scss';
+import MyProjectsList from './myProjectsList';
+import ProjectModal from './detailsProject';
 
 const reversedProjectsList = MyProjectsList.reverse();
 
@@ -23,9 +23,9 @@ function MyProjects() {
   return (
     <div className={styles.myProjectsArea} id="myProjectsArea">
       <div className="separationEnsemble">
-        <div className="separationbar"></div>
+        <div className="separationbar" />
         <h2>Mes projets</h2>
-        <div className="separationbar"></div>
+        <div className="separationbar" />
       </div>
 
       <div className={styles.myProjectsContainer}>
@@ -59,7 +59,7 @@ function MyProjects() {
                 <div className={styles.myProjectStacksContainer}>
                   {data.stacks.map((stack) => (
                     <Image
-                      src={"/images/competence/" + stack + "Logo.png"}
+                      src={`/images/competence/${stack}Logo.png`}
                       alt={stack}
                       title={stack}
                       width={35}
@@ -78,10 +78,10 @@ function MyProjects() {
         selectedProject={selectedProject}
         showModal={showModal}
         closeModal={closeModal}
-        title={selectedProject ? selectedProject.title : ""}
-        imageUrl={selectedProject ? selectedProject.img : ""}
-        imageGif={selectedProject ? selectedProject.gif : ""}
-        stacks={selectedProject ? selectedProject.stacks : ""}
+        title={selectedProject ? selectedProject.title : ''}
+        imageUrl={selectedProject ? selectedProject.img : ''}
+        imageGif={selectedProject ? selectedProject.gif : ''}
+        stacks={selectedProject ? selectedProject.stacks : ''}
       />
     </div>
   );

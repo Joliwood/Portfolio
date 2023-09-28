@@ -1,9 +1,9 @@
-import React from "react";
-import GithubLogo from "../svg/githubLogo";
-import LinkedinLogo from "../svg/linkedinLogo";
-import ProfilePicture from "../../public/images/profilePicture.png";
-import styles from "../../styles/home.module.scss";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
+import GithubLogo from '../svg/githubLogo';
+import LinkedinLogo from '../svg/linkedinLogo';
+import ProfilePicture from '../../public/images/profilePicture.png';
+import styles from '../../styles/home.module.scss';
 
 function Home() {
   return (
@@ -31,7 +31,7 @@ function Home() {
         </div>
       </div>
 
-      <div className={styles.homeLine}></div>
+      <div className={styles.homeLine} />
 
       <Image
         src={ProfilePicture}

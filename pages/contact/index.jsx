@@ -1,12 +1,12 @@
-import React from "react";
-import stylesHome from "../../styles/home.module.scss";
-import stylesContact from "../../styles/contact.module.scss";
-import stylesMyExperiences from "../../styles/myExperiences.module.scss";
-import ProfilePicture from "../../public/images/profilePicture.png";
-import Footer from "../../components/footer";
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import stylesHome from '../../styles/home.module.scss';
+import stylesContact from '../../styles/contact.module.scss';
+import stylesMyExperiences from '../../styles/myExperiences.module.scss';
+import ProfilePicture from '../../public/images/profilePicture.png';
+import Footer from '../../components/footer';
 
 function Contact() {
   return (
@@ -19,9 +19,9 @@ function Contact() {
       </Head>
 
       <div className="separationEnsemble">
-        <div className="separationbar"></div>
+        <div className="separationbar" />
         <h2>Contact</h2>
-        <div className="separationbar"></div>
+        <div className="separationbar" />
       </div>
 
       <div className={stylesContact.contactContainer}>
@@ -50,7 +50,10 @@ function Contact() {
             </address>
 
             <div className={stylesHome.homeLogosLinks}>
-              <button className={stylesMyExperiences.myExperiencesLinkButton}>
+              <button
+                type="button"
+                className={stylesMyExperiences.myExperiencesLinkButton}
+              >
                 <Link href="/">
                   <h4
                     className={stylesMyExperiences.myExperiencesLinkButtonText}
@@ -63,7 +66,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className={stylesHome.homeLine}></div>
+        <div className={stylesHome.homeLine} />
 
         <Image
           src={ProfilePicture}

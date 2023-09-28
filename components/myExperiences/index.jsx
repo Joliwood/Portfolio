@@ -113,7 +113,9 @@ function MyExperiences() {
                 )
               </p>
 
-              <p>{experience.description}</p>
+              {experience.descriptions.map((description) => (
+                <p key={description}>{description}</p>
+              ))}
 
               <div className={styles.myExperiencesLinksContainer}>
                 {experience.projectCreated.map((project) => (

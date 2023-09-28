@@ -116,7 +116,7 @@ function MyExperiences() {
               <p>{experience.description}</p>
 
               <div className={styles.myExperiencesLinksContainer}>
-                {experience.project_created.map((project) => (
+                {experience.projectCreated.map((project) => (
                   <a href={project.link} target="blank" key={project.title}>
                     <button
                       type="button"
@@ -162,7 +162,7 @@ function MyExperiences() {
                   title={stack}
                   width={35}
                   height={35}
-                  key={stack.value}
+                  key={stack}
                 />
               ))}
             </div>

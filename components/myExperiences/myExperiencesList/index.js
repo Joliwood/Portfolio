@@ -1,13 +1,13 @@
 const MyExperiencesList = [
   {
     title: "O'clock - Formation Développeur Full Stack Javascript",
-    date_start_month: 3,
-    date_start_year: 2023,
-    date_end_month: 9,
-    date_end_year: 2023,
+    dateStartMonth: 3,
+    dateStartYear: 2023,
+    dateEndMonth: 9,
+    dateEndYear: 2023,
     description:
       "D'une durée de 798 heures (6 mois temps plein), la formation full-stack Javascript proposée par O'Clock (établissement labellisé Grande Ecole du Numérique) est très complète. La pédagogie d'O'Clock est, au-delà des compétences techniques, \"d'apprendre à apprendre\". Les sujets techniques couverts sont nombreux et la formation s'achève par un projet professionnalisant d'un moi spermettant de présenter le titre de développeur web et web mobile (équivalent bac + 2).",
-    project_created: [
+    projectCreated: [
       {
         title: 'Lien de la formation',
         link: 'https://oclock.io/formations/developpeur-web-fullstack-javascript',
@@ -29,13 +29,13 @@ const MyExperiencesList = [
 
   {
     title: 'Agartha - Dev Front-End - Freelance',
-    date_start_month: 6,
-    date_start_year: 2022,
-    date_end_month: 'now',
-    date_end_year: 'now',
+    dateStartMonth: 6,
+    dateStartYear: 2022,
+    dateEndMonth: 'now',
+    dateEndYear: 'now',
     description:
       'Création maquette + site web client suivant cahier des charges en React.js, Material UI, I18Next (fr / en), Figma, Inkscape. Création maquettes également en Three.js, Next.js, Tailwindcss.',
-    project_created: [
+    projectCreated: [
       {
         title: 'Site Agartha',
         link: 'https://agartha.ch',
@@ -55,13 +55,13 @@ const MyExperiencesList = [
 
   {
     title: 'Formation en autodiadacte',
-    date_start_month: 11,
-    date_start_year: 2021,
-    date_end_month: 'now',
-    date_end_year: 'now',
+    dateStartMonth: 11,
+    dateStartYear: 2021,
+    dateEndMonth: 'now',
+    dateEndYear: 'now',
     description:
       "Formation en autodidacte, j'ai utilisé plusieurs supports, par exemple : Clever Programmer, FreeCodeCamp, Graphikart, SoloLearn, Youtube, etc. Chaque projet créé est disponible sur mon Github, avec toutes les informations complémentaires (ou visibles dans le détail de chaque projet sur ce site). Les stacks choisies sont variées, et je me suis concentré sur les technologies les plus demandées sur le marché du travail.",
-    project_created: [
+    projectCreated: [
       {
         title: 'Clone Netflix',
         link: 'https://gj-netlix-clone.netlify.app/',

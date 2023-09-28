@@ -11,14 +11,14 @@ function MyProjects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
-  function openModal(project) {
+  const openModal = (project) => {
     setSelectedProject(project);
     setShowModal(true);
-  }
+  };
 
-  function closeModal() {
+  const closeModal = () => {
     setShowModal(false);
-  }
+  };
 
   return (
     <div className={styles.myProjectsArea} id="myProjectsArea">
@@ -29,8 +29,8 @@ function MyProjects() {
       </div>
 
       <div className={styles.myProjectsContainer}>
-        {reversedProjectsList.map((data, index) => (
-          <div key={index} data-aos="fade-up">
+        {reversedProjectsList.map((data) => (
+          <div key={data.id} data-aos="fade-up">
             <div className={styles.myProjectIndividualContainer}>
               <div>
                 <Image
@@ -40,7 +40,6 @@ function MyProjects() {
                   width={500}
                   height={500}
                   className={styles.myProjectsPicture}
-                  key={index}
                 />
 
                 <div className={styles.projectGithubButtons}>
@@ -58,14 +57,14 @@ function MyProjects() {
               <div>
                 <h3 className={styles.myProjectsTitle}>{data.title}</h3>
                 <div className={styles.myProjectStacksContainer}>
-                  {data.stacks.map((stack, stackIndex) => (
+                  {data.stacks.map((stack) => (
                     <Image
                       src={"/images/competence/" + stack + "Logo.png"}
                       alt={stack}
                       title={stack}
                       width={35}
                       height={35}
-                      key={stackIndex}
+                      key={stack}
                     />
                   ))}
                 </div>

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:components/headerBar/index.js
 import React, { useState } from "react";
 import styles from "../../styles/headerBar.module.scss";
 import stylesAnimations from "../../styles/animations.module.scss";
@@ -8,6 +9,18 @@ import { MdOutlineNightsStay } from "react-icons/md";
 import { BsSun } from "react-icons/bs";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
+=======
+import React, { useState } from 'react';
+import { IoClose } from 'react-icons/io5';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { MdOutlineNightsStay } from 'react-icons/md';
+import { BsSun } from 'react-icons/bs';
+import { Link as ScrollLink } from 'react-scroll';
+import Link from 'next/link';
+// import stylesSvg from '../../styles/svg.module.scss';
+import stylesAnimations from '../../styles/animations.module.scss';
+import styles from '../../styles/headerBar.module.scss';
+>>>>>>> Stashed changes:components/headerBar/index.jsx
 // import PortfolioLogo from "../../public/images/portfolio-logo.png";
 // import Image from "next/image";
 import Logo from "../svg/logo/index.js";
@@ -76,6 +89,7 @@ const HeaderBar = function () {
       </div>
 
       <div
+<<<<<<< Updated upstream:components/headerBar/index.js
         className={`${styles.headerBarButtonsEnsemble} ${
           animatedMenu
             ? stylesAnimations.headerBarAnimationOn
@@ -84,6 +98,14 @@ const HeaderBar = function () {
             : ""
         }`}
         style={!toggleMenu ? { display: "flex" } : {}}
+=======
+        className={`
+          ${styles.headerBarButtonsEnsemble}
+          ${animatedMenu ? stylesAnimations.headerBarAnimationOn : ''}
+          ${!animatedMenu && animatedMenu !== null ? stylesAnimations.headerBarAnimationOff : ''}
+        `}
+        style={!toggleMenu ? { display: 'flex' } : {}}
+>>>>>>> Stashed changes:components/headerBar/index.jsx
       >
         <ScrollLink
           to="homeArea"

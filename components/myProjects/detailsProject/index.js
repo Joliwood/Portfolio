@@ -37,8 +37,8 @@ function DetailsProject({
       <div
         className={`${styles.detailsProjectStacksContainer} ${styles.detailsProjectSeparationLine}`}
       >
-        {stacks.map((stack, stackIndex) => (
-          <div key={stackIndex}>
+        {stacks.map((stack) => (
+          <div key={stack.id}>
             <Image
               src={"/images/competence/" + stack + "Logo.png"}
               alt={stack}

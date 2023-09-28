@@ -9,7 +9,7 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="icon" type="image/png" sizes="512" href="/logo512.png" />
         <link
-          rel="sitemap"
+          rel="alternate"
           type="application/xml"
           title="Sitemap"
           href="/sitemap.xml"

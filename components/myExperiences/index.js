@@ -7,6 +7,7 @@ import SimpleArray from "../svg/simpleArray";
 
 function MyExperiences() {
   const dateCalculator = (
+<<<<<<< Updated upstream:components/myExperiences/index.js
     date_start_month,
     date_start_year,
     date_end_month,
@@ -17,10 +18,23 @@ function MyExperiences() {
 
     if (date_end_month === "now" || date_end_year === "now") {
       date_end = new Date();
+=======
+    dateStartMonth,
+    dateStartYear,
+    dateEndMonth,
+    dateEndYear,
+  ) => {
+    const dateStart = new Date(dateStartYear, dateStartMonth, 1);
+    let dateEnd;
+
+    if (dateEndMonth === 'now' || dateEndYear === 'now') {
+      dateEnd = new Date();
+>>>>>>> Stashed changes:components/myExperiences/index.jsx
     } else {
-      date_end = new Date(date_end_year, date_end_month, 1);
+      dateEnd = new Date(dateEndYear, dateEndMonth, 1);
     }
 
+<<<<<<< Updated upstream:components/myExperiences/index.js
     let date_diff = date_end.getTime() - date_start.getTime();
     let nb_days = Math.round(date_diff / (1000 * 60 * 60 * 24));
     let nb_months = Math.round(nb_days / 30);
@@ -44,6 +58,31 @@ function MyExperiences() {
     }
 
     return nb_years + " ans " + nb_months + " mois";
+=======
+    const dateDiff = dateEnd.getTime() - dateStart.getTime();
+    const nbDays = Math.round(dateDiff / (1000 * 60 * 60 * 24));
+    const nbMonths = Math.round(nbDays / 30);
+    const nbYears = Math.floor(nbMonths / 12);
+
+    if (nbYears < 1) {
+      return `${nbMonths} mois`;
+    } if (dateEndMonth === 'now' || dateEndYear === 'now') {
+      const currentDate = new Date();
+      const currentDiff = currentDate.getTime() - dateStart.getTime();
+      const currentNbDays = Math.round(currentDiff / (1000 * 60 * 60 * 24));
+      let currentNbMonths = Math.round(currentNbDays / 30);
+      const currentNbYears = Math.floor(currentNbMonths / 12);
+      if (currentNbMonths > 12) {
+        currentNbMonths -= currentNbYears * 12;
+      }
+      if (currentNbMonths === 12) {
+        return `${currentNbYears} an`;
+      }
+      return `${currentNbYears} ans ${currentNbMonths} mois`;
+    }
+
+    return `${nbYears} ans ${nbMonths} mois`;
+>>>>>>> Stashed changes:components/myExperiences/index.jsx
   };
 
   const [stacksVisibility, setStacksVisibility] = useState(
@@ -83,18 +122,24 @@ function MyExperiences() {
       </div>
 
       <div className={styles.myExperiencesContainer}>
-        {MyExperiencesList.map((item, index) => (
+        {MyExperiencesList.map((experience, index) => (
           <div
             className={styles.myExperiencesBlockContainer}
+<<<<<<< Updated upstream:components/myExperiences/index.js
             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             key={index}
+=======
+            data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
+            key={experience.title}
+>>>>>>> Stashed changes:components/myExperiences/index.jsx
           >
             <div className={styles.myExperiencesDescriptionContainer}>
               <div className={styles.myExperiencesTitleEnsemble}>
-                <h3 className={styles.myExperiencesTitle}>{item.title}</h3>
+                <h3 className={styles.myExperiencesTitle}>{experience.title}</h3>
               </div>
 
               <p>
+<<<<<<< Updated upstream:components/myExperiences/index.js
                 Début : {item.date_start_month}/{item.date_start_year}
                 {item.date_end_month === "now" || item.date_end_year === "now"
                   ? " - En cours "
@@ -105,25 +150,51 @@ function MyExperiences() {
                   item.date_start_year,
                   item.date_end_month,
                   item.date_end_year
+=======
+                Début :
+                {' '}
+                {experience.dateStartMonth}
+                /
+                {experience.dateStartYear}
+                {experience.dateEndMonth === 'now' || experience.dateEndYear === 'now'
+                  ? ' - En cours '
+                  : ` - Fin ${experience.dateEndMonth}/${experience.dateEndYear}`}
+                (
+                {dateCalculator(
+                  experience.dateStartMonth,
+                  experience.dateStartYear,
+                  experience.dateEndMonth,
+                  experience.dateEndYear,
+>>>>>>> Stashed changes:components/myExperiences/index.jsx
                 )}
                 )
               </p>
 
-              <p>{item.description}</p>
+              <p>{experience.description}</p>
 
               <div className={styles.myExperiencesLinksContainer}>
+<<<<<<< Updated upstream:components/myExperiences/index.js
                 {item.project_created.map((item, index) => (
                   <a href={item.link} target="blank" key={index}>
                     <button className={styles.myExperiencesLinkButton}>
+=======
+                {experience.project_created.map((project) => (
+                  <a href={project.link} target="blank" key={project.title}>
+                    <button
+                      type="button"
+                      className={styles.myExperiencesLinkButton}
+                    >
+>>>>>>> Stashed changes:components/myExperiences/index.jsx
                       <h4 className={styles.myExperiencesLinkButtonText}>
-                        {item.title}
+                        {project.title}
                       </h4>
                     </button>
                   </a>
                 ))}
               </div>
 
-              <div
+              <button
+                type="button"
                 className={styles.stacksToggler}
                 onClick={() => handleToggleStacks(index)}
               >
@@ -137,23 +208,28 @@ function MyExperiences() {
                 <p style={{ marginLeft: "5px" }}>
                   {stacksVisibility[index] ? "Cacher" : "Voir"} les stacks
                 </p>
-              </div>
+              </button>
             </div>
             <div
               className={`${styles.myExperiencesCompetencesContainer} ${
                 stacks[index] ? styles.fadeInAnimation : ""
               }`}
+<<<<<<< Updated upstream:components/myExperiences/index.js
               style={stacks[index] ? { display: "flex" } : { display: "none" }}
               ref={(ref) => (itemRefs.current[index] = ref)}
+=======
+              style={stacks[index] ? { display: 'flex' } : { display: 'none' }}
+              ref={(ref) => { itemRefs.current[index] = ref; }}
+>>>>>>> Stashed changes:components/myExperiences/index.jsx
             >
-              {item.stacks.map((stack, index) => (
+              {experience.stacks.map((stack) => (
                 <Image
                   src={"/images/competence/" + stack + "Logo.png"}
                   alt={stack}
                   title={stack}
                   width={35}
                   height={35}
-                  key={index}
+                  key={stack.value}
                 />
               ))}
             </div>

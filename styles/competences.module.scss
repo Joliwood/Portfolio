@@ -19,6 +19,14 @@
   max-width: 1200px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1399px) {
+    min-width: unset;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 85vw;
+  }
 }
 
 .individualCompetenceBlock {
@@ -40,7 +48,7 @@
   > div {
     display: flex;
     justify-content: center;
-    gap: 2rem 5vw;
+    gap: 2rem 4rem;
     flex-wrap: wrap;
     padding: 20px 30px 30px 30px;
 
@@ -84,6 +92,11 @@
     width: 60%;
     object-fit: contain;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .otherCompetencesContainer {
@@ -95,8 +108,13 @@
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
+}
 
-  .competencesContainer {
-    min-width: unset;
+@media screen and (max-width: 768px) {
+  .individualCompetenceBlock {
+    > div {
+      gap: 2rem 2rem;
+      padding: 20px 10px 20px 10px;
+    }
   }
 }

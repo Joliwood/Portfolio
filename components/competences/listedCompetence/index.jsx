@@ -3,7 +3,7 @@ import reactLogo from '../../../public/images/competence/reactLogo.png';
 import jsLogo from '../../../public/images/competence/jsLogo.png';
 import NodeLogo from '../../svg/nodeLogo';
 import reduxLogo from '../../../public/images/competence/reduxLogo.png';
-import jqueryLogo from '../../../public/images/competence/jqueryLogo.png';
+// import jqueryLogo from '../../../public/images/competence/jqueryLogo.png';
 import seoLogo from '../../../public/images/competence/seoLogo.png';
 import gitLogo from '../../../public/images/competence/gitLogo.png';
 import netlifyLogo from '../../../public/images/competence/netlifyLogo.png';
@@ -14,16 +14,22 @@ import nextLogo from '../../../public/images/competence/nextLogo.png';
 import expressLogo from '../../../public/images/competence/expressLogo.png';
 import renderLogo from '../../../public/images/competence/renderLogo.png';
 import tailwindcssLogo from '../../../public/images/competence/tailwindcssLogo.png';
-import sqlLogo from '../../../public/images/competence/sqlLogo.png';
+// import sqlLogo from '../../../public/images/competence/sqlLogo.png';
 import ejsLogo from '../../../public/images/competence/ejsLogo.png';
 import psqlLogo from '../../../public/images/competence/psqlLogo.png';
 import dbeaverLogo from '../../../public/images/competence/dbeaverLogo.png';
 import sequelizeLogo from '../../../public/images/competence/sequelizeLogo.png';
 import webpackLogo from '../../../public/images/competence/webpackLogo.png';
 import typescriptLogo from '../../../public/images/competence/typescriptLogo.png';
-// import mangodbLogo from "../../../public/images/competence/mangodbLogo.png";
+import mangodbLogo from '../../../public/images/competence/mangodbLogo.png';
 // import redisLogo from "../../../public/images/competence/redisLogo.png";
-// import graphqlLogo from "../../../public/images/competence/graphqlLogo.png";
+import graphqlLogo from '../../../public/images/competence/graphqlLogo.png';
+import prismaLogo from '../../../public/images/competence/prismaLogo.png';
+import cypressLogo from '../../../public/images/competence/cypressLogo.png';
+import viteLogo from '../../../public/images/competence/viteLogo.png';
+import knexLogo from '../../../public/images/competence/knexLogo.png';
+import socketIoLogo from '../../../public/images/competence/socketIoLogo.png';
+import eslintLogo from '../../../public/images/competence/eslintLogo.png';
 
 export const frontCompetences = [
   {
@@ -47,6 +53,11 @@ export const frontCompetences = [
     name: 'Webpack',
     img: webpackLogo,
   },
+  {
+    name: 'Vite',
+    img: viteLogo,
+  },
+
 ];
 
 export const backCompetences = [
@@ -59,10 +70,10 @@ export const backCompetences = [
     name: 'Express',
     img: expressLogo,
   },
-  {
-    name: 'SQL',
-    img: sqlLogo,
-  },
+  // {
+  //   name: 'SQL',
+  //   img: sqlLogo,
+  // },
   {
     name: 'Firebase',
     img: firebaseLogo,
@@ -79,18 +90,30 @@ export const backCompetences = [
     name: 'Sequelize',
     img: sequelizeLogo,
   },
-  // {
-  //   name: "MangoDB",
-  //   img: mangodbLogo,
-  // },
+  {
+    name: 'MangoDB',
+    img: mangodbLogo,
+  },
+  {
+    name: 'Prisma',
+    img: prismaLogo,
+  },
   // {
   //   name: "Redis",
   //   img: redisLogo,
   // },
-  // {
-  //   name: "GraphQL",
-  //   img: graphqlLogo,
-  // },
+  {
+    name: 'GraphQL',
+    img: graphqlLogo,
+  },
+  {
+    name: 'Knex',
+    img: knexLogo,
+  },
+  {
+    name: 'Socket.io',
+    img: socketIoLogo,
+  },
 ];
 
 export const technoCompetences = [
@@ -102,10 +125,10 @@ export const technoCompetences = [
     name: 'Redux',
     img: reduxLogo,
   },
-  {
-    name: 'JQuery',
-    img: jqueryLogo,
-  },
+  // {
+  //   name: 'JQuery',
+  //   img: jqueryLogo,
+  // },
   {
     name: 'SEO',
     img: seoLogo,
@@ -113,6 +136,14 @@ export const technoCompetences = [
   {
     name: 'TypeScript',
     img: typescriptLogo,
+  },
+  {
+    name: 'Cypress',
+    img: cypressLogo,
+  },
+  {
+    name: 'Eslint',
+    img: eslintLogo,
   },
 ];
 

@@ -43,9 +43,18 @@ function MyProjects() {
                 />
 
                 <div className={styles.projectGithubButtons}>
-                  <a href={data.github} target="blank">
-                    <h4>Voir le Github</h4>
-                  </a>
+                  {data.github && (
+                    <a href={data.github} target="blank">
+                      <h4>Voir le Github</h4>
+                    </a>
+                  )}
+                  {data.githubs && (
+                    data.githubs.map((github) => (
+                      <a href={github.link} target="blank" key={github.title}>
+                        <h4>{github.title}</h4>
+                      </a>
+                    ))
+                  )}
                   <a href={data.link} target="blank">
                     <h4>Voir le Projet</h4>
                   </a>

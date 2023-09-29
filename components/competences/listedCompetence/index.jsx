@@ -21,7 +21,7 @@ import dbeaverLogo from '../../../public/images/competence/dbeaverLogo.png';
 import sequelizeLogo from '../../../public/images/competence/sequelizeLogo.png';
 import webpackLogo from '../../../public/images/competence/webpackLogo.png';
 import typescriptLogo from '../../../public/images/competence/typescriptLogo.png';
-import mangodbLogo from '../../../public/images/competence/mangodbLogo.png';
+import mongodbLogo from '../../../public/images/competence/mongodbLogo.png';
 // import redisLogo from "../../../public/images/competence/redisLogo.png";
 import graphqlLogo from '../../../public/images/competence/graphqlLogo.png';
 import prismaLogo from '../../../public/images/competence/prismaLogo.png';
@@ -91,8 +91,8 @@ export const backCompetences = [
     img: sequelizeLogo,
   },
   {
-    name: 'MangoDB',
-    img: mangodbLogo,
+    name: 'MongoDB',
+    img: mongodbLogo,
   },
   {
     name: 'Prisma',

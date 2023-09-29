@@ -7,6 +7,7 @@ const coffeeTimeProject = '/images/projects/coffeeTimeProject.png';
 const restApiTournamentProject = '/images/projects/restApiTournamentProject.png';
 const cinocharProject = '/images/projects/cinocharProject.png';
 const osportProject = '/images/projects/osportProject.png';
+const lyricsLibraryProject = '/images/projects/lyricsLibraryProject.png';
 
 const MyProjectsList = [
   {
@@ -83,7 +84,7 @@ const MyProjectsList = [
     id: 6,
     title: 'Coffee Time',
     img: coffeeTimeProject,
-    imgTag: 'MVC Architecture',
+    imgTag: 'Coffee Time',
     description:
       "Application Front créée avec React 18 + Typescript + Webpack 5 + Babel. Sur ce site, vous aurez la possibilité de prendre différents types de café qui vous apporteront des quantité de caféine différentes, elles viendront remplir votre jauge d'énergie (gérée avec Redux). Le design est géré avec Material UI, avec un night / light mod.",
     link: 'https://gj-coffee-time.netlify.app/',
@@ -151,21 +152,47 @@ const MyProjectsList = [
     link: 'https://osport-client.netlify.app/',
     githubs: [
       {
-        title: 'Voir le Front',
+        title: 'Github Front',
         link: 'https://github.com/Joliwood/osport-client',
       },
       {
-        title: 'Voir le Back',
+        title: 'Github Back',
         link: 'https://github.com/Joliwood/osport-server',
       },
     ],
     stacks: [
+      'react',
+      'node',
+      'typescript',
+      'tailwindcss',
+      'daisyui',
+      'api',
+      'vite',
+      'psql',
+      'express',
+      'prisma',
+      'cypress',
+      'netlify',
+      'render',
+    ],
+  },
+  {
+    id: 10,
+    title: 'Lyrics library',
+    img: lyricsLibraryProject,
+    imgTag: 'Lyrics library API',
+    description:
+      'Ceci est une API graphQL optimisée pour les grandes bases de données. Les datas ont été générées par faker, une validation des données par JOI et une documentation par Appolo Studio. Tout le système d\'initialisation et de migration de la base de données à été géré par Knex. L\'API est hébergée sur Render.com',
+    link: 'https://lyrics-library.onrender.com/',
+    github: 'https://github.com/Joliwood/lyrics-library',
+    stacks: [
       'node',
       'express',
       'api',
-      'sequelize',
-      'typescript',
-      'railway',
+      'graphql',
+      'knex',
+      'appolo',
+      'render',
     ],
   },
 ];

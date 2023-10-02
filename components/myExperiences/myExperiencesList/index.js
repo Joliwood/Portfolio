@@ -72,8 +72,8 @@ const MyExperiencesList = [
     title: 'Agartha - Dev Front-End - Freelance',
     dateStartMonth: 6,
     dateStartYear: 2022,
-    dateEndMonth: 'now',
-    dateEndYear: 'now',
+    dateEndMonth: 6,
+    dateEndYear: 2023,
     descriptions: [
       'Création maquette + site web client suivant cahier des charges en React.js, Material UI, I18Next (fr / en), Figma, Inkscape. Création maquettes également en Three.js, Next.js, Tailwindcss.',
     ],

@@ -23,8 +23,15 @@ function MyExperiences() {
 
     const dateDiff = dateEnd.getTime() - dateStart.getTime();
     const nbDays = Math.round(dateDiff / (1000 * 60 * 60 * 24));
-    const nbMonths = Math.round(nbDays / 30);
+    let nbMonths = Math.round(nbDays / 30);
     const nbYears = Math.floor(nbMonths / 12);
+    if (nbMonths > 12) {
+      nbMonths -= nbYears * 12;
+    }
+
+    if (nbMonths === 12) {
+      return `${nbYears} an`;
+    }
 
     if (nbYears < 1) {
       return `${nbMonths} mois`;

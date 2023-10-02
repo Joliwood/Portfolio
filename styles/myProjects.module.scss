@@ -13,12 +13,12 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  max-width: 80vw;
+  width: 80vw;
 }
 
 .myProjectIndividualContainer {
   position: relative;
-  width: 30vw;
+  width: 300px;
   border-radius: 8px;
   border: solid 1px transparent;
   background-image: linear-gradient(transparent, var(--theme-dark-color)),
@@ -90,19 +90,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: max-content;
+  max-width: 80%;
   display: none;
-  opacity: 0;
+  opacity: 0;  
 
   > a,
   button {
     background-color: var(--theme-dark-color);
     border-radius: 8px;
     border: solid 1px var(--theme-special-color);
-    height: 30px;
+    min-height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
 
     &:hover {
       cursor: pointer;
@@ -267,13 +271,13 @@
 
 @media screen and (max-width: 1100px) {
   .myProjectIndividualContainer {
-    min-width: 250px;
-    width: 100%;
+    min-width: unset;
+    max-width: 85vw;
   }
 }
 
 @media screen and (max-width: 500px) {
   .myProjectsContainer {
-    width: auto;
+    width: 85vw;
   }
 }

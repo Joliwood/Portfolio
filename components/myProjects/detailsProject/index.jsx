@@ -1,7 +1,7 @@
-import React from "react";
-import { Button, Modal } from "react-bootstrap";
-import styles from "../../../styles/myProjects.module.scss";
-import Image from "next/image";
+import React from 'react';
+import { Button, Modal } from 'react-bootstrap';
+import Image from 'next/image';
+import styles from '../../../styles/myProjects.module.scss';
 
 function DetailsProject({
   stacks,
@@ -23,29 +23,33 @@ function DetailsProject({
     >
       <h3>{selectedProject.title}</h3>
       <Image
-        src={imageGif ? imageGif : imageUrl}
+        src={imageGif || imageUrl}
         alt={selectedProject.title}
         title={selectedProject.title}
         width={500}
         height={500}
-        unoptimized={true}
+        unoptimized
       />
-      <p className={styles.detailsProjectSeparationLine}>
-        {selectedProject.description}
-      </p>
+
+      <div className={styles.detailsProjectSeparationLine}>
+        {selectedProject.descriptions.map((description) => (
+          <p key={description}>{description}</p>
+        ))}
+      </div>
+
       <h4>Récapitulatif des compétences utilisées pour ce projet : </h4>
       <div
         className={`${styles.detailsProjectStacksContainer} ${styles.detailsProjectSeparationLine}`}
       >
-        {stacks.map((stack, stackIndex) => (
-          <div key={stackIndex}>
+        {stacks.map((stack) => (
+          <div key={stack.id}>
             <Image
-              src={"/images/competence/" + stack + "Logo.png"}
+              src={`/images/competence/${stack}Logo.png`}
               alt={stack}
               title={stack}
               width={35}
               height={35}
-              unoptimized={true}
+              unoptimized
             />
             <p>{stack}</p>
           </div>
@@ -58,7 +62,10 @@ function DetailsProject({
         <a href={selectedProject.link} target="blank">
           <h4>Voir le Projet</h4>
         </a>
-        <button onClick={closeModal}>
+        <button
+          type="button"
+          onClick={closeModal}
+        >
           <h4>Retourner aux projets</h4>
         </button>
       </div>

@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react';
+import Image from 'next/image';
 import {
-  frontCompetence,
-  technoCompetence,
-  toolsCompetence,
-  backCompetence,
-} from "./listedCompetence";
-import styles from "../../styles/competences.module.scss";
-import stylesAnimations from "../../styles/animations.module.scss";
-import Image from "next/image";
+  frontCompetences,
+  technoCompetences,
+  toolsCompetences,
+  backCompetences,
+} from './listedCompetence';
+import styles from '../../styles/competences.module.scss';
+import stylesAnimations from '../../styles/animations.module.scss';
 
 function Competences() {
   return (
     <div className={styles.competencesArea} id="competencesArea">
       <div className="separationEnsemble">
-        <div className="separationbar"></div>
+        <div className="separationbar" />
         <h2>Compétences</h2>
-        <div className="separationbar"></div>
+        <div className="separationbar" />
       </div>
 
       <div className={styles.competencesContainer}>
@@ -30,18 +30,22 @@ function Competences() {
           <div className={styles.individualCompetenceBlock}>
             <h3 className={styles.ensembleCompetencesTitle}>Front End</h3>
             <div>
-              {frontCompetence.map((item) => (
-                <div key={item.name}>
-                  {item.svg ? (
+              {frontCompetences.map((frontCompetence) => (
+                <div key={frontCompetence.name}>
+                  {frontCompetence.svg ? (
                     <div className={styles.competenceLogoContainer}>
-                      {item.svg}
+                      {frontCompetence.svg}
                     </div>
                   ) : (
                     <div className={styles.competenceLogoContainer}>
-                      <Image src={item.img} alt={item.name} title={item.name} />
+                      <Image
+                        src={frontCompetence.img}
+                        alt={frontCompetence.name}
+                        title={frontCompetence.name}
+                      />
                     </div>
                   )}
-                  <h4 className={styles.competenceTitle}>{item.name}</h4>
+                  <h4 className={styles.competenceTitle}>{frontCompetence.name}</h4>
                 </div>
               ))}
             </div>
@@ -62,22 +66,26 @@ function Competences() {
             data-aos-offset="150"
             data-aos-delay="500"
             data-aos-duration="1000"
-          ></div>
+          />
           <div className={styles.individualCompetenceBlock}>
             <h3 className={styles.ensembleCompetencesTitle}>Back End</h3>
             <div>
-              {backCompetence.map((item) => (
-                <div key={item.name}>
-                  {item.svg ? (
+              {backCompetences.map((backCompetence) => (
+                <div key={backCompetence.name}>
+                  {backCompetence.svg ? (
                     <div className={styles.competenceLogoContainer}>
-                      {item.svg}
+                      {backCompetence.svg}
                     </div>
                   ) : (
                     <div className={styles.competenceLogoContainer}>
-                      <Image src={item.img} alt={item.name} title={item.name} />
+                      <Image
+                        src={backCompetence.img}
+                        alt={backCompetence.name}
+                        title={backCompetence.name}
+                      />
                     </div>
                   )}
-                  <h4 className={styles.competenceTitle}>{item.name}</h4>
+                  <h4 className={styles.competenceTitle}>{backCompetence.name}</h4>
                 </div>
               ))}
             </div>
@@ -98,24 +106,28 @@ function Competences() {
             data-aos-offset="150"
             data-aos-delay="500"
             data-aos-duration="1000"
-          ></div>
+          />
           <div className={styles.individualCompetenceBlock}>
             <h3 className={styles.ensembleCompetencesTitle}>
               Les technos que j&apos;ai travaillé
             </h3>
             <div>
-              {technoCompetence.map((item) => (
-                <div key={item.name}>
-                  {item.svg ? (
+              {technoCompetences.map((technoCompetence) => (
+                <div key={technoCompetence.name}>
+                  {technoCompetence.svg ? (
                     <div className={styles.competenceLogoContainer}>
-                      {item.svg}
+                      {technoCompetence.svg}
                     </div>
                   ) : (
                     <div className={styles.competenceLogoContainer}>
-                      <Image src={item.img} alt={item.name} title={item.name} />
+                      <Image
+                        src={technoCompetence.img}
+                        alt={technoCompetence.name}
+                        title={technoCompetence.name}
+                      />
                     </div>
                   )}
-                  <h4 className={styles.competenceTitle}>{item.name}</h4>
+                  <h4 className={styles.competenceTitle}>{technoCompetence.name}</h4>
                 </div>
               ))}
             </div>
@@ -136,24 +148,28 @@ function Competences() {
             data-aos-offset="150"
             data-aos-delay="500"
             data-aos-duration="1000"
-          ></div>
+          />
           <div className={styles.individualCompetenceBlock}>
             <h3 className={styles.ensembleCompetencesTitle}>
               Les outils que j&apos;ai utilisé
             </h3>
             <div>
-              {toolsCompetence.map((item) => (
-                <div key={item.name}>
-                  {item.svg ? (
+              {toolsCompetences.map((toolCompetence) => (
+                <div key={toolCompetence.name}>
+                  {toolCompetence.svg ? (
                     <div className={styles.competenceLogoContainer}>
-                      {item.svg}
+                      {toolCompetence.svg}
                     </div>
                   ) : (
                     <div className={styles.competenceLogoContainer}>
-                      <Image src={item.img} alt={item.name} title={item.name} />
+                      <Image
+                        src={toolCompetence.img}
+                        alt={toolCompetence.name}
+                        title={toolCompetence.name}
+                      />
                     </div>
                   )}
-                  <h4 className={styles.competenceTitle}>{item.name}</h4>
+                  <h4 className={styles.competenceTitle}>{toolCompetence.name}</h4>
                 </div>
               ))}
             </div>

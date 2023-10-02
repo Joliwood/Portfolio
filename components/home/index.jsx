@@ -1,9 +1,9 @@
-import React from "react";
-import GithubLogo from "../svg/githubLogo";
-import LinkedinLogo from "../svg/linkedinLogo";
-import ProfilePicture from "../../public/images/profilePicture.png";
-import styles from "../../styles/home.module.scss";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
+import GithubLogo from '../svg/githubLogo';
+import LinkedinLogo from '../svg/linkedinLogo';
+import ProfilePicture from '../../public/images/profilePicture.png';
+import styles from '../../styles/home.module.scss';
 
 function Home() {
   return (
@@ -11,11 +11,16 @@ function Home() {
       <div className={styles.homeDescriptionContainer}>
         <div className={styles.homeDescription}>
           <h1>Guillaume Jolibois</h1>
-          <h2>Développeur Javascript</h2>
+          <h2>Développeur Full Stack</h2>
           <p>
-            Autodidacte de 28 ans, avec une appetence pour le design et
-            l’ergonomie. Je souhaite mettre mes compétences aux services des
-            entreprises. Disponible en région parisienne.
+            Je suis un développeur passionné par les nouvelles technologies, baignant dans ce
+            milieu depuis longtemps. Autonome, motivé et adaptable, je suis capatble de manier
+            et de m'adapter à votre framework / librairie.
+            <br />
+            <br />
+            J'ai une forte appétence pour le clean
+            code, les structures base de données, l'optimisation et enfin l'expérience utilisateur
+            UX.
           </p>
           <div className={styles.homeLogosLinks}>
             <a
@@ -31,7 +36,7 @@ function Home() {
         </div>
       </div>
 
-      <div className={styles.homeLine}></div>
+      <div className={styles.homeLine} />
 
       <Image
         src={ProfilePicture}

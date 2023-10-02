@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import styles from "../../styles/myProjects.module.scss";
-import { MyProjectsList } from "./myProjectsList";
-import Image from "next/image";
-import { Button } from "react-bootstrap";
-import ProjectModal from "./detailsProject";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { Button } from 'react-bootstrap';
+import styles from '../../styles/myProjects.module.scss';
+import MyProjectsList from './myProjectsList';
+import ProjectModal from './detailsProject';
 
 const reversedProjectsList = MyProjectsList.reverse();
 
@@ -11,26 +11,26 @@ function MyProjects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
-  function openModal(project) {
+  const openModal = (project) => {
     setSelectedProject(project);
     setShowModal(true);
-  }
+  };
 
-  function closeModal() {
+  const closeModal = () => {
     setShowModal(false);
-  }
+  };
 
   return (
     <div className={styles.myProjectsArea} id="myProjectsArea">
       <div className="separationEnsemble">
-        <div className="separationbar"></div>
+        <div className="separationbar" />
         <h2>Mes projets</h2>
-        <div className="separationbar"></div>
+        <div className="separationbar" />
       </div>
 
       <div className={styles.myProjectsContainer}>
-        {reversedProjectsList.map((data, index) => (
-          <div key={index} data-aos="fade-up">
+        {reversedProjectsList.map((data) => (
+          <div key={data.id} data-aos="fade-up">
             <div className={styles.myProjectIndividualContainer}>
               <div>
                 <Image
@@ -40,13 +40,21 @@ function MyProjects() {
                   width={500}
                   height={500}
                   className={styles.myProjectsPicture}
-                  key={index}
                 />
 
                 <div className={styles.projectGithubButtons}>
-                  <a href={data.github} target="blank">
-                    <h4>Voir le Github</h4>
-                  </a>
+                  {data.github && (
+                    <a href={data.github} target="blank">
+                      <h4>Voir le Github</h4>
+                    </a>
+                  )}
+                  {data.githubs && (
+                    data.githubs.map((github) => (
+                      <a href={github.link} target="blank" key={github.title}>
+                        <h4>{github.title}</h4>
+                      </a>
+                    ))
+                  )}
                   <a href={data.link} target="blank">
                     <h4>Voir le Projet</h4>
                   </a>
@@ -58,14 +66,14 @@ function MyProjects() {
               <div>
                 <h3 className={styles.myProjectsTitle}>{data.title}</h3>
                 <div className={styles.myProjectStacksContainer}>
-                  {data.stacks.map((stack, stackIndex) => (
+                  {data.stacks.map((stack) => (
                     <Image
-                      src={"/images/competence/" + stack + "Logo.png"}
+                      src={`/images/competence/${stack}Logo.png`}
                       alt={stack}
                       title={stack}
                       width={35}
                       height={35}
-                      key={stackIndex}
+                      key={stack}
                     />
                   ))}
                 </div>
@@ -79,10 +87,10 @@ function MyProjects() {
         selectedProject={selectedProject}
         showModal={showModal}
         closeModal={closeModal}
-        title={selectedProject ? selectedProject.title : ""}
-        imageUrl={selectedProject ? selectedProject.img : ""}
-        imageGif={selectedProject ? selectedProject.gif : ""}
-        stacks={selectedProject ? selectedProject.stacks : ""}
+        title={selectedProject ? selectedProject.title : ''}
+        imageUrl={selectedProject ? selectedProject.img : ''}
+        imageGif={selectedProject ? selectedProject.gif : ''}
+        stacks={selectedProject ? selectedProject.stacks : ''}
       />
     </div>
   );

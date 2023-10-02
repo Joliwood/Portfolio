@@ -30,9 +30,13 @@ function DetailsProject({
         height={500}
         unoptimized
       />
-      <p className={styles.detailsProjectSeparationLine}>
-        {selectedProject.description}
-      </p>
+
+      <div className={styles.detailsProjectSeparationLine}>
+        {selectedProject.descriptions.map((description) => (
+          <p key={description}>{description}</p>
+        ))}
+      </div>
+
       <h4>Récapitulatif des compétences utilisées pour ce projet : </h4>
       <div
         className={`${styles.detailsProjectStacksContainer} ${styles.detailsProjectSeparationLine}`}

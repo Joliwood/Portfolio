@@ -4,17 +4,19 @@ import styles from '../../styles/headerBar.module.scss';
 
 function CvDownloadButton() {
   return (
-    <a
+    <div className={styles.CvDownloadButtonContainer}>
+      <a
       // It will search into public folder
-      href="/CV Développeur Full Stack - Jolibois.pdf"
-      download="CV Développeur Full Stack - Jolibois"
-      className={styles.CvDownloadButton}
-      target="_blank"
-      rel="noreferrer"
-    >
-      CV
-      <ArrowDown />
-    </a>
+        href="/CV Développeur Full Stack - Jolibois.pdf"
+        download="CV Développeur Full Stack - Jolibois"
+        className={styles.CvDownloadButton}
+        target="_blank"
+        rel="noreferrer"
+      >
+        CV
+        <ArrowDown />
+      </a>
+    </div>
   );
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoClose } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { MdOutlineNightsStay } from 'react-icons/md';
@@ -8,9 +8,9 @@ import Link from 'next/link';
 // import stylesSvg from '../../styles/svg.module.scss';
 import stylesAnimations from '../../styles/animations.module.scss';
 import styles from '../../styles/headerBar.module.scss';
-// import PortfolioLogo from "../../public/images/portfolio-logo.png";
 // import Image from "next/image";
 import Logo from '../svg/logo/index';
+import CvDownloadButton from '../cvDownloadButton/index';
 
 function HeaderBar() {
   const [toggleMenu, setToggleMenu] = useState(true);
@@ -23,10 +23,25 @@ function HeaderBar() {
     setLightTheme(!lightTheme);
   };
 
+  useEffect(() => {
+    const disableBodyScroll = () => {
+      document.body.style.overflow = 'hidden';
+    };
+
+    const enableBodyScroll = () => {
+      document.body.style.overflow = 'auto';
+    };
+
+    if (toggleMenu) {
+      enableBodyScroll();
+    } else {
+      disableBodyScroll();
+    }
+  }, [toggleMenu]);
+
   return (
     <div className={styles.headerBarArea}>
       <div className={styles.headerBarMain}>
-        {/* <h2>Mon portfolio</h2> */}
         <ScrollLink
           to="homeArea"
           spy
@@ -35,8 +50,6 @@ function HeaderBar() {
           duration={500}
           href="#home-area"
         >
-          {/* <Image src={PortfolioLogo} alt="GJ" title="Logo" /> */}
-          {/* <Image src={LogoWebsite} alt="GJ" title="Logo" /> */}
           <Logo />
         </ScrollLink>
 
@@ -139,6 +152,7 @@ function HeaderBar() {
             <h3>Contact</h3>
           </Link>
         </button>
+        <CvDownloadButton />
         <div className={styles.themeSwitchContainer}>
           {lightTheme ? (
             <MdOutlineNightsStay

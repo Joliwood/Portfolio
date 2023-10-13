@@ -24,6 +24,7 @@ const MyExperiencesList = [
       'React',
       'Express',
       'PSQL',
+      'Redis',
       'Prisma',
       'Vite',
       'Cypress',

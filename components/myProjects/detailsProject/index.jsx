@@ -56,9 +56,22 @@ function DetailsProject({
         ))}
       </div>
       <div className={styles.detailsProjectLinksContainer}>
-        <a href={selectedProject.github} target="blank">
-          <h4>Voir le Github</h4>
-        </a>
+        {selectedProject.github && (
+          selectedProject.github === 'Non disponible'
+            ? (<h4>Github privé</h4>)
+            : (
+              <a href={selectedProject.github} target="blank">
+                <h4>Voir le Github</h4>
+              </a>
+            )
+        )}
+        {selectedProject.githubs && (
+          selectedProject.githubs.map((github) => (
+            <a href={github.link} target="blank" key={github.title}>
+              <h4>{github.title}</h4>
+            </a>
+          ))
+        )}
         <a href={selectedProject.link} target="blank">
           <h4>Voir le Projet</h4>
         </a>

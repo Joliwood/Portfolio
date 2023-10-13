@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Head>
         <title>
-          Guillaume Jolibois - Full Stack JavaScript Developer Portfolio
+          Guillaume Jolibois - Full Stack JS | TS | SQL Developer Portfolio
         </title>
         <link rel="canonical" href="https://guillaume-jolibois.fr/" />
       </Head>

@@ -63,16 +63,28 @@
   max-width: 1800px;
   min-width: 700px;
 
-  &:nth-child(even) {
-    align-items: flex-end;
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    min-width: unset;
+    align-items: flex-start;
+  }
 
-    > div {
+  @media screen and (max-width: 500px) {
+    gap: 20px;
+  }
+
+  @media (min-width: 1101px) {
+    &:nth-child(even) {
       align-items: flex-end;
-      text-align: end;
-    }
 
-    > .myExperiencesCompetencesContainer {
-      justify-content: flex-end;
+      > div {
+        align-items: flex-end;
+        text-align: end;
+      }
+
+      > .myExperiencesCompetencesContainer {
+        justify-content: flex-end;
+      }
     }
   }
 }
@@ -192,12 +204,7 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .myExperiencesBlockContainer {
-    width: 100%;
-    min-width: unset;
-    align-items: flex-start;
-  }
-
+    
   .myExperiencesDescriptionContainer {
     width: 100%;
     width: -webkit-fill-available;
@@ -227,10 +234,6 @@
   .myExperiencesCompetencesContainer {
     align-items: center;
     gap: 15px 10px;
-  }
-
-  .myExperiencesBlockContainer {
-    gap: 20px;
   }
 
   .myExperiencesContainer {

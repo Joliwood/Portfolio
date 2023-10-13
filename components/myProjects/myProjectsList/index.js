@@ -8,10 +8,10 @@ const restApiTournamentProject = '/images/projects/restApiTournamentProject.png'
 const cinocharProject = '/images/projects/cinocharProject.png';
 const osportProject = '/images/projects/osportProject.png';
 const lyricsLibraryProject = '/images/projects/lyricsLibraryProject.png';
+const agarthaProject = '/images/projects/agarthaProject.png';
 
 const MyProjectsList = [
   {
-    id: 1,
     title: 'Clone Netflix',
     img: NetflixProject,
     imgTag: 'Netflix project',
@@ -25,7 +25,6 @@ const MyProjectsList = [
   },
 
   {
-    id: 2,
     title: 'Clone Linkedin',
     img: LinkedinProject,
     imgTag: 'Linkedin project',
@@ -37,7 +36,25 @@ const MyProjectsList = [
     stacks: ['react', 'firebase', 'netlify', 'styledComponents'],
   },
   {
-    id: 3,
+    title: 'Agartha',
+    img: agarthaProject,
+    imgTag: 'Agartha',
+    descriptions: [
+      'Site client pour une startup Suisse spécialisée dans le web3. Réalisé en React js, avec une gestion de la traduction en 2 langues (français, anglais) avec i18next.',
+      'Le design a été fait initialement avec Material UI, puis modifié ultérieurement.',
+      'Une API a également été ajoutée pour obtenir les taux en temps réel de certaines cryptomonnaies.',
+    ],
+    link: 'https://www.agartha.ch/',
+    github: 'Non disponible',
+    stacks: [
+      'react',
+      'node',
+      'api',
+      'i18next',
+      'materialUi',
+    ],
+  },
+  {
     title: 'BackList',
     img: BacklistProject,
     imgTag: 'BackList project',
@@ -50,7 +67,6 @@ const MyProjectsList = [
     stacks: ['node', 'ejs', 'express', 'render', 'tailwindcss'],
   },
   {
-    id: 4,
     title: 'SQL Showcase',
     img: SqlShowcaseProject,
     imgTag: 'SQL Showcase',
@@ -63,7 +79,6 @@ const MyProjectsList = [
     stacks: ['node', 'ejs', 'express', 'sql', 'psql', 'render', 'bootstrap'],
   },
   {
-    id: 5,
     title: 'MVC Architecture',
     img: mvcArchitectureProject,
     imgTag: 'MVC Architecture',
@@ -86,7 +101,6 @@ const MyProjectsList = [
     ],
   },
   {
-    id: 6,
     title: 'Coffee Time',
     img: coffeeTimeProject,
     imgTag: 'Coffee Time',
@@ -108,7 +122,6 @@ const MyProjectsList = [
     ],
   },
   {
-    id: 7,
     title: 'REST API Tournament',
     img: restApiTournamentProject,
     imgTag: 'REST API Tournament',
@@ -127,7 +140,6 @@ const MyProjectsList = [
     ],
   },
   {
-    id: 8,
     title: 'Cinochar',
     img: cinocharProject,
     imgTag: 'Cinochar',
@@ -159,7 +171,6 @@ const MyProjectsList = [
     ],
   },
   {
-    id: 9,
     title: 'O\'sport',
     img: osportProject,
     imgTag: 'O\'sport',
@@ -201,7 +212,6 @@ const MyProjectsList = [
     ],
   },
   {
-    id: 10,
     title: 'Lyrics library',
     img: lyricsLibraryProject,
     imgTag: 'Lyrics library API',

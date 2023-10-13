@@ -30,7 +30,7 @@ function MyProjects() {
 
       <div className={styles.myProjectsContainer}>
         {reversedProjectsList.map((data) => (
-          <div key={data.id} data-aos="fade-up">
+          <div key={data.title} data-aos="fade-up">
             <div className={styles.myProjectIndividualContainer}>
               <div>
                 <Image
@@ -44,9 +44,13 @@ function MyProjects() {
 
                 <div className={styles.projectGithubButtons}>
                   {data.github && (
-                    <a href={data.github} target="blank">
-                      <h4>Voir le Github</h4>
-                    </a>
+                    data.github === 'Non disponible'
+                      ? (<h4>Github privé</h4>)
+                      : (
+                        <a href={data.github} target="blank">
+                          <h4>Voir le Github</h4>
+                        </a>
+                      )
                   )}
                   {data.githubs && (
                     data.githubs.map((github) => (

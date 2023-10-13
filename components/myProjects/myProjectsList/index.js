@@ -192,6 +192,7 @@ const MyProjectsList = [
       'api',
       'vite',
       'psql',
+      'redis',
       'express',
       'prisma',
       'cypress',

@@ -22,7 +22,7 @@ import sequelizeLogo from '../../../public/images/competence/sequelizeLogo.png';
 import webpackLogo from '../../../public/images/competence/webpackLogo.png';
 import typescriptLogo from '../../../public/images/competence/typescriptLogo.png';
 import mongodbLogo from '../../../public/images/competence/mongodbLogo.png';
-// import redisLogo from "../../../public/images/competence/redisLogo.png";
+import redisLogo from '../../../public/images/competence/redisLogo.png';
 import graphqlLogo from '../../../public/images/competence/graphqlLogo.png';
 import prismaLogo from '../../../public/images/competence/prismaLogo.png';
 import cypressLogo from '../../../public/images/competence/cypressLogo.png';
@@ -98,10 +98,10 @@ export const backCompetences = [
     name: 'Prisma',
     img: prismaLogo,
   },
-  // {
-  //   name: "Redis",
-  //   img: redisLogo,
-  // },
+  {
+    name: 'Redis',
+    img: redisLogo,
+  },
   {
     name: 'GraphQL',
     img: graphqlLogo,

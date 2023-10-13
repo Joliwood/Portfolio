@@ -230,3 +230,36 @@
     font-size: 2rem;
   }
 }
+
+.CvDownloadButton {
+  display: flex;
+  gap: 0.5rem;
+  // padding: 0.3rem 0.6rem 0.2rem 0.7rem;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 8px;
+  height: 36px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: var(--theme-special-color);
+  border: 1px solid var(--theme-semi-dark-color);
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.151), 0px 8px 13px rgba(173, 139, 97, 0.062745098), 0px 18px 23px rgba(0, 0, 0, 0.041);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--theme-dark-color);
+  font-family: Arial, Helvetica, sans-serif;
+
+  &:hover {
+    background-color: var(--theme-special-enhanced-color);
+    cursor: pointer;
+    border: 1px solid var(--theme-special-color);
+  }
+
+  > svg {
+    height: 65%;
+    width: auto;
+    aspect-ratio: 1;
+    stroke: var(--theme-dark-color);
+    padding-bottom: 3px;
+  }
+}

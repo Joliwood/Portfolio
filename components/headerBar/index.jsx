@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoClose } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { MdOutlineNightsStay } from 'react-icons/md';
@@ -22,6 +22,22 @@ function HeaderBar() {
     rootTheme.classList.toggle('lightTheme');
     setLightTheme(!lightTheme);
   };
+
+  useEffect(() => {
+    const disableBodyScroll = () => {
+      document.body.style.overflow = 'hidden';
+    };
+
+    const enableBodyScroll = () => {
+      document.body.style.overflow = 'auto';
+    };
+
+    if (toggleMenu) {
+      enableBodyScroll();
+    } else {
+      disableBodyScroll();
+    }
+  }, [toggleMenu]);
 
   return (
     <div className={styles.headerBarArea}>

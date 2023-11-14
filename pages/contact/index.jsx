@@ -5,7 +5,6 @@ import Image from 'next/image';
 import stylesHome from '../../styles/home.module.scss';
 import stylesContact from '../../styles/contact.module.scss';
 import stylesMyExperiences from '../../styles/myExperiences.module.scss';
-import ProfilePicture from '../../public/images/profilePicture.png';
 import Footer from '../../components/footer';
 
 function Contact() {
@@ -69,7 +68,9 @@ function Contact() {
         <div className={stylesHome.homeLine} />
 
         <Image
-          src={ProfilePicture}
+          src="/images/profilePicture.png"
+          width={500}
+          height={500}
           alt="profile"
           title="profile"
           className={`${stylesHome.homeProfilePicture} ${stylesHome.unselectable}`}

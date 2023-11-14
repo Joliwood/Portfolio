@@ -86,7 +86,7 @@ const MyExperiencesList = [
     ],
     stacks: [
       'React',
-      'MaterialUI',
+      'Materialui',
       'Figma',
       'Inkscape',
       'I18Next',
@@ -174,7 +174,7 @@ const MyExperiencesList = [
       'DaisyUI',
       'Prisma',
       'Cypress',
-      'MaterialUI',
+      'Materialui',
       'Vite',
     ],
   },

@@ -33,7 +33,7 @@ const MyProjectsList = [
     ],
     link: 'https://gj-linkedin-clone.netlify.app/',
     github: 'https://github.com/Joliwood/linkedinClone',
-    stacks: ['react', 'firebase', 'netlify', 'styledComponents'],
+    stacks: ['react', 'firebase', 'netlify', 'styledcomponents'],
   },
   {
     title: 'Agartha',
@@ -51,7 +51,7 @@ const MyProjectsList = [
       'node',
       'api',
       'i18next',
-      'materialUi',
+      'materialui',
     ],
   },
   {
@@ -117,7 +117,7 @@ const MyProjectsList = [
       'redux',
       'webpack',
       'typescript',
-      'materialUi',
+      'materialui',
       'netlify',
     ],
   },

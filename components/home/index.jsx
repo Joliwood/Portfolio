@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import GithubLogo from '../svg/githubLogo';
 import LinkedinLogo from '../svg/linkedinLogo';
-import ProfilePicture from '../../public/images/profilePicture.png';
 import styles from '../../styles/home.module.scss';
 
 function Home() {
@@ -39,7 +38,9 @@ function Home() {
       <div className={styles.homeLine} />
 
       <Image
-        src={ProfilePicture}
+        src="/images/profilePicture.png"
+        width={500}
+        height={500}
         alt="profile"
         title="profile"
         className={`${styles.homeProfilePicture} ${styles.unselectable}`}

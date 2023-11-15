@@ -39,6 +39,8 @@ function Competences() {
                   ) : (
                     <div className={styles.competenceLogoContainer}>
                       <Image
+                        width={100}
+                        height={100}
                         src={frontCompetence.img}
                         alt={frontCompetence.name}
                         title={frontCompetence.name}
@@ -79,6 +81,8 @@ function Competences() {
                   ) : (
                     <div className={styles.competenceLogoContainer}>
                       <Image
+                        width={100}
+                        height={100}
                         src={backCompetence.img}
                         alt={backCompetence.name}
                         title={backCompetence.name}
@@ -121,6 +125,8 @@ function Competences() {
                   ) : (
                     <div className={styles.competenceLogoContainer}>
                       <Image
+                        width={100}
+                        height={100}
                         src={technoCompetence.img}
                         alt={technoCompetence.name}
                         title={technoCompetence.name}
@@ -163,6 +169,8 @@ function Competences() {
                   ) : (
                     <div className={styles.competenceLogoContainer}>
                       <Image
+                        width={100}
+                        height={100}
                         src={toolCompetence.img}
                         alt={toolCompetence.name}
                         title={toolCompetence.name}

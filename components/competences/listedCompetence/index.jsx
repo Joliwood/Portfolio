@@ -1,8 +1,6 @@
 import React from 'react';
 import NodeLogo from '../../svg/nodeLogo';
-// import jqueryLogo from '/images/competence/jqueryLogo.png';
 import SassLogo from '../../svg/sassLogo';
-// import sqlLogo from '/images/competence/sqlLogo.png';
 
 export const frontCompetences = [
   {
@@ -45,7 +43,7 @@ export const backCompetences = [
   },
   // {
   //   name: 'SQL',
-  //   img: sqlLogo,
+  //   img: '/images/competence/sqlLogo.png',
   // },
   {
     name: 'Firebase',
@@ -100,7 +98,7 @@ export const technoCompetences = [
   },
   // {
   //   name: 'JQuery',
-  //   img: jqueryLogo,
+  //   img: '/images/competence/jqueryLogo.png',
   // },
   {
     name: 'SEO',
@@ -117,6 +115,10 @@ export const technoCompetences = [
   {
     name: 'Eslint',
     img: '/images/competence/eslintLogo.png',
+  },
+  {
+    name: 'Jest',
+    img: '/images/competence/jestLogo.png',
   },
 ];
 

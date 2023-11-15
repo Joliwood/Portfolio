@@ -25,10 +25,15 @@ function Home() {
             <a
               href="https://www.linkedin.com/in/guillaume-jolibois-430426119/"
               target="blank"
+              aria-label="Linkedin link"
             >
               <LinkedinLogo />
             </a>
-            <a href="https://github.com/Joliwood" target="blank">
+            <a
+              href="https://github.com/Joliwood"
+              target="blank"
+              aria-label="Github link"
+            >
               <GithubLogo />
             </a>
           </div>

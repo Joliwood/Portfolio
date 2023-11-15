@@ -19,11 +19,11 @@ export default function Document() {
         />
         <meta
           name="keywords"
-          content="Full Stack Developer, JavaScript, Personal Portfolio, Web Developer, React.js, Web Development, UI/UX Design, Responsive Design, Front End Development, Back End Development, Node.js, CSS, HTML, Portfolio Showcase, Professional Experience, Technical Skills, Project Demonstrations, Code Samples, Client Work, Personal Projects"
+          content="Full Stack Développeur, JavaScript, Typescript, SQL, Personal Portfolio, Web Developer, React.js, Développement web, UI/UX Design, BDD, DB, Clean Code, Responsive Design, Front End Development, Back End Development, Node.js, CSS, HTML, Portfolio, Expérience Professionnelle, Compétences techniques, Project Demonstrations, Client Work, Projets personnels, freelance, contrat"
         />
         <meta
           name="description"
-          content="Hi, I'm Guillaume Jolibois, a full Stack JavaScript Developer with React.js expertise. Check out my portfolio for UI/UX design, front-end & back-end dev."
+          content="Bonjour, je suis Guillaume Jolibois, un développeur full Stack en Javascript, Typescript et SQL. Venez découvrir ma stack technique, je travaille en contrat ou freelance."
         />
         <link rel="manifest" href="/manifest.json" />
       </Head>

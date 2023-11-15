@@ -12,7 +12,7 @@ function Contact() {
     <div className={stylesContact.contactArea}>
       <Head>
         <title>
-          Guillaume Jolibois - Full Stack JavaScript Developer Contact
+          Développeur Full Stack - JS | TS | SQL - Contact - Guillaume Jolibois
         </title>
         <link rel="canonical" href="https://guillaume-jolibois.fr/contact/" />
       </Head>

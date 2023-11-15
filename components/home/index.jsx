@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import GithubLogo from '../svg/githubLogo';
 import LinkedinLogo from '../svg/linkedinLogo';
-import ProfilePicture from '../../public/images/profilePicture.png';
 import styles from '../../styles/home.module.scss';
 
 function Home() {
@@ -26,10 +25,15 @@ function Home() {
             <a
               href="https://www.linkedin.com/in/guillaume-jolibois-430426119/"
               target="blank"
+              aria-label="Linkedin link"
             >
               <LinkedinLogo />
             </a>
-            <a href="https://github.com/Joliwood" target="blank">
+            <a
+              href="https://github.com/Joliwood"
+              target="blank"
+              aria-label="Github link"
+            >
               <GithubLogo />
             </a>
           </div>
@@ -39,7 +43,9 @@ function Home() {
       <div className={styles.homeLine} />
 
       <Image
-        src={ProfilePicture}
+        src="/images/profilePicture.png"
+        width={500}
+        height={500}
         alt="profile"
         title="profile"
         className={`${styles.homeProfilePicture} ${styles.unselectable}`}

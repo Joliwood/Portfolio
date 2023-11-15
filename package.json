@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "aos": "^2.3.4",
-    "next": "^13.3.0",
+    "next": "13.4.20-canary.13",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
@@ -39,6 +39,10 @@
   "devDependencies": {
     "eslint": "^8.38.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-next": "13.3.0"
+    "eslint-config-next": "13.3.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }

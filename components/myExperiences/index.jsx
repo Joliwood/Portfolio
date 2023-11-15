@@ -166,7 +166,7 @@ function MyExperiences() {
             >
               {experience.stacks.map((stack) => (
                 <Image
-                  src={`/images/competence/${stack}Logo.png`}
+                  src={`/images/competence/${stack.toLowerCase()}Logo.png`}
                   alt={stack}
                   title={stack}
                   width={35}

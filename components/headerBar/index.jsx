@@ -23,15 +23,15 @@ function HeaderBar() {
     setLightTheme(!lightTheme);
   };
 
+  const disableBodyScroll = () => {
+    document.body.style.overflow = 'hidden';
+  };
+
+  const enableBodyScroll = () => {
+    document.body.style.overflow = 'auto';
+  };
+
   useEffect(() => {
-    const disableBodyScroll = () => {
-      document.body.style.overflow = 'hidden';
-    };
-
-    const enableBodyScroll = () => {
-      document.body.style.overflow = 'auto';
-    };
-
     if (toggleMenu) {
       enableBodyScroll();
     } else {
@@ -148,7 +148,10 @@ function HeaderBar() {
           type="button"
           className={styles.headerBarButton}
         >
-          <Link href="/contact">
+          <Link
+            href="/contact"
+            onClick={() => setToggleMenu(true)}
+          >
             <h3>Contact</h3>
           </Link>
         </button>

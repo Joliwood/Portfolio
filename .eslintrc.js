@@ -3,6 +3,7 @@ module.exports = {
     'next/core-web-vitals',
     'airbnb',
   ],
+  plugins: ['import', 'jsx-a11y', 'react', 'react-hooks'],
   rules: {
     // 'linebreak-style': 'off',
     'no-console': 'off',

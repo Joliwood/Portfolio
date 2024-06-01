@@ -1,0 +1,9 @@
+export { default as animationsStyles } from './animations.module.scss';
+export { default as competencesStyles } from './competences.module.scss';
+export { default as contactStyles } from './contact.module.scss';
+export { default as footerStyles } from './footer.module.scss';
+export { default as headerBarStyles } from './headerBar.module.scss';
+export { default as homeStyles } from './home.module.scss';
+export { default as myExperiencesStyles } from './myExperiences.module.scss';
+export { default as myProjectsStyles } from './myProjects.module.scss';
+export { default as svgStyles } from './svg.module.scss';

@@ -20,7 +20,7 @@ const MyExperiences = () => {
 
   const itemRefs = useRef([]);
 
-  const handleToggleStacks = (index: any) => {
+  const handleToggleStacks = (index: number) => {
     const updatedStacks = [...stacks];
     updatedStacks[index] = !updatedStacks[index];
     setStacks(updatedStacks);

@@ -39,7 +39,7 @@ const DetailsProject = (props: Props) => {
       />
 
       <div className={myProjectsStyles.detailsProjectSeparationLine}>
-        {selectedProject.descriptions.map((description: any) => (
+        {selectedProject.descriptions.map((description) => (
           <p key={description}>{description}</p>
         ))}
       </div>
@@ -48,8 +48,8 @@ const DetailsProject = (props: Props) => {
       <div
         className={`${myProjectsStyles.detailsProjectStacksContainer} ${myProjectsStyles.detailsProjectSeparationLine}`}
       >
-        {stacks.map((stack: any) => (
-          <div key={stack.id}>
+        {stacks.map((stack, index) => (
+          <div key={index}>
             <Image
               src={`/images/competence/${stack}Logo.png`}
               alt={stack}
@@ -73,7 +73,7 @@ const DetailsProject = (props: Props) => {
             )
         )}
         {selectedProject.githubs && (
-          selectedProject.githubs.map((github: any) => (
+          selectedProject.githubs.map((github) => (
             <a href={github.link} target="blank" key={github.title}>
               <h4>{github.title}</h4>
             </a>

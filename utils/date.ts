@@ -1,8 +1,8 @@
 export function dateCalculator(
-  dateStartMonth: any,
-  dateStartYear: any,
-  dateEndMonth: any,
-  dateEndYear: any,
+  dateStartMonth: number,
+  dateStartYear: number,
+  dateEndMonth: number | string,
+  dateEndYear: number | string,
 ) {
   const dateStart = new Date(dateStartYear, dateStartMonth, 1);
   let dateEnd;
@@ -10,7 +10,7 @@ export function dateCalculator(
   if (dateEndMonth === 'now' || dateEndYear === 'now') {
     dateEnd = new Date();
   } else {
-    dateEnd = new Date(dateEndYear, dateEndMonth, 1);
+    dateEnd = new Date(Number(dateEndYear), Number(dateEndMonth), 1);
   }
 
   const dateDiff = dateEnd.getTime() - dateStart.getTime();

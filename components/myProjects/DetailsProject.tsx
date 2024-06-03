@@ -3,29 +3,24 @@ import { Button, Modal } from 'react-bootstrap';
 import Image from 'next/image';
 
 import { myProjectsStyles } from '#styles';
+import { type ProjectType } from '#types';
 
 type Props = {
-  stacks: any;
-  imageUrl: string;
-  selectedProject: any;
-  showModal: boolean;
   closeModal: () => void;
-  imageGif: string;
+  imageUrl: string;
+  selectedProject: ProjectType;
+  showModal: boolean;
 };
 
 const DetailsProject = (props: Props) => {
   const {
-    stacks,
+    closeModal,
     imageUrl,
     selectedProject,
     showModal,
-    closeModal,
-    imageGif,
   } = props;
 
-  if (!selectedProject) {
-    return null;
-  }
+  const { stacks } = selectedProject;
 
   return (
     <Modal
@@ -35,7 +30,7 @@ const DetailsProject = (props: Props) => {
     >
       <h3>{selectedProject.title}</h3>
       <Image
-        src={imageGif || imageUrl}
+        src={imageUrl}
         alt={selectedProject.title}
         title={selectedProject.title}
         width={500}
@@ -44,7 +39,7 @@ const DetailsProject = (props: Props) => {
       />
 
       <div className={myProjectsStyles.detailsProjectSeparationLine}>
-        {selectedProject.descriptions.map((description: any) => (
+        {selectedProject.descriptions.map((description) => (
           <p key={description}>{description}</p>
         ))}
       </div>
@@ -53,8 +48,8 @@ const DetailsProject = (props: Props) => {
       <div
         className={`${myProjectsStyles.detailsProjectStacksContainer} ${myProjectsStyles.detailsProjectSeparationLine}`}
       >
-        {stacks.map((stack: any) => (
-          <div key={stack.id}>
+        {stacks.map((stack, index) => (
+          <div key={index}>
             <Image
               src={`/images/competence/${stack}Logo.png`}
               alt={stack}
@@ -78,7 +73,7 @@ const DetailsProject = (props: Props) => {
             )
         )}
         {selectedProject.githubs && (
-          selectedProject.githubs.map((github: any) => (
+          selectedProject.githubs.map((github) => (
             <a href={github.link} target="blank" key={github.title}>
               <h4>{github.title}</h4>
             </a>

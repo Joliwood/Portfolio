@@ -1,12 +1,7 @@
 import React from 'react';
 
 import { NodeLogo, SassLogo } from '#svg';
-
-type CompetenceType = {
-  img?: string;
-  name: string;
-  svg?: JSX.Element;
-};
+import { type CompetenceType } from '#types';
 
 export const frontCompetences: CompetenceType[] = [
   {
@@ -40,16 +35,11 @@ export const backCompetences: CompetenceType[] = [
   {
     name: 'Node.js',
     svg: <NodeLogo />,
-    // Même avec un svg, le map fonctionne, voir fichier src/components/competences/index.js
   },
   {
     name: 'Express',
     img: '/images/competence/expressLogo.png',
   },
-  // {
-  //   name: 'SQL',
-  //   img: '/images/competence/sqlLogo.png',
-  // },
   {
     name: 'Firebase',
     img: '/images/competence/firebaseLogo.png',
@@ -101,10 +91,6 @@ export const technoCompetences: CompetenceType[] = [
     name: 'Redux',
     img: '/images/competence/reduxLogo.png',
   },
-  // {
-  //   name: 'JQuery',
-  //   img: '/images/competence/jqueryLogo.png',
-  // },
   {
     name: 'SEO',
     img: '/images/competence/seoLogo.png',

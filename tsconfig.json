@@ -35,6 +35,7 @@
       "#svg": ["./components/svg"],
       "#types": ["./types"],
       "#styles": ["./styles"],
+      "#utils": ["./utils"],
     }
   },
   "include": [

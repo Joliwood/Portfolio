@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Image from 'next/image';
 import { Button } from 'react-bootstrap';
 
-import MyProjectsList from './MyProjectsList';
-import ProjectModal from './DetailsProject';
+import MyProjectsList from './MyProjectsData';
+import DetailsProject from './DetailsProject';
 
 import { myProjectsStyles } from '#styles';
+import { type ProjectType } from '#types';
 
 const reversedProjectsList = MyProjectsList.reverse();
 
 const MyProjects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
   const [showModal, setShowModal] = useState(false);
 
-  const openModal = (project: any) => {
+  const openModal = (project: ProjectType) => {
     setSelectedProject(project);
     setShowModal(true);
   };
@@ -21,6 +22,21 @@ const MyProjects = () => {
   const closeModal = () => {
     setShowModal(false);
   };
+
+  const projectModalJSX = useMemo(() => {
+    if (selectedProject == null) {
+      return null;
+    }
+
+    return (
+      <DetailsProject
+        closeModal={closeModal}
+        imageUrl={selectedProject.gif ?? selectedProject.img}
+        selectedProject={selectedProject}
+        showModal={showModal}
+      />
+    );
+  }, [selectedProject, showModal]);
 
   return (
     <div className={myProjectsStyles.myProjectsArea} id="myProjectsArea">
@@ -89,19 +105,7 @@ const MyProjects = () => {
         ))}
       </div>
 
-      <ProjectModal
-        selectedProject={selectedProject}
-        showModal={showModal}
-        closeModal={closeModal}
-        // @ts-expect-error types to fix here
-        title={selectedProject ? selectedProject.title : ''}
-        // @ts-expect-error types to fix here
-        imageUrl={selectedProject ? selectedProject.img : ''}
-        // @ts-expect-error types to fix here
-        imageGif={selectedProject ? selectedProject.gif : ''}
-        // @ts-expect-error types to fix here
-        stacks={selectedProject ? selectedProject.stacks : ''}
-      />
+      {projectModalJSX}
     </div>
   );
 };

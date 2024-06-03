@@ -1,16 +1,20 @@
-const NetflixProject = '/images/projects/netflixProject.png';
-const LinkedinProject = '/images/projects/linkedinProject.png';
-const BacklistProject = '/images/projects/backlistProject.png';
-const SqlShowcaseProject = '/images/projects/sqlShowcaseProject.png';
-const mvcArchitectureProject = '/images/projects/mvcArchitectureProject.png';
-const coffeeTimeProject = '/images/projects/coffeeTimeProject.png';
-const restApiTournamentProject = '/images/projects/restApiTournamentProject.png';
-const cinocharProject = '/images/projects/cinocharProject.png';
-const osportProject = '/images/projects/osportProject.png';
-const lyricsLibraryProject = '/images/projects/lyricsLibraryProject.png';
-const agarthaProject = '/images/projects/agarthaProject.png';
+import {
+  agarthaProject,
+  BacklistProject,
+  cinocharProject,
+  coffeeTimeProject,
+  LinkedinProject,
+  lyricsLibraryProject,
+  mvcArchitectureProject,
+  NetflixProject,
+  osportProject,
+  restApiTournamentProject,
+  SqlShowcaseProject,
+} from '../../public/images';
 
-const MyProjectsList = [
+import { type ProjectType } from '#types';
+
+const MyProjectsList: ProjectType[] = [
   {
     title: 'Clone Netflix',
     img: NetflixProject,

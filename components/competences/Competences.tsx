@@ -1,5 +1,4 @@
-import React, { useMemo } from 'react';
-import Image from 'next/image';
+import React from 'react';
 
 import {
   backCompetences,
@@ -7,33 +6,11 @@ import {
   technoCompetences,
   toolsCompetences,
 } from './CompetencesList';
+import CompetencesStack from './CompetencesStacks';
 
 import { competencesStyles, animationsStyles } from '#styles';
 
 const Competences = () => {
-  const technoCompetencesJSX = useMemo(() => {
-    return technoCompetences.map((technoCompetence) => (
-      <div key={technoCompetence.name}>
-        {technoCompetence.svg ? (
-          <div className={competencesStyles.competenceLogoContainer}>
-            {technoCompetence.svg}
-          </div>
-        ) : (
-          <div className={competencesStyles.competenceLogoContainer}>
-            <Image
-              width={100}
-              height={100}
-              src={technoCompetence.img ?? ''}
-              alt={technoCompetence.name}
-              title={technoCompetence.name}
-            />
-          </div>
-        )}
-        <h4 className={competencesStyles.competenceTitle}>{technoCompetence.name}</h4>
-      </div>
-    ));
-  }, []);
-
   return (
     <div className={competencesStyles.competencesArea} id="competencesArea">
       <div className="separationEnsemble">
@@ -53,28 +30,7 @@ const Competences = () => {
         >
           <div className={competencesStyles.individualCompetenceBlock}>
             <h3 className={competencesStyles.ensembleCompetencesTitle}>Front End</h3>
-            <div>
-              {frontCompetences.map((frontCompetence) => (
-                <div key={frontCompetence.name}>
-                  {frontCompetence.svg ? (
-                    <div className={competencesStyles.competenceLogoContainer}>
-                      {frontCompetence.svg}
-                    </div>
-                  ) : (
-                    <div className={competencesStyles.competenceLogoContainer}>
-                      <Image
-                        width={100}
-                        height={100}
-                        src={frontCompetence.img ?? ''}
-                        alt={frontCompetence.name}
-                        title={frontCompetence.name}
-                      />
-                    </div>
-                  )}
-                  <h4 className={competencesStyles.competenceTitle}>{frontCompetence.name}</h4>
-                </div>
-              ))}
-            </div>
+            <CompetencesStack competences={frontCompetences} />
           </div>
         </div>
 
@@ -95,28 +51,7 @@ const Competences = () => {
           />
           <div className={competencesStyles.individualCompetenceBlock}>
             <h3 className={competencesStyles.ensembleCompetencesTitle}>Back End</h3>
-            <div>
-              {backCompetences.map((backCompetence) => (
-                <div key={backCompetence.name}>
-                  {backCompetence.svg ? (
-                    <div className={competencesStyles.competenceLogoContainer}>
-                      {backCompetence.svg}
-                    </div>
-                  ) : (
-                    <div className={competencesStyles.competenceLogoContainer}>
-                      <Image
-                        width={100}
-                        height={100}
-                        src={backCompetence.img ?? ''}
-                        alt={backCompetence.name}
-                        title={backCompetence.name}
-                      />
-                    </div>
-                  )}
-                  <h4 className={competencesStyles.competenceTitle}>{backCompetence.name}</h4>
-                </div>
-              ))}
-            </div>
+            <CompetencesStack competences={backCompetences} />
           </div>
         </div>
 
@@ -139,9 +74,7 @@ const Competences = () => {
             <h3 className={competencesStyles.ensembleCompetencesTitle}>
               Les technos que j&apos;ai travaillé
             </h3>
-            <div>
-              {technoCompetencesJSX}
-            </div>
+            <CompetencesStack competences={technoCompetences} />
           </div>
         </div>
 
@@ -164,28 +97,7 @@ const Competences = () => {
             <h3 className={competencesStyles.ensembleCompetencesTitle}>
               Les outils que j&apos;ai utilisé
             </h3>
-            <div>
-              {toolsCompetences.map((toolCompetence) => (
-                <div key={toolCompetence.name}>
-                  {toolCompetence.svg ? (
-                    <div className={competencesStyles.competenceLogoContainer}>
-                      {toolCompetence.svg}
-                    </div>
-                  ) : (
-                    <div className={competencesStyles.competenceLogoContainer}>
-                      <Image
-                        width={100}
-                        height={100}
-                        src={toolCompetence.img ?? ''}
-                        alt={toolCompetence.name}
-                        title={toolCompetence.name}
-                      />
-                    </div>
-                  )}
-                  <h4 className={competencesStyles.competenceTitle}>{toolCompetence.name}</h4>
-                </div>
-              ))}
-            </div>
+            <CompetencesStack competences={toolsCompetences} />
           </div>
         </div>
       </div>

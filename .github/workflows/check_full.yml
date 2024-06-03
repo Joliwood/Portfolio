@@ -16,12 +16,18 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
+      uses: pnpm/action-setup@v4
+      with:
+        version: 9
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
-    - run: pnpm ci
+
+    - name: Install dependencies
+      run: pnpm install
+
     - run: pnpm run typescript
     - run: pnpm run eslint
     - run: pnpm run build
-    - run: pnpm run start

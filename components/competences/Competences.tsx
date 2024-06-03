@@ -5,7 +5,7 @@ import {
   frontCompetences,
   technoCompetences,
   toolsCompetences,
-} from './CompetencesList';
+} from './CompetencesData';
 import CompetencesStack from './CompetencesStacks';
 
 import { competencesStyles, animationsStyles } from '#styles';

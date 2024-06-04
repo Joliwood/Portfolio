@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 
-import MyExperiencesList from './myExperiencesData';
+import { myExperiencesData } from '../data';
 
 import { animationsStyles, myExperiencesStyles } from '#styles';
 import { SimpleArray } from '#svg';
@@ -9,13 +9,13 @@ import { dateCalculator } from '#utils';
 
 const MyExperiences = () => {
   const [stacksVisibility, setStacksVisibility] = useState(
-    Array(MyExperiencesList.length).fill(false),
+    Array(myExperiencesData.length).fill(false),
   );
   const [stacks, setStacks] = useState(
-    Array(MyExperiencesList.length).fill(false),
+    Array(myExperiencesData.length).fill(false),
   );
   const [rotatedStates, setRotatedStates] = useState(
-    Array(MyExperiencesList.length).fill(false),
+    Array(myExperiencesData.length).fill(false),
   );
 
   const itemRefs = useRef([]);
@@ -45,7 +45,7 @@ const MyExperiences = () => {
       </div>
 
       <div className={myExperiencesStyles.myExperiencesContainer}>
-        {MyExperiencesList.map((experience, index) => (
+        {myExperiencesData.map((experience, index) => (
           <div
             className={myExperiencesStyles.myExperiencesBlockContainer}
             data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}

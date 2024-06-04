@@ -5,7 +5,8 @@ import {
   frontCompetences,
   technoCompetences,
   toolsCompetences,
-} from './CompetencesData';
+} from '../data';
+
 import CompetencesStack from './CompetencesStacks';
 
 import { competencesStyles, animationsStyles } from '#styles';
@@ -95,7 +96,7 @@ const Competences = () => {
           />
           <div className={competencesStyles.individualCompetenceBlock}>
             <h3 className={competencesStyles.ensembleCompetencesTitle}>
-              Les outils que j&apos;ai utilisé
+              Les outils que j&apos;utilise
             </h3>
             <CompetencesStack competences={toolsCompetences} />
           </div>

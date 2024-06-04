@@ -68,7 +68,7 @@ const MyProjectsList: ProjectType[] = [
     link: 'https://backlist.onrender.com/',
     github: 'https://github.com/Joliwood/todo-list-back',
     gif: 'https://github.com/Joliwood/todo-list-back/raw/main/docs/backlist.gif?raw=true',
-    stacks: ['node', 'ejs', 'express', 'render', 'tailwindcss'],
+    stacks: ['node', 'ejs', 'render', 'tailwindcss'],
   },
   {
     title: 'SQL Showcase',
@@ -80,7 +80,7 @@ const MyProjectsList: ProjectType[] = [
     link: 'https://sql-showcase.onrender.com/',
     github: 'https://github.com/Joliwood/sql-showcase',
     gif: 'https://github.com/Joliwood/sql-showcase/blob/main/docs/sql-showcase.gif?raw=true',
-    stacks: ['node', 'ejs', 'express', 'sql', 'psql', 'render', 'bootstrap'],
+    stacks: ['node', 'ejs', 'sql', 'psql', 'render', 'bootstrap'],
   },
   {
     title: 'MVC Architecture',
@@ -95,7 +95,6 @@ const MyProjectsList: ProjectType[] = [
     stacks: [
       'node',
       'ejs',
-      'express',
       'sql',
       'psql',
       'sequelize',
@@ -136,7 +135,6 @@ const MyProjectsList: ProjectType[] = [
     github: 'https://github.com/Joliwood/REST-API-Tournaments',
     stacks: [
       'node',
-      'express',
       'api',
       'sequelize',
       'typescript',
@@ -160,7 +158,6 @@ const MyProjectsList: ProjectType[] = [
     github: 'https://github.com/Joliwood/cinochar',
     stacks: [
       'node',
-      'express',
       'api',
       'react',
       'typescript',
@@ -208,7 +205,6 @@ const MyProjectsList: ProjectType[] = [
       'vite',
       'psql',
       'redis',
-      'express',
       'prisma',
       'cypress',
       'netlify',
@@ -226,7 +222,6 @@ const MyProjectsList: ProjectType[] = [
     github: 'https://github.com/Joliwood/lyrics-library',
     stacks: [
       'node',
-      'express',
       'api',
       'graphql',
       'knex',

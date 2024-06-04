@@ -20,14 +20,9 @@ export const frontCompetences: CompetenceType[] = [
     name: 'Tailwindcss',
     img: '/images/competence/tailwindcssLogo.png',
   },
-
   {
-    name: 'Webpack',
-    img: '/images/competence/webpackLogo.png',
-  },
-  {
-    name: 'Vite',
-    img: '/images/competence/viteLogo.png',
+    name: 'Storybook',
+    img: '/images/competence/storybookLogo.png',
   },
 ];
 
@@ -35,10 +30,6 @@ export const backCompetences: CompetenceType[] = [
   {
     name: 'Node.js',
     svg: <NodeLogo />,
-  },
-  {
-    name: 'Express',
-    img: '/images/competence/expressLogo.png',
   },
   {
     name: 'Firebase',
@@ -51,10 +42,6 @@ export const backCompetences: CompetenceType[] = [
   {
     name: 'Postgres',
     img: '/images/competence/psqlLogo.png',
-  },
-  {
-    name: 'Sequelize',
-    img: '/images/competence/sequelizeLogo.png',
   },
   {
     name: 'MongoDB',
@@ -111,6 +98,14 @@ export const technoCompetences: CompetenceType[] = [
     name: 'Jest',
     img: '/images/competence/jestLogo.png',
   },
+  {
+    name: 'Webpack',
+    img: '/images/competence/webpackLogo.png',
+  },
+  {
+    name: 'Vite',
+    img: '/images/competence/viteLogo.png',
+  },
 ];
 
 export const toolsCompetences: CompetenceType[] = [
@@ -133,5 +128,9 @@ export const toolsCompetences: CompetenceType[] = [
   {
     name: 'Dbeaver',
     img: '/images/competence/dbeaverLogo.png',
+  },
+  {
+    name: 'Postman',
+    img: '/images/competence/postmanLogo.png',
   },
 ];

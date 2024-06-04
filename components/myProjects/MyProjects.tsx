@@ -2,13 +2,14 @@ import React, { useMemo, useState } from 'react';
 import Image from 'next/image';
 import { Button } from 'react-bootstrap';
 
-import MyProjectsList from './MyProjectsData';
+import { MyProjectsData } from '../data';
+
 import DetailsProject from './DetailsProject';
 
 import { myProjectsStyles } from '#styles';
 import { type ProjectType } from '#types';
 
-const reversedProjectsList = MyProjectsList.reverse();
+const reversedProjectsList = MyProjectsData.reverse();
 
 const MyProjects = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);

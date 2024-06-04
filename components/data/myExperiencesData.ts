@@ -1,6 +1,36 @@
 const MyExperiencesList = [
   {
     title: "O'sport - Développeur Full Stack",
+    dateStartMonth: 11,
+    dateStartYear: 2023,
+    dateEndMonth: 'now',
+    dateEndYear: 'now',
+    descriptions: [
+      'Développement d\'une application de type SAAS, Full Stack en Typescript. Agrisight est une startup proposant des solutions technologiques pour le monde de l\'agriculture',
+      'Le projet se fait en méthode agile et la poste est en complet Full Stack, front, back et infrastructure.',
+    ],
+    projectCreated: [
+      {
+        title: 'Site web d\'Agrisight',
+        link: 'https://www.agrisight.fr/',
+      },
+    ],
+    stacks: [
+      'JS',
+      'Typescript',
+      'Node',
+      'GraphQL',
+      'React',
+      'MongoDB',
+      'Vite',
+      'Storybook',
+      'Postman',
+      'Figma',
+    ],
+  },
+
+  {
+    title: "O'sport - Développeur Full Stack",
     dateStartMonth: 8,
     dateStartYear: 2023,
     dateEndMonth: 9,
@@ -22,7 +52,6 @@ const MyExperiencesList = [
       'Typescript',
       'Node',
       'React',
-      'Express',
       'PSQL',
       'Redis',
       'Prisma',
@@ -55,7 +84,6 @@ const MyExperiencesList = [
     stacks: [
       'JS',
       'Node',
-      'Express',
       'SQL',
       'PSQL',
       'Sequelize',
@@ -123,19 +151,19 @@ const MyExperiencesList = [
         title: 'BackList',
         link: 'https://backlist.onrender.com/',
         description:
-          'Back-end app avec Node.js, Express et Ejs pour le rendu html dynamique. Les designs sont fait avec Tailwindcss, la liste est stockée dans un cookie pendant 1 heure, publié sur Render.com',
+          'Back-end app avec Node.js et Ejs pour le rendu html dynamique. Les designs sont fait avec Tailwindcss, la liste est stockée dans un cookie pendant 1 heure, publié sur Render.com',
       },
       {
         title: 'SQL Showcase',
         link: 'https://sql-showcase.onrender.com/',
         description:
-          'CRUD Back-end app avec Node.js, Express et Ejs pour le rendu html dynamique. On peut voir une base de donnée créée avec Postgresql qui est elle-même stockée dans un cloud chez Render.com. Les designs sont fait avec Bootstrap.',
+          'CRUD Back-end app avec Node.js et Ejs pour le rendu html dynamique. On peut voir une base de donnée créée avec Postgresql qui est elle-même stockée dans un cloud chez Render.com. Les designs sont fait avec Bootstrap.',
       },
       {
         title: 'MVC Architecture',
         link: 'https://mvc-architecture.onrender.com/',
         description:
-          'Back-end app avec Node.js, Express, et Ejs pour le rendu html dynamique. Cette base de donnée créée avec Postgresql et Sequelize, suit la méthodologie MVC (Model View Controller). Cette application suit également la méthodologie Merise avec MCV & MLD. Les desings sont fait avec Tailwindcss et Daisy UI.',
+          'Back-end app avec Node.js, et Ejs pour le rendu html dynamique. Cette base de donnée créée avec Postgresql et Sequelize, suit la méthodologie MVC (Model View Controller). Cette application suit également la méthodologie Merise avec MCV & MLD. Les desings sont fait avec Tailwindcss et Daisy UI.',
       },
       {
         title: 'Coffee Time',

@@ -1,5 +1,4 @@
 export { default as ArrowDown } from './ArrowDown';
-export { default as ExpressLogo } from './ExpressLogo';
 export { default as GithubLogo } from './GithubLogo';
 export { default as LinkedinLogo } from './LinkedinLogo';
 export { default as Logo } from './Logo';

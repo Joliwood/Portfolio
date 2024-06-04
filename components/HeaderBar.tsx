@@ -9,12 +9,11 @@ import React, { useState, useEffect } from 'react';
 import CvDownloadButton from './CvDownloadButton';
 
 import { animationsStyles, headerBarStyles } from '#styles';
-
 import { Logo } from '#svg';
 
 const HeaderBar = () => {
   const [toggleMenu, setToggleMenu] = useState(true);
-  const [animatedMenu, setAnimatedMenu] = useState(null);
+  const [animatedMenu, setAnimatedMenu] = useState<boolean | null>(null);
   const [lightTheme, setLightTheme] = useState(false);
 
   const changeTheme = () => {
@@ -48,7 +47,6 @@ const HeaderBar = () => {
           smooth
           offset={-250}
           duration={500}
-          href="#home-area"
         >
           <Logo />
         </ScrollLink>
@@ -71,7 +69,6 @@ const HeaderBar = () => {
               size="2em"
               onClick={() => {
                 setToggleMenu(!toggleMenu);
-                // @ts-expect-error TO FIX
                 setAnimatedMenu(true);
               }}
             />
@@ -82,7 +79,6 @@ const HeaderBar = () => {
               size="2em"
               onClick={() => {
                 setToggleMenu(!toggleMenu);
-                // @ts-expect-error TO FIX
                 setAnimatedMenu(false);
               }}
             />
@@ -104,7 +100,6 @@ const HeaderBar = () => {
           smooth
           offset={-250}
           duration={500}
-          href="#home-area"
           onClick={() => setToggleMenu(true)}
         >
           <button
@@ -120,7 +115,6 @@ const HeaderBar = () => {
           smooth
           offset={-150}
           duration={500}
-          href="#competences-area"
           onClick={() => setToggleMenu(true)}
         >
           <button
@@ -136,7 +130,6 @@ const HeaderBar = () => {
           smooth
           offset={-150}
           duration={500}
-          href="#my-projects-area"
           onClick={() => setToggleMenu(true)}
         >
           <button
@@ -144,6 +137,21 @@ const HeaderBar = () => {
             className={headerBarStyles.headerBarButton}
           >
             <h3>Portfolio</h3>
+          </button>
+        </ScrollLink>
+        <ScrollLink
+          to="myExperienceArea"
+          spy
+          smooth
+          offset={-150}
+          duration={500}
+          onClick={() => setToggleMenu(true)}
+        >
+          <button
+            type="button"
+            className={headerBarStyles.headerBarButton}
+          >
+            <h3>Mon experience</h3>
           </button>
         </ScrollLink>
         <button

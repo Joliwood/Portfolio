@@ -5,6 +5,7 @@ import { Button } from 'react-bootstrap';
 import { MyProjectsData } from '../data';
 
 import DetailsProject from './DetailsProject';
+import ProjectLink from './ProjectButtonLink';
 
 import { myProjectsStyles } from '#styles';
 import { type ProjectType } from '#types';
@@ -64,7 +65,7 @@ const MyProjects = () => {
                 <div className={myProjectsStyles.projectGithubButtons}>
                   {data.github && (
                     data.github === 'Non disponible'
-                      ? (<h4>Github privé</h4>)
+                      ? (<h4 className="disabledButton">Github privé</h4>)
                       : (
                         <a href={data.github} target="blank">
                           <h4>Voir le Github</h4>
@@ -78,9 +79,7 @@ const MyProjects = () => {
                       </a>
                     ))
                   )}
-                  <a href={data.link} target="blank">
-                    <h4>Voir le Projet</h4>
-                  </a>
+                  <ProjectLink selectedProject={data} />
                   <Button onClick={() => openModal(data)}>
                     <h4>Détails</h4>
                   </Button>

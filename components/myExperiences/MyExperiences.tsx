@@ -37,7 +37,7 @@ const MyExperiences = () => {
   };
 
   return (
-    <div className={myExperiencesStyles.myExperiencesArea}>
+    <div className={myExperiencesStyles.myExperiencesArea} id="myExperienceArea">
       <div className="separationEnsemble">
         <div className="separationbar" />
         <h2>Mon parcours</h2>

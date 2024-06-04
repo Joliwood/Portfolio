@@ -256,7 +256,7 @@ p {
 
 h1 {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   text-align-last: center;
   color: var(--theme-special-enhanced-color);
@@ -268,7 +268,7 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
   text-align-last: center;
 
@@ -279,7 +279,7 @@ h2 {
 
 h3 {
   font-weight: normal;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   text-align-last: center;
 
@@ -290,7 +290,7 @@ h3 {
 
 h4 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align-last: center;
 
   @media screen and (max-width: 768px) {
@@ -349,5 +349,13 @@ a {
   to {
     background-size: 100% 100%, 100% 100%;
     background-image: var(--theme-color-B64);
+  }
+}
+
+.disabledButton {
+  color: gray;
+
+  &:hover {
+    cursor: not-allowed;
   }
 }

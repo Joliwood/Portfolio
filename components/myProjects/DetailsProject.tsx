@@ -2,6 +2,8 @@ import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import Image from 'next/image';
 
+import ProjectLink from './ProjectButtonLink';
+
 import { myProjectsStyles } from '#styles';
 import { type ProjectType } from '#types';
 
@@ -65,7 +67,7 @@ const DetailsProject = (props: Props) => {
       <div className={myProjectsStyles.detailsProjectLinksContainer}>
         {selectedProject.github && (
           selectedProject.github === 'Non disponible'
-            ? (<h4>Github privé</h4>)
+            ? (<h4 className="disabledButton">Github privé</h4>)
             : (
               <a href={selectedProject.github} target="blank">
                 <h4>Voir le Github</h4>
@@ -79,9 +81,7 @@ const DetailsProject = (props: Props) => {
             </a>
           ))
         )}
-        <a href={selectedProject.link} target="blank">
-          <h4>Voir le Projet</h4>
-        </a>
+        <ProjectLink selectedProject={selectedProject} />
         <button
           type="button"
           onClick={closeModal}

@@ -1,6 +1,6 @@
 const MyExperiencesList = [
   {
-    title: "O'sport - Développeur Full Stack",
+    title: 'Agrisight - Développeur Full Stack',
     dateStartMonth: 11,
     dateStartYear: 2023,
     dateEndMonth: 'now',

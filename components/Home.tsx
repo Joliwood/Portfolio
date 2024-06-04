@@ -24,15 +24,17 @@ const Home = () => {
           <div className={homeStyles.homeLogosLinks}>
             <a
               href="https://www.linkedin.com/in/guillaume-jolibois-430426119/"
-              target="blank"
+              target="_blank"
               aria-label="Linkedin link"
+              rel="noreferrer"
             >
               <LinkedinLogo />
             </a>
             <a
               href="https://github.com/Joliwood"
-              target="blank"
+              target="_blank"
               aria-label="Github link"
+              rel="noreferrer"
             >
               <GithubLogo />
             </a>

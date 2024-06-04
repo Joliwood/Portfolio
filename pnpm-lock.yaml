@@ -37,25 +37,25 @@ importers:
         version: 18.0.0(@typescript-eslint/eslint-plugin@7.11.0(@typescript-eslint/parser@7.11.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(@typescript-eslint/parser@7.11.0(eslint@8.57.0)(typescript@5.4.5))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.11.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0))(eslint@8.57.0)
       next:
         specifier: 14.2.3
-        version: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4)
+        version: 14.2.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.4)
       postcss:
         specifier: ^8.4.38
         version: 8.4.38
       react:
-        specifier: ^18.3.1
-        version: 18.3.1
+        specifier: 18.2.0
+        version: 18.2.0
       react-bootstrap:
         specifier: ^2.10.2
-        version: 2.10.2(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 2.10.2(@types/react@18.3.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-dom:
-        specifier: ^18.3.1
-        version: 18.3.1(react@18.3.1)
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
       react-icons:
         specifier: ^4.12.0
-        version: 4.12.0(react@18.3.1)
+        version: 4.12.0(react@18.2.0)
       react-scroll:
         specifier: ^1.9.0
-        version: 1.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.9.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       sass:
         specifier: ^1.77.4
         version: 1.77.4
@@ -1342,10 +1342,10 @@ packages:
       '@types/react':
         optional: true
 
-  react-dom@18.3.1:
-    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
+  react-dom@18.2.0:
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
-      react: ^18.3.1
+      react: ^18.2.0
 
   react-icons@4.12.0:
     resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==}
@@ -1370,8 +1370,8 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
 
-  react@18.3.1:
-    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+  react@18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
 
   readable-stream@3.6.2:
@@ -1775,28 +1775,28 @@ snapshots:
 
   '@popperjs/core@2.11.8': {}
 
-  '@react-aria/ssr@3.9.4(react@18.3.1)':
+  '@react-aria/ssr@3.9.4(react@18.2.0)':
     dependencies:
       '@swc/helpers': 0.5.11
-      react: 18.3.1
+      react: 18.2.0
 
-  '@restart/hooks@0.4.16(react@18.3.1)':
+  '@restart/hooks@0.4.16(react@18.2.0)':
     dependencies:
       dequal: 2.0.3
-      react: 18.3.1
+      react: 18.2.0
 
-  '@restart/ui@1.6.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@restart/ui@1.6.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@babel/runtime': 7.24.6
       '@popperjs/core': 2.11.8
-      '@react-aria/ssr': 3.9.4(react@18.3.1)
-      '@restart/hooks': 0.4.16(react@18.3.1)
+      '@react-aria/ssr': 3.9.4(react@18.2.0)
+      '@restart/hooks': 0.4.16(react@18.2.0)
       '@types/warning': 3.0.3
       dequal: 2.0.3
       dom-helpers: 5.2.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      uncontrollable: 8.0.4(react@18.3.1)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      uncontrollable: 8.0.4(react@18.2.0)
       warning: 4.0.3
 
   '@rushstack/eslint-patch@1.10.3': {}
@@ -3027,7 +3027,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.4):
+  next@14.2.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.77.4):
     dependencies:
       '@next/env': 14.2.3
       '@swc/helpers': 0.5.5
@@ -3035,9 +3035,9 @@ snapshots:
       caniuse-lite: 1.0.30001625
       graceful-fs: 4.2.11
       postcss: 8.4.31
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      styled-jsx: 5.1.1(react@18.3.1)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      styled-jsx: 5.1.1(react@18.2.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.3
       '@next/swc-darwin-x64': 14.2.3
@@ -3175,9 +3175,9 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prop-types-extra@1.1.1(react@18.3.1):
+  prop-types-extra@1.1.1(react@18.2.0):
     dependencies:
-      react: 18.3.1
+      react: 18.2.0
       react-is: 16.13.1
       warning: 4.0.3
 
@@ -3205,56 +3205,56 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-bootstrap@2.10.2(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-bootstrap@2.10.2(@types/react@18.3.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.24.6
-      '@restart/hooks': 0.4.16(react@18.3.1)
-      '@restart/ui': 1.6.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@restart/hooks': 0.4.16(react@18.2.0)
+      '@restart/ui': 1.6.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@types/react-transition-group': 4.4.10
       classnames: 2.5.1
       dom-helpers: 5.2.1
       invariant: 2.2.4
       prop-types: 15.8.1
-      prop-types-extra: 1.1.1(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-transition-group: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      uncontrollable: 7.2.1(react@18.3.1)
+      prop-types-extra: 1.1.1(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-transition-group: 4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      uncontrollable: 7.2.1(react@18.2.0)
       warning: 4.0.3
     optionalDependencies:
       '@types/react': 18.3.3
 
-  react-dom@18.3.1(react@18.3.1):
+  react-dom@18.2.0(react@18.2.0):
     dependencies:
       loose-envify: 1.4.0
-      react: 18.3.1
+      react: 18.2.0
       scheduler: 0.23.2
 
-  react-icons@4.12.0(react@18.3.1):
+  react-icons@4.12.0(react@18.2.0):
     dependencies:
-      react: 18.3.1
+      react: 18.2.0
 
   react-is@16.13.1: {}
 
   react-lifecycles-compat@3.0.4: {}
 
-  react-scroll@1.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-scroll@1.9.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       lodash.throttle: 4.1.1
       prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
 
-  react-transition-group@4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-transition-group@4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.24.6
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
 
-  react@18.3.1:
+  react@18.2.0:
     dependencies:
       loose-envify: 1.4.0
 
@@ -3456,10 +3456,10 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.1(react@18.3.1):
+  styled-jsx@5.1.1(react@18.2.0):
     dependencies:
       client-only: 0.0.1
-      react: 18.3.1
+      react: 18.2.0
 
   supports-color@7.2.0:
     dependencies:
@@ -3579,17 +3579,17 @@ snapshots:
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
 
-  uncontrollable@7.2.1(react@18.3.1):
+  uncontrollable@7.2.1(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.24.6
       '@types/react': 18.3.3
       invariant: 2.2.4
-      react: 18.3.1
+      react: 18.2.0
       react-lifecycles-compat: 3.0.4
 
-  uncontrollable@8.0.4(react@18.3.1):
+  uncontrollable@8.0.4(react@18.2.0):
     dependencies:
-      react: 18.3.1
+      react: 18.2.0
 
   undici-types@5.26.5: {}
 

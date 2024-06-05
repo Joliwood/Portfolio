@@ -11,7 +11,7 @@ export type ProjectType = {
   img: string;
   imgTag: string;
   descriptions: string[];
-  link: string;
+  link: string | null;
   github?: string;
   githubs?: { title: string, link: string }[];
   gif?: string;

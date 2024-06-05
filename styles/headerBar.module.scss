@@ -66,6 +66,7 @@
   background-color: transparent;
   color: var(--theme-light-color);
   transition: scale 250ms;
+  white-space: nowrap;
 
   &:hover {
     cursor: pointer;

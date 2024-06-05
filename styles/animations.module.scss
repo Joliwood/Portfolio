@@ -30,6 +30,9 @@
     &:nth-child(5) {
       animation: 0.65s burgerMenuOpen 0.4s forwards;
     }
+    &:nth-child(6) {
+      animation: 0.70s burgerMenuOpen 0.45s forwards;
+    }
   }
 }
 
@@ -55,15 +58,18 @@
       animation: 0.65s burgerMenuItemClose 0.4s forwards;
     }
     &:nth-child(2) {
-      animation: 0.55s burgerMenuItemClose 0.3s forwards;
+      animation: 0.55s burgerMenuItemClose 0.35s forwards;
     }
     &:nth-child(3) {
-      animation: 0.45s burgerMenuItemClose 0.2s forwards;
+      animation: 0.45s burgerMenuItemClose 0.3s forwards;
     }
     &:nth-child(4) {
-      animation: 0.25s burgerMenuItemClose 0.1s forwards;
+      animation: 0.30s burgerMenuItemClose 0.2s forwards;
     }
     &:nth-child(5) {
+      animation: 0.25s burgerMenuItemClose 0.1s forwards;
+    }
+    &:nth-child(6) {
       animation: 0.2s burgerMenuItemClose 0s forwards;
     }
   }

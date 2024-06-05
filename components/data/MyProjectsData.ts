@@ -216,7 +216,8 @@ const MyProjectsList: ProjectType[] = [
     img: soundyProject,
     imgTag: 'Soundy',
     descriptions: [
-      'Ceci est une API graphQL optimisée pour les grandes bases de données. Les datas ont été générées par faker, une validation des données par JOI et une documentation par Appolo Studio. Tout le système d\'initialisation et de migration de la base de données à été géré par Knex. L\'API est hébergée sur Render.com',
+      'Soundy est une application de type SAAS pour les passionnés de musique ! On peut écouter et partager ses propres créations musicales',
+      'L\'application comprend deux repos Github, Lyric-library pour le back-end et Soundy pour le front-end. Tout a été mis en place pour avoir une scalabilité optimale.',
     ],
     link: null,
     githubs: [
@@ -242,7 +243,6 @@ const MyProjectsList: ProjectType[] = [
       'graphql',
       'knex',
       'appolo',
-      'render',
     ],
   },
   {

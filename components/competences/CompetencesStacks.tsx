@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react';
-import Image from 'next/image';
+import React, { useMemo, type JSX } from "react";
+import Image from "next/image";
 
-import { type CompetenceType } from '#types';
-import { competencesStyles } from '#styles';
+import { type CompetenceType } from "#types";
+import { competencesStyles } from "#styles";
 
 type Props = {
   competences: CompetenceType[];
@@ -19,7 +19,9 @@ const CompetencesStack = (props: Props): JSX.Element => {
             <div className={competencesStyles.competenceLogoContainer}>
               {competence.svg}
             </div>
-            <h4 className={competencesStyles.competenceTitle}>{competence.name}</h4>
+            <h4 className={competencesStyles.competenceTitle}>
+              {competence.name}
+            </h4>
           </div>
         );
       }
@@ -30,22 +32,20 @@ const CompetencesStack = (props: Props): JSX.Element => {
             <Image
               width={100}
               height={100}
-              src={competence.img ?? ''}
+              src={competence.img ?? ""}
               alt={competence.name}
               title={competence.name}
             />
           </div>
-          <h4 className={competencesStyles.competenceTitle}>{competence.name}</h4>
+          <h4 className={competencesStyles.competenceTitle}>
+            {competence.name}
+          </h4>
         </div>
       );
     });
   }, [competences]);
 
-  return (
-    <div>
-      {competencesList}
-    </div>
-  );
+  return <div>{competencesList}</div>;
 };
 
 export default CompetencesStack;

@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 export type CompetenceType = {
   img?: string;
   name: string;
@@ -13,7 +15,7 @@ export type ProjectType = {
   descriptions: string[];
   link: string | null;
   github?: string;
-  githubs?: { title: string, link: string }[];
+  githubs?: { title: string; link: string }[];
   gif?: string;
   stacks: string[];
 };

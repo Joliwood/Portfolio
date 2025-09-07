@@ -1,4 +1,4 @@
-export { default as myExperiencesData } from './myExperiencesData';
-export { default as MyProjectsData } from './MyProjectsData';
+export { default as myExperiencesData } from "./myExperiencesData";
+export { default as MyProjectsData } from "./MyProjectsData";
 
-export * from './CompetencesData';
+export * from "./CompetencesData";

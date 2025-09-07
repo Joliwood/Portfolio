@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
-import { headerBarStyles } from '#styles';
-import { TopAngle } from '#svg';
+import { headerBarStyles } from "#styles";
+import { TopAngle } from "#svg";
 
 const ReturnTopScroller = () => {
   const [pageY, setPageY] = useState(null);
@@ -13,9 +13,9 @@ const ReturnTopScroller = () => {
       setPageY(window.pageYOffset);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -32,8 +32,8 @@ const ReturnTopScroller = () => {
       <div
         className={`
         ${headerBarStyles.returnTopScrollContainer}
-        ${pageY && pageY > 200 ? headerBarStyles.animatedAppears : ''} 
-        ${pageY && pageY <= 200 ? headerBarStyles.animatedDisappears : ''}
+        ${pageY && pageY > 200 ? headerBarStyles.animatedAppears : ""} 
+        ${pageY && pageY <= 200 ? headerBarStyles.animatedDisappears : ""}
         `}
       >
         <TopAngle />

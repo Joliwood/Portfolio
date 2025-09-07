@@ -1,21 +1,21 @@
-import React, { useRef, useState } from 'react';
-import Image from 'next/image';
+import React, { useRef, useState } from "react";
+import Image from "next/image";
 
-import { myExperiencesData } from '../data';
+import { myExperiencesData } from "../data";
 
-import { animationsStyles, myExperiencesStyles } from '#styles';
-import { SimpleArray } from '#svg';
-import { dateCalculator } from '#utils';
+import { animationsStyles, myExperiencesStyles } from "#styles";
+import { SimpleArray } from "#svg";
+import { dateCalculator } from "#utils";
 
 const MyExperiences = () => {
   const [stacksVisibility, setStacksVisibility] = useState(
-    Array(myExperiencesData.length).fill(false),
+    Array(myExperiencesData.length).fill(false)
   );
   const [stacks, setStacks] = useState(
-    Array(myExperiencesData.length).fill(false),
+    Array(myExperiencesData.length).fill(false)
   );
   const [rotatedStates, setRotatedStates] = useState(
-    Array(myExperiencesData.length).fill(false),
+    Array(myExperiencesData.length).fill(false)
   );
 
   const itemRefs = useRef([]);
@@ -37,7 +37,10 @@ const MyExperiences = () => {
   };
 
   return (
-    <div className={myExperiencesStyles.myExperiencesArea} id="myExperienceArea">
+    <div
+      className={myExperiencesStyles.myExperiencesArea}
+      id="myExperienceArea"
+    >
       <div className="separationEnsemble">
         <div className="separationbar" />
         <h2>Mon parcours</h2>
@@ -48,29 +51,30 @@ const MyExperiences = () => {
         {myExperiencesData.map((experience, index) => (
           <div
             className={myExperiencesStyles.myExperiencesBlockContainer}
-            data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
+            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             key={experience.title}
           >
-            <div className={myExperiencesStyles.myExperiencesDescriptionContainer}>
+            <div
+              className={myExperiencesStyles.myExperiencesDescriptionContainer}
+            >
               <div className={myExperiencesStyles.myExperiencesTitleEnsemble}>
-                <h3 className={myExperiencesStyles.myExperiencesTitle}>{experience.title}</h3>
+                <h3 className={myExperiencesStyles.myExperiencesTitle}>
+                  {experience.title}
+                </h3>
               </div>
 
               <p>
-                Début :
-                {' '}
-                {experience.dateStartMonth}
-                /
-                {experience.dateStartYear}
-                {experience.dateEndMonth === 'now' || experience.dateEndYear === 'now'
-                  ? ' - En cours '
+                Début : {experience.dateStartMonth}/{experience.dateStartYear}
+                {experience.dateEndMonth === "now" ||
+                experience.dateEndYear === "now"
+                  ? " - En cours "
                   : ` - Fin ${experience.dateEndMonth}/${experience.dateEndYear}`}
                 (
                 {dateCalculator(
                   experience.dateStartMonth,
                   experience.dateStartYear,
                   experience.dateEndMonth,
-                  experience.dateEndYear,
+                  experience.dateEndYear
                 )}
                 )
               </p>
@@ -86,7 +90,11 @@ const MyExperiences = () => {
                       type="button"
                       className={myExperiencesStyles.myExperiencesLinkButton}
                     >
-                      <h4 className={myExperiencesStyles.myExperiencesLinkButtonText}>
+                      <h4
+                        className={
+                          myExperiencesStyles.myExperiencesLinkButtonText
+                        }
+                      >
                         {project.title}
                       </h4>
                     </button>
@@ -101,23 +109,24 @@ const MyExperiences = () => {
               >
                 <div
                   className={
-                    rotatedStates[index] ? animationsStyles.rotate90deg : ''
+                    rotatedStates[index] ? animationsStyles.rotate90deg : ""
                   }
                 >
                   <SimpleArray />
                 </div>
-                <p style={{ marginLeft: '5px' }}>
-                  {stacksVisibility[index] ? 'Cacher' : 'Voir'}
-                  {' '}
-                  les stacks
+                <p style={{ marginLeft: "5px" }}>
+                  {stacksVisibility[index] ? "Cacher" : "Voir"} les stacks
                 </p>
               </button>
             </div>
             <div
-              className={`${myExperiencesStyles.myExperiencesCompetencesContainer} ${stacks[index] ? myExperiencesStyles.fadeInAnimation : ''
-              }`}
-              style={stacks[index] ? { display: 'flex' } : { display: 'none' }}
-              ref={(ref) => { itemRefs.current[index] = ref as never; }}
+              className={`${
+                myExperiencesStyles.myExperiencesCompetencesContainer
+              } ${stacks[index] ? myExperiencesStyles.fadeInAnimation : ""}`}
+              style={stacks[index] ? { display: "flex" } : { display: "none" }}
+              ref={(ref) => {
+                itemRefs.current[index] = ref as never;
+              }}
             >
               {experience.stacks.map((stack) => (
                 <Image

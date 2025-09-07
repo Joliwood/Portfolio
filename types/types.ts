@@ -4,6 +4,7 @@ export type CompetenceType = {
   img?: string;
   name: string;
   svg?: JSX.Element;
+  isFavoriteStack?: boolean;
 };
 
 export type ArrayElementType<T> = T extends (infer U)[] ? U : never;

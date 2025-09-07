@@ -2,7 +2,8 @@ import React, { useMemo, type JSX } from "react";
 import Image from "next/image";
 
 import { type CompetenceType } from "#types";
-import { competencesStyles } from "#styles";
+import { competencesStyles, animationsStyles } from "#styles";
+import { Tooltip } from "#components";
 
 type Props = {
   competences: CompetenceType[];
@@ -13,22 +14,22 @@ const CompetencesStack = (props: Props): JSX.Element => {
 
   const competencesList = useMemo(() => {
     return competences.map((competence) => {
-      if (competence.svg) {
-        return (
-          <div key={competence.name}>
-            <div className={competencesStyles.competenceLogoContainer}>
-              {competence.svg}
-            </div>
-            <h4 className={competencesStyles.competenceTitle}>
-              {competence.name}
-            </h4>
-          </div>
-        );
-      }
+      const containerClass = `
+        ${competencesStyles.competenceLogoContainer}
+        ${
+          competence.isFavoriteStack
+            ? animationsStyles.favoriteCompetenceItem
+            : ""
+        }
+      `.trim();
 
-      return (
-        <div key={competence.name}>
-          <div className={competencesStyles.competenceLogoContainer}>
+      const renderLogo = () => {
+        if (competence.svg) {
+          return <div className={containerClass}>{competence.svg}</div>;
+        }
+
+        return (
+          <div className={containerClass}>
             <Image
               width={100}
               height={100}
@@ -37,6 +38,21 @@ const CompetencesStack = (props: Props): JSX.Element => {
               title={competence.name}
             />
           </div>
+        );
+      };
+
+      return (
+        <div key={competence.name}>
+          {competence.isFavoriteStack ? (
+            <Tooltip
+              text="Fait partie de ma stack de prédilection"
+              position="bottom"
+            >
+              {renderLogo()}
+            </Tooltip>
+          ) : (
+            renderLogo()
+          )}
           <h4 className={competencesStyles.competenceTitle}>
             {competence.name}
           </h4>

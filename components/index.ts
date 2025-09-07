@@ -8,3 +8,4 @@ export { default as Footer } from "./Footer";
 export { default as HeaderBar } from "./HeaderBar";
 export { default as Home } from "./Home";
 export { default as ReturnTopScroller } from "./ReturnTopScroller";
+export { default as Tooltip } from "./Tooltip";

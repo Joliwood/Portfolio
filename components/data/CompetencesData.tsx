@@ -3,7 +3,28 @@ import React from "react";
 import { NodeLogo, SassLogo } from "#svg";
 import { type CompetenceType } from "#types";
 
+export const languages: CompetenceType[] = [
+  {
+    name: "TypeScript",
+    img: "/images/competence/typescriptLogo.png",
+  },
+  {
+    name: "Rust",
+    img: "/images/competence/rustLogo.png",
+    isFavoriteStack: true,
+  },
+  {
+    name: "SQL",
+    img: "/images/competence/sqlLogo.png",
+  },
+];
+
 export const frontCompetences: CompetenceType[] = [
+  {
+    name: "Bevy",
+    img: "/images/competence/bevyLogo.png",
+    isFavoriteStack: true,
+  },
   {
     name: "React.js",
     img: "/images/competence/reactLogo.png",
@@ -15,6 +36,7 @@ export const frontCompetences: CompetenceType[] = [
   {
     name: "Sass",
     svg: <SassLogo />,
+    isFavoriteStack: true,
   },
   {
     name: "Tailwindcss",
@@ -32,24 +54,13 @@ export const backCompetences: CompetenceType[] = [
     svg: <NodeLogo />,
   },
   {
-    name: "Firebase",
-    img: "/images/competence/firebaseLogo.png",
-  },
-  {
-    name: "Ejs",
-    img: "/images/competence/ejsLogo.png",
-  },
-  {
     name: "Postgres",
     img: "/images/competence/psqlLogo.png",
+    isFavoriteStack: true,
   },
   {
     name: "MongoDB",
     img: "/images/competence/mongodbLogo.png",
-  },
-  {
-    name: "Prisma",
-    img: "/images/competence/prismaLogo.png",
   },
   {
     name: "Redis",
@@ -58,79 +69,39 @@ export const backCompetences: CompetenceType[] = [
   {
     name: "GraphQL",
     img: "/images/competence/graphqlLogo.png",
+    isFavoriteStack: true,
   },
   {
     name: "Knex",
     img: "/images/competence/knexLogo.png",
+    isFavoriteStack: true,
   },
   {
-    name: "Socket.io",
+    name: "Websockets",
     img: "/images/competence/socketIoLogo.png",
   },
-];
-
-export const technoCompetences: CompetenceType[] = [
   {
-    name: "Javascript",
-    img: "/images/competence/jsLogo.png",
-  },
-  {
-    name: "Redux",
-    img: "/images/competence/reduxLogo.png",
-  },
-  {
-    name: "SEO",
-    img: "/images/competence/seoLogo.png",
-  },
-  {
-    name: "TypeScript",
-    img: "/images/competence/typescriptLogo.png",
-  },
-  {
-    name: "Cypress",
-    img: "/images/competence/cypressLogo.png",
-  },
-  {
-    name: "Eslint",
-    img: "/images/competence/eslintLogo.png",
-  },
-  {
-    name: "Jest",
-    img: "/images/competence/jestLogo.png",
-  },
-  {
-    name: "Webpack",
-    img: "/images/competence/webpackLogo.png",
-  },
-  {
-    name: "Vite",
-    img: "/images/competence/viteLogo.png",
+    name: "RabbitMQ",
+    img: "/images/competence/rabbitmqLogo.png",
   },
 ];
 
 export const toolsCompetences: CompetenceType[] = [
   {
-    name: "Git",
-    img: "/images/competence/gitLogo.png",
-  },
-  {
-    name: "Netlify",
-    img: "/images/competence/netlifyLogo.png",
-  },
-  {
     name: "Figma",
     img: "/images/competence/figmaLogo.png",
   },
   {
-    name: "Render.com",
-    img: "/images/competence/renderLogo.png",
-  },
-  {
     name: "Dbeaver",
     img: "/images/competence/dbeaverLogo.png",
+    isFavoriteStack: true,
   },
   {
     name: "Postman",
     img: "/images/competence/postmanLogo.png",
+  },
+  {
+    name: "Compass",
+    img: "/images/competence/compassLogo.png",
   },
 ];

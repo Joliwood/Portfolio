@@ -19,4 +19,5 @@ export type ProjectType = {
   githubs?: { title: string; link: string }[];
   gif?: string;
   stacks: string[];
+  state: "DEPRECATED" | "WIP" | "DONE";
 };

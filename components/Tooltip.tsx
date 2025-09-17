@@ -13,7 +13,6 @@ const Tooltip = ({
   children,
   text,
   position = "bottom",
-  className = "",
 }: TooltipProps): JSX.Element => {
   const tooltipPositionClass = `${tooltipsStyles.tooltip} ${
     tooltipsStyles[
@@ -22,7 +21,7 @@ const Tooltip = ({
   }`;
 
   return (
-    <div className={`${tooltipsStyles.tooltipContainer} ${className}`}>
+    <div className={`${tooltipsStyles.tooltipContainer}`}>
       {children}
       <div className={tooltipPositionClass}>{text}</div>
     </div>

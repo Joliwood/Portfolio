@@ -3,6 +3,7 @@ import {
   BacklistProject,
   cinocharProject,
   coffeeTimeProject,
+  guild_simulator,
   LinkedinProject,
   mvcArchitectureProject,
   NetflixProject,
@@ -27,6 +28,7 @@ const MyProjectsList: ProjectType[] = [
     github: "https://github.com/Joliwood/Netflix-clone",
     gif: "https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif?raw=true",
     stacks: ["react", "api", "netlify", "jest"],
+    state: "DEPRECATED",
   },
 
   {
@@ -39,6 +41,7 @@ const MyProjectsList: ProjectType[] = [
     link: null,
     github: "https://github.com/Joliwood/linkedinClone",
     stacks: ["react", "firebase", "netlify", "styledcomponents"],
+    state: "DEPRECATED",
   },
   {
     title: "Agartha",
@@ -52,6 +55,7 @@ const MyProjectsList: ProjectType[] = [
     link: "https://www.agartha.ch/",
     github: "Non disponible",
     stacks: ["react", "node", "api", "i18next", "materialui"],
+    state: "DONE",
   },
   {
     title: "BackList",
@@ -64,6 +68,7 @@ const MyProjectsList: ProjectType[] = [
     github: "https://github.com/Joliwood/todo-list-back",
     gif: "https://github.com/Joliwood/todo-list-back/raw/main/docs/backlist.gif?raw=true",
     stacks: ["node", "ejs", "render", "tailwindcss"],
+    state: "DEPRECATED",
   },
   {
     title: "SQL Showcase",
@@ -76,6 +81,7 @@ const MyProjectsList: ProjectType[] = [
     github: "https://github.com/Joliwood/sql-showcase",
     gif: "https://github.com/Joliwood/sql-showcase/blob/main/docs/sql-showcase.gif?raw=true",
     stacks: ["node", "ejs", "sql", "psql", "render", "bootstrap"],
+    state: "DEPRECATED",
   },
   {
     title: "MVC Architecture",
@@ -97,6 +103,7 @@ const MyProjectsList: ProjectType[] = [
       "daisyui",
       "render",
     ],
+    state: "DEPRECATED",
   },
   {
     title: "Coffee Time",
@@ -118,6 +125,7 @@ const MyProjectsList: ProjectType[] = [
       "materialui",
       "netlify",
     ],
+    state: "DEPRECATED",
   },
   {
     title: "REST API Tournament",
@@ -129,6 +137,7 @@ const MyProjectsList: ProjectType[] = [
     link: null,
     github: "https://github.com/Joliwood/REST-API-Tournaments",
     stacks: ["node", "api", "sequelize", "typescript", "railway"],
+    state: "DEPRECATED",
   },
   {
     title: "Cinochar",
@@ -158,6 +167,7 @@ const MyProjectsList: ProjectType[] = [
       "netlify",
       "render",
     ],
+    state: "DEPRECATED",
   },
   {
     title: "O'sport",
@@ -198,6 +208,7 @@ const MyProjectsList: ProjectType[] = [
       "netlify",
       "render",
     ],
+    state: "DEPRECATED",
   },
   {
     title: "Soundy",
@@ -232,6 +243,7 @@ const MyProjectsList: ProjectType[] = [
       "knex",
       "appolo",
     ],
+    state: "DEPRECATED",
   },
   {
     title: "Solo dev SAAS template",
@@ -253,6 +265,32 @@ const MyProjectsList: ProjectType[] = [
       "tailwindcss",
       "shadncui",
     ],
+    state: "DEPRECATED",
+  },
+  {
+    title: "Guild Simulator",
+    img: guild_simulator,
+    imgTag: "Guild Simulator image",
+    descriptions: [
+      "Jeu développé en Rust avec le moteur Bevy.",
+      "Projet démarré en juin 2024, de type stratégie 4X en 3D avec Blender.",
+      "Les designs 2D sont eux réalisés avec Affinity Designer.",
+      "Le concept du jeu est de gérer une guilde en étant manager, tout en gérant ses propres recrues, le but est de développer l'influence de sa guilde et d'acquérir un monopole auprès des autres guildes adverses.",
+      "Le jeu a une finalité réelle, il est prévu pour être vendu sur Steam une fois terminé. Aucune date n'est prévue et le développement est prévu pour durer au minimum jusqu'en 2027.",
+    ],
+    link: null,
+    githubs: [
+      {
+        title: "Version archivée publique",
+        link: "https://github.com/Joliwood/guild-simulator-archive",
+      },
+      {
+        title: "Projet privé en cours",
+        link: "Non disponible",
+      },
+    ],
+    stacks: ["rust", "bevy", "blender", "affinityDesigner"],
+    state: "WIP",
   },
 ];
 

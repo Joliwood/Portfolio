@@ -104,4 +104,12 @@ export const toolsCompetences: CompetenceType[] = [
     name: "Compass",
     img: "/images/competence/compassLogo.png",
   },
+  {
+    name: "Blender",
+    img: "/images/competence/blenderLogo.png",
+  },
+  {
+    name: "Affinity designer",
+    img: "/images/competence/affinityDesignerLogo.png",
+  },
 ];

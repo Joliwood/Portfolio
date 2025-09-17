@@ -69,11 +69,15 @@ const DetailsProject = (props: Props) => {
             </a>
           ))}
         {selectedProject.githubs &&
-          selectedProject.githubs.map((github) => (
-            <a href={github.link} target="blank" key={github.title}>
-              <h4>{github.title}</h4>
-            </a>
-          ))}
+          selectedProject.githubs.map((github) =>
+            github.link === "Non disponible" ? (
+              <h4 className="disabledButton">Github privé</h4>
+            ) : (
+              <a href={github.link} target="blank" key={github.title}>
+                <h4>{github.title}</h4>
+              </a>
+            )
+          )}
         <ProjectLink selectedProject={selectedProject} />
         <button type="button" onClick={closeModal}>
           <h4>Retourner aux projets</h4>

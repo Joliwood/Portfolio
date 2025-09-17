@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
 }
 
-/* Animations of the burger menu when it is opened */
+// Animations of the burger menu when it is opened
 
 .headerBarAnimationOn {
   max-height: 0;
@@ -47,7 +47,7 @@
   }
 }
 
-/* Animations of the burger menu when it is closed */
+// Animations of the burger menu when it is closed
 
 .headerBarAnimationOff {
   display: flex !important;

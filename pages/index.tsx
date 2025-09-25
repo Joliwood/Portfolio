@@ -1,5 +1,5 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import Head from "next/head";
 
 import {
   Competences,
@@ -9,7 +9,7 @@ import {
   MyExperiences,
   MyProjects,
   ReturnTopScroller,
-} from '#components';
+} from "#components";
 
 const App = () => {
   return (

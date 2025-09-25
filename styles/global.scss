@@ -147,25 +147,26 @@ table {
   --theme-headerBar: #16171977;
 
   --theme-color-B64: 
-    /* --theme-special-color in base 64 image */ url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjWNud+B8ABhsCmY7eXlAAAAAASUVORK5CYII="),
     /* --theme-special-color in base 64 image */
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjWNud+B8ABhsCmY7eXlAAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjWNud+B8ABhsCmY7eXlAAAAAASUVORK5CYII="),
+
+    /* --theme-special-color in base 64 image */
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjWNud+B8ABhsCmY7eXlAAAAAASUVORK5CYII="),
+
     /* Must be like background */
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjEBOX/A8AAdMBRlnf4dMAAAAASUVORK5CYII=");
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjEBOX/A8AAdMBRlnf4dMAAAAASUVORK5CYII=");
 }
 
 .lightTheme {
   --theme-dark-color: #ffffff;
   --theme-semi-dark-color: var(--theme-dark-color);
 
+  /* Some experimentations */
   --theme-special-color: #778da9;
   --theme-special-color: #e26d5c;
   --theme-special-color: #a3a380;
   --theme-special-color: #b58463;
-
-  /* ------------------------------------------- */
   --theme-special-color: #b58463;
-  /* ------------------------------------------- */
 
   --theme-special-enhanced-color: #b58463;
   --theme-semi-special-color: #ebeae7;
@@ -197,7 +198,7 @@ html {
 
 ::-webkit-scrollbar {
   width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  background: transparent; /* Make scrollbar transparent */
 }
 
 @font-face {

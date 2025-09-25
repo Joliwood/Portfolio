@@ -1,7 +1,10 @@
+import type { JSX } from "react";
+
 export type CompetenceType = {
   img?: string;
   name: string;
   svg?: JSX.Element;
+  isFavoriteStack?: boolean;
 };
 
 export type ArrayElementType<T> = T extends (infer U)[] ? U : never;
@@ -13,7 +16,8 @@ export type ProjectType = {
   descriptions: string[];
   link: string | null;
   github?: string;
-  githubs?: { title: string, link: string }[];
+  githubs?: { title: string; link: string }[];
   gif?: string;
   stacks: string[];
+  state: "DEPRECATED" | "WIP" | "DONE";
 };

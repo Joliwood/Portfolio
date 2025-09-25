@@ -1,11 +1,11 @@
-import React from 'react';
-import { Button, Modal } from 'react-bootstrap';
-import Image from 'next/image';
+import React from "react";
+import { Button, Modal } from "react-bootstrap";
+import Image from "next/image";
 
-import ProjectLink from './ProjectButtonLink';
+import ProjectLink from "./ProjectButtonLink";
 
-import { myProjectsStyles } from '#styles';
-import { type ProjectType } from '#types';
+import { myProjectsStyles } from "#styles";
+import { type ProjectType } from "#types";
 
 type Props = {
   closeModal: () => void;
@@ -15,12 +15,7 @@ type Props = {
 };
 
 const DetailsProject = (props: Props) => {
-  const {
-    closeModal,
-    imageUrl,
-    selectedProject,
-    showModal,
-  } = props;
+  const { closeModal, imageUrl, selectedProject, showModal } = props;
 
   const { stacks } = selectedProject;
 
@@ -65,27 +60,26 @@ const DetailsProject = (props: Props) => {
         ))}
       </div>
       <div className={myProjectsStyles.detailsProjectLinksContainer}>
-        {selectedProject.github && (
-          selectedProject.github === 'Non disponible'
-            ? (<h4 className="disabledButton">Github privé</h4>)
-            : (
-              <a href={selectedProject.github} target="blank">
-                <h4>Voir le Github</h4>
+        {selectedProject.github &&
+          (selectedProject.github === "Non disponible" ? (
+            <h4 className="disabledButton">Github privé</h4>
+          ) : (
+            <a href={selectedProject.github} target="blank">
+              <h4>Voir le Github</h4>
+            </a>
+          ))}
+        {selectedProject.githubs &&
+          selectedProject.githubs.map((github) =>
+            github.link === "Non disponible" ? (
+              <h4 className="disabledButton">Github privé</h4>
+            ) : (
+              <a href={github.link} target="blank" key={github.title}>
+                <h4>{github.title}</h4>
               </a>
             )
-        )}
-        {selectedProject.githubs && (
-          selectedProject.githubs.map((github) => (
-            <a href={github.link} target="blank" key={github.title}>
-              <h4>{github.title}</h4>
-            </a>
-          ))
-        )}
+          )}
         <ProjectLink selectedProject={selectedProject} />
-        <button
-          type="button"
-          onClick={closeModal}
-        >
+        <button type="button" onClick={closeModal}>
           <h4>Retourner aux projets</h4>
         </button>
       </div>

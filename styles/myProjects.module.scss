@@ -323,3 +323,26 @@
     width: 85vw;
   }
 }
+
+.deprecatedBanner {
+  position: absolute !important;
+  top: 0;
+  right: -60px;
+  height: 30px;
+  border: black 1px solid;
+  background: var(--theme-special-color);
+  transform: rotate(30deg);
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deprecatedText {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 75px;
+}

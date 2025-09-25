@@ -1,19 +1,21 @@
-import React, { useMemo, useState } from 'react';
-import Image from 'next/image';
-import { Button } from 'react-bootstrap';
+import React, { useMemo, useState } from "react";
+import Image from "next/image";
+import { Button } from "react-bootstrap";
 
-import { MyProjectsData } from '../data';
+import { MyProjectsData } from "../data";
 
-import DetailsProject from './DetailsProject';
-import ProjectLink from './ProjectButtonLink';
+import DetailsProject from "./DetailsProject";
+import ProjectLink from "./ProjectButtonLink";
 
-import { myProjectsStyles } from '#styles';
-import { type ProjectType } from '#types';
+import { myProjectsStyles } from "#styles";
+import { type ProjectType } from "#types";
 
 const reversedProjectsList = MyProjectsData.reverse();
 
 const MyProjects = () => {
-  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
+    null
+  );
   const [showModal, setShowModal] = useState(false);
 
   const openModal = (project: ProjectType) => {
@@ -51,7 +53,18 @@ const MyProjects = () => {
       <div className={myProjectsStyles.myProjectsContainer}>
         {reversedProjectsList.map((data) => (
           <div key={data.title} data-aos="fade-up">
-            <div className={myProjectsStyles.myProjectIndividualContainer}>
+            <div
+              className={myProjectsStyles.myProjectIndividualContainer}
+              style={{ position: "relative", overflow: "hidden" }}
+            >
+              {data.state === "DEPRECATED" && (
+                <div className={myProjectsStyles.deprecatedBanner}>
+                  <span className={myProjectsStyles.deprecatedText}>
+                    Déprécié
+                  </span>
+                </div>
+              )}
+
               <div>
                 <Image
                   src={data.img}
@@ -63,22 +76,24 @@ const MyProjects = () => {
                 />
 
                 <div className={myProjectsStyles.projectGithubButtons}>
-                  {data.github && (
-                    data.github === 'Non disponible'
-                      ? (<h4 className="disabledButton">Github privé</h4>)
-                      : (
-                        <a href={data.github} target="blank">
-                          <h4>Voir le Github</h4>
+                  {data.github &&
+                    (data.github === "Non disponible" ? (
+                      <h4 className="disabledButton">Github privé</h4>
+                    ) : (
+                      <a href={data.github} target="blank">
+                        <h4>Voir le Github</h4>
+                      </a>
+                    ))}
+                  {data.githubs &&
+                    data.githubs.map((github) =>
+                      github.link === "Non disponible" ? (
+                        <h4 className="disabledButton">Github privé</h4>
+                      ) : (
+                        <a href={github.link} target="blank" key={github.title}>
+                          <h4>{github.title}</h4>
                         </a>
                       )
-                  )}
-                  {data.githubs && (
-                    data.githubs.map((github) => (
-                      <a href={github.link} target="blank" key={github.title}>
-                        <h4>{github.title}</h4>
-                      </a>
-                    ))
-                  )}
+                    )}
                   <ProjectLink selectedProject={data} />
                   <Button onClick={() => openModal(data)}>
                     <h4>Détails</h4>
@@ -86,7 +101,9 @@ const MyProjects = () => {
                 </div>
               </div>
               <div>
-                <h3 className={myProjectsStyles.myProjectsTitle}>{data.title}</h3>
+                <h3 className={myProjectsStyles.myProjectsTitle}>
+                  {data.title}
+                </h3>
                 <div className={myProjectsStyles.myProjectStacksContainer}>
                   {data.stacks.map((stack) => (
                     <Image

@@ -1,8 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
-import { homeStyles } from '#styles';
-import { GithubLogo, LinkedinLogo } from '#svg';
+import { homeStyles } from "#styles";
+import { GithubLogo, LinkedinLogo } from "#svg";
 
 const Home = () => {
   return (
@@ -12,14 +12,13 @@ const Home = () => {
           <h1>Guillaume Jolibois</h1>
           <h2>Développeur Full Stack</h2>
           <p>
-            Je suis un développeur passionné par les nouvelles technologies, baignant dans ce
-            milieu depuis longtemps. Autonome, motivé et adaptable, je suis capatble de manier
-            et de m'adapter à votre framework / librairie.
+            Je suis un développeur passionné par l’écosystème de la tech.
+            Autonome, motivé et adaptable, je cherche toujours à concevoir des
+            solutions propres, performantes et maintenables.
             <br />
             <br />
-            J'ai une forte appétence pour le clean
-            code, les structures base de données, l'optimisation et enfin l'expérience utilisateur
-            UX.
+            J’ai une forte appétence pour le clean code, les structures base de
+            données et l’expérience utilisateur UX.
           </p>
           <div className={homeStyles.homeLogosLinks}>
             <a

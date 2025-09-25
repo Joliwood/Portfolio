@@ -6,8 +6,8 @@ const MyExperiencesList = [
     dateEndMonth: "now",
     dateEndYear: "now",
     descriptions: [
-      "Développement d'une application de type SAAS, Full Stack en Typescript. Agrisight est une startup proposant des solutions technologiques pour le monde de l'agriculture",
-      "Le projet se fait en méthode agile et la poste est en complet Full Stack, front, back et infrastructure.",
+      "Développement d'une application de type SAAS, Full Stack en Typescript & Rust. Agrisight est une startup proposant des solutions technologiques pour le monde de l'agriculture.",
+      "Le projet se fait en grande partie en méthode agile et la poste est en complet Full Stack front et back.",
     ],
     projectCreated: [
       {
@@ -18,14 +18,15 @@ const MyExperiencesList = [
     stacks: [
       "JS",
       "Typescript",
+      "Rust",
       "Node",
       "GraphQL",
       "React",
       "MongoDB",
       "Vite",
       "Storybook",
-      "Postman",
       "Figma",
+      "RabbitMQ",
     ],
   },
 

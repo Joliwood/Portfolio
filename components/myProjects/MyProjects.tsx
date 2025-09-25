@@ -9,7 +9,6 @@ import ProjectLink from "./ProjectButtonLink";
 
 import { myProjectsStyles } from "#styles";
 import { type ProjectType } from "#types";
-import Tooltip from "#components/Tooltip";
 
 const reversedProjectsList = MyProjectsData.reverse();
 

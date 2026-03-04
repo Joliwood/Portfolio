@@ -77,9 +77,10 @@
     &:nth-child(even) {
       align-items: flex-end;
 
-      > div {
-        align-items: flex-end;
-        text-align: end;
+      > .myExperiencesDescriptionContainer {
+        > .stacksToggler {
+          right: 25px;
+        }
       }
 
       > .myExperiencesCompetencesContainer {
@@ -128,6 +129,10 @@
 
 .myExperiencesText {
   font-size: 1.2rem;
+}
+
+.myExperiencesDescriptionText {
+  white-space: pre-line;
 }
 
 .myExperiencesLinksContainer {

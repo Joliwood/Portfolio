@@ -12,13 +12,16 @@ const Home = () => {
           <h1>Guillaume Jolibois</h1>
           <h2>Développeur Full Stack</h2>
           <p>
-            Je suis un développeur passionné par l’écosystème de la tech.
-            Autonome, motivé et adaptable, je cherche toujours à concevoir des
-            solutions propres, performantes et maintenables.
+            Développeur Full-Stack / Backend (TypeScript & Rust) | Architecture
+            & Clean Code
             <br />
             <br />
             J’ai une forte appétence pour le clean code, les structures base de
             données et l’expérience utilisateur UX.
+            <br />
+            <br />
+            Mon objectif est de concevoir des applications robustes,
+            prédictibles et scalables.
           </p>
           <div className={homeStyles.homeLogosLinks}>
             <a

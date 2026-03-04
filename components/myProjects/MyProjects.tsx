@@ -1,6 +1,5 @@
 import React, { useMemo, useState } from "react";
 import Image from "next/image";
-import { Button } from "react-bootstrap";
 
 import { MyProjectsData } from "../data";
 
@@ -14,7 +13,7 @@ const reversedProjectsList = MyProjectsData.reverse();
 
 const MyProjects = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
-    null
+    null,
   );
   const [showModal, setShowModal] = useState(false);
 
@@ -85,19 +84,28 @@ const MyProjects = () => {
                       </a>
                     ))}
                   {data.githubs &&
-                    data.githubs.map((github) =>
+                    data.githubs.map((github, index) =>
                       github.link === "Non disponible" ? (
-                        <h4 className="disabledButton">Github privé</h4>
+                        <h4
+                          className="disabledButton"
+                          key={`${github.title}-${index}`}
+                        >
+                          Github privé
+                        </h4>
                       ) : (
-                        <a href={github.link} target="blank" key={github.title}>
+                        <a
+                          href={github.link}
+                          target="blank"
+                          key={`${github.title}-${index}`}
+                        >
                           <h4>{github.title}</h4>
                         </a>
-                      )
+                      ),
                     )}
                   <ProjectLink selectedProject={data} />
-                  <Button onClick={() => openModal(data)}>
+                  <button onClick={() => openModal(data)}>
                     <h4>Détails</h4>
-                  </Button>
+                  </button>
                 </div>
               </div>
               <div>

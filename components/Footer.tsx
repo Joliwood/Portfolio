@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={footerStyles.footerArea}>
       <p className={footerStyles.footerText}>
-        Site créé en React et Next, hébergé par Netlify :&nbsp;
+        Site créé en React et Next, hébergé par Vercel :&nbsp;
       </p>
       <a
         href="https://github.com/Joliwood/Portfolio"

@@ -3,6 +3,7 @@ import typescript from "@typescript-eslint/eslint-plugin";
 import typescriptParser from "@typescript-eslint/parser";
 import next from "@next/eslint-plugin-next";
 import importPlugin from "eslint-plugin-import";
+import globals from "globals";
 
 export default [
   js.configs.recommended,
@@ -57,6 +58,12 @@ export default [
   },
   {
     files: ["**/*.{js,jsx}"],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
     plugins: {
       "@next/next": next,
       import: importPlugin,

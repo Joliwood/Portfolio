@@ -9,13 +9,13 @@ import { dateCalculator } from "#utils";
 
 const MyExperiences = () => {
   const [stacksVisibility, setStacksVisibility] = useState(
-    Array(myExperiencesData.length).fill(false)
+    Array(myExperiencesData.length).fill(false),
   );
   const [stacks, setStacks] = useState(
-    Array(myExperiencesData.length).fill(false)
+    Array(myExperiencesData.length).fill(false),
   );
   const [rotatedStates, setRotatedStates] = useState(
-    Array(myExperiencesData.length).fill(false)
+    Array(myExperiencesData.length).fill(false),
   );
 
   const itemRefs = useRef([]);
@@ -74,13 +74,18 @@ const MyExperiences = () => {
                   experience.dateStartMonth,
                   experience.dateStartYear,
                   experience.dateEndMonth,
-                  experience.dateEndYear
+                  experience.dateEndYear,
                 )}
                 )
               </p>
 
               {experience.descriptions.map((description) => (
-                <p key={description}>{description}</p>
+                <p
+                  key={description}
+                  className={myExperiencesStyles.myExperiencesDescriptionText}
+                >
+                  {description}
+                </p>
               ))}
 
               <div className={myExperiencesStyles.myExperiencesLinksContainer}>

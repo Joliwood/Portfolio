@@ -6,8 +6,13 @@ const MyExperiencesList = [
     dateEndMonth: "now",
     dateEndYear: "now",
     descriptions: [
-      "Développement d'une application de type SAAS, Full Stack en Typescript & Rust. Agrisight est une startup proposant des solutions technologiques pour le monde de l'agriculture.",
-      "Le projet se fait en grande partie en méthode agile et la poste est en complet Full Stack front et back.",
+      "Développement et conception d'architecture au sein de Agrisight / Javelot, dans une organisation en Squads / Feature Teams.",
+
+      "Architecture & Backend :\n- Conception de micro-services scalables en Node.js et TypeScript.\n- Implémentation de composants critiques en Rust (focus optimisation mémoire).\n- Mise en place d'Architecture Hexagonale pour garantir le découplage métier.\n- Conception d'API GraphQL et communication inter-services via gRPC et RabbitMQ.\n- Gestion des données sous MongoDB et optimisation des temps de réponse via Redis.",
+
+      "Frontend & Design System :\n- Développement d'interfaces web complexes avec React et TypeScript.\n- Participation active à la recherche UX et à l'étude de design.\n- Création de composants UI selon l'Atomic Design, documentés via Storybook.",
+
+      "Méthodologie & Équipe :\n- Garant de la qualité du code via des revues de code rigoureuses.\n- Accompagnement de l'équipe (notamment sur la prise en main de Rust).\n- Travail en méthode Agile (Feature Teams) au plus proche des besoins produit.",
     ],
     projectCreated: [
       {
@@ -37,10 +42,13 @@ const MyExperiencesList = [
     dateEndMonth: 9,
     dateEndYear: 2023,
     descriptions: [
-      "Durant 1 mois avec 3 autres étudiants de la promotion Watt, nous avons réalisé une application Full Stack en Typescript ( front : React | Back : Node & Postgresql en REST API ), de A à Z : ",
-      "1 semaine : Edition du Cahier des Charges et tout ce qui le compose, (MVP, objectifs, Wireframes, MCD, MLD, Dictionnaire de données, User Stories)",
-      "2 semaines : Création des structures Front & Back, paramétrage Typescript & Eslint-airbnb, création BDD et génération faker, établissement des schéma Prisma, préparation des routes pour le front, sécurisation de l'application (JWT, cookies, chiffrages), intégration et développement front (React, Tailwindcss, DaisyUI, Vite)",
-      "1 semaine : Amélioration UI / UX, hébergement, synchro Front (Netlify) / Back (Render.com) / BDD (Render.com)",
+      "Conception et développement de A à Z du MVP O'Sport, une application Full-Stack de mise en relation sportive, au sein d'une équipe Agile de 4 développeurs (Projet de fin d'études O'clock).",
+
+      "Backend & Architecture :\n- Développement d'une API REST robuste en Node.js et TypeScript.\n- Modélisation de la base de données relationnelle (MCD/MLD) sur PostgreSQL et intégration de l'ORM Prisma.\n- Sécurisation des flux : Authentification par JWT, hachage des mots de passe et validation stricte des données entrantes avec Zod.",
+
+      "Frontend & UI :\n- Création d'une interface réactive et moderne avec React (Vite).\n- Intégration du design et stylisation via Tailwind CSS et DaisyUI.",
+
+      "Méthodologie & Déploiement :\n- Définition complète de l'architecture initiale (Cahier des charges, User Stories, Wireframes).\n- Configuration d'un environnement de code strict (ESLint configuration Airbnb).\n- Déploiement cloud de l'infrastructure logicielle (Netlify pour le front, Render pour l'API et la BDD).",
     ],
     projectCreated: [
       {
@@ -99,13 +107,19 @@ const MyExperiencesList = [
   },
 
   {
-    title: "Agartha - Dev Front-End - Freelance",
+    title: "Agartha - Dev Front-End React / Next.js - Freelance",
     dateStartMonth: 6,
     dateStartYear: 2022,
     dateEndMonth: 6,
     dateEndYear: 2023,
     descriptions: [
-      "Création maquette + site web client suivant cahier des charges en React.js, Material UI, I18Next (fr / en), Figma, Inkscape. Création maquettes également en Three.js, Next.js, Tailwindcss.",
+      "Développement front-end et intégration Web3 d'une application sur l'écosystème Solana, de la phase de conception à la livraison.",
+
+      "Développement Front-end & UI :\n- Création d'interfaces web modernes, performantes et scalables avec React.js et Next.js.\n- Conception et implémentation d'un Design System complet et responsive via Tailwind CSS.\n- Optimisation de l'expérience utilisateur (UX) sur des parcours complexes.",
+
+      "Architecture & Intégration Web3 :\n- Développement des interactions directes avec la blockchain Solana (connexion wallet, transactions).\n- Gestion de l'état asynchrone complexe lié aux appels des Smart Contracts.",
+
+      "Gestion de Projet & Méthodologie :\n- Analyse du besoin initial, étude de faisabilité technique et chiffrage du projet.\n- Traduction du cahier des charges en spécifications techniques et architecture front-end.\n- Pilotage du développement et livraisons itératives en méthodologie Agile.",
     ],
     projectCreated: [
       {

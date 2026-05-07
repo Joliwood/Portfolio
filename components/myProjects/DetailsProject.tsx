@@ -64,7 +64,11 @@ const DetailsProject = (props: Props) => {
           (selectedProject.github === "Non disponible" ? (
             <h4 className="disabledButton">Github privé</h4>
           ) : (
-            <a href={selectedProject.github} target="blank">
+            <a
+              href={selectedProject.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h4>Voir le Github</h4>
             </a>
           ))}
@@ -75,10 +79,15 @@ const DetailsProject = (props: Props) => {
                 Github privé
               </h4>
             ) : (
-              <a href={github.link} target="blank" key={github.title}>
+              <a
+                href={github.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={github.title}
+              >
                 <h4>{github.title}</h4>
               </a>
-            )
+            ),
           )}
         <ProjectLink selectedProject={selectedProject} />
         <button type="button" onClick={closeModal}>

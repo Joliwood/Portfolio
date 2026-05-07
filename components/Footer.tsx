@@ -10,7 +10,8 @@ const Footer = () => {
       </p>
       <a
         href="https://github.com/Joliwood/Portfolio"
-        target="blank"
+        target="_blank"
+        rel="noopener noreferrer"
         className={footerStyles.footerText}
       >
         <p className={footerStyles.footerText}>Voir le projet sur Github</p>

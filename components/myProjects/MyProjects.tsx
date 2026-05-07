@@ -79,7 +79,11 @@ const MyProjects = () => {
                     (data.github === "Non disponible" ? (
                       <h4 className="disabledButton">Github privé</h4>
                     ) : (
-                      <a href={data.github} target="blank">
+                      <a
+                        href={data.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <h4>Voir le Github</h4>
                       </a>
                     ))}
@@ -95,7 +99,8 @@ const MyProjects = () => {
                       ) : (
                         <a
                           href={github.link}
-                          target="blank"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           key={`${github.title}-${index}`}
                         >
                           <h4>{github.title}</h4>

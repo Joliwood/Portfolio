@@ -90,7 +90,12 @@ const MyExperiences = () => {
 
               <div className={myExperiencesStyles.myExperiencesLinksContainer}>
                 {experience.projectCreated.map((project) => (
-                  <a href={project.link} target="blank" key={project.title}>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={project.title}
+                  >
                     <button
                       type="button"
                       className={myExperiencesStyles.myExperiencesLinkButton}

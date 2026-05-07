@@ -37,9 +37,10 @@ const MyExperiences = () => {
   };
 
   return (
-    <div
+    <section
       className={myExperiencesStyles.myExperiencesArea}
       id="myExperienceArea"
+      aria-label="Parcours"
     >
       <div className="separationEnsemble">
         <div className="separationbar" />
@@ -152,7 +153,7 @@ const MyExperiences = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

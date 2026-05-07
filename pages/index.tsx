@@ -24,10 +24,12 @@ const App = () => {
       <ReturnTopScroller />
 
       <HeaderBar />
-      <Home />
-      <Competences />
-      <MyProjects />
-      <MyExperiences />
+      <main>
+        <Home />
+        <Competences />
+        <MyProjects />
+        <MyExperiences />
+      </main>
       <Footer />
     </div>
   );

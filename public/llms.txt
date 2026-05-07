@@ -1,0 +1,33 @@
+# Guillaume Jolibois
+
+> Développeur Full Stack TypeScript & Rust — Conception d'applications robustes, prédictibles et scalables. Disponible en contrat ou freelance.
+
+Guillaume Jolibois est un développeur Full Stack spécialisé en TypeScript et Rust, avec une expertise en architecture hexagonale, clean code et expérience utilisateur. Basé en France.
+
+## Compétences
+
+- **Langages** : TypeScript, Rust, SQL, JavaScript
+- **Front-end** : React.js, Next.js, Sass, Tailwind CSS, Storybook, Bevy
+- **Back-end** : Node.js, GraphQL, gRPC, RabbitMQ, Prisma, Sequelize
+- **Bases de données** : PostgreSQL, MongoDB, Redis
+- **DevOps & Outils** : Docker, GitHub Actions, CI/CD, Vercel, Netlify, Figma, Vite, ESLint
+
+## Expériences professionnelles
+
+- **Agrisight (Javelot)** — Développeur Full Stack (nov. 2023 – présent) : Micro-services Node.js/TypeScript, composants Rust critiques, Architecture Hexagonale, API GraphQL, communication inter-services gRPC et RabbitMQ, MongoDB, Redis, React, Design System Atomic documenté via Storybook. Organisation en Squads / Feature Teams.
+- **O'sport** — Développeur Full Stack (août–sept. 2023) : MVP de mise en relation sportive. API REST Node.js/TypeScript, modélisation PostgreSQL, ORM Prisma, React (Vite), Tailwind CSS, DaisyUI, authentification JWT, déploiement Netlify/Render.
+- **O'clock** — Formation Développeur Full Stack JavaScript (mars–sept. 2023) : 798h temps plein, titre RNCP bac+2, Grande École du Numérique.
+- **Agartha** — Développeur Front-End React/Next.js Freelance (juin 2022 – juin 2023) : Application Web3 sur la blockchain Solana. Design System Tailwind CSS, intégration wallet et Smart Contracts, gestion d'état asynchrone complexe. Pilotage Agile en autonomie.
+- **Formation autodidacte** — (nov. 2021 – présent) : Projets personnels variés (Clone Netflix, Clone LinkedIn, jeux Bevy/Rust, REST API, etc.), tous disponibles sur GitHub.
+
+## Pages
+
+- [Accueil](https://guillaume-jolibois.fr/) : Présentation, compétences, projets et parcours professionnel
+- [Contact](https://guillaume-jolibois.fr/contact/) : Informations de contact
+
+## Contact
+
+- **Site web** : https://guillaume-jolibois.fr/
+- **LinkedIn** : https://www.linkedin.com/in/guillaume-jolibois-430426119/
+- **GitHub** : https://github.com/Joliwood
+- **Email** : jolibois.contact@gmail.com

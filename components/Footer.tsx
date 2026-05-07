@@ -4,7 +4,7 @@ import { footerStyles } from "#styles";
 
 const Footer = () => {
   return (
-    <div className={footerStyles.footerArea}>
+    <footer className={footerStyles.footerArea}>
       <p className={footerStyles.footerText}>
         Site créé en React et Next, hébergé par Vercel :&nbsp;
       </p>
@@ -16,7 +16,7 @@ const Footer = () => {
       >
         <p className={footerStyles.footerText}>Voir le projet sur Github</p>
       </a>
-    </div>
+    </footer>
   );
 };
 

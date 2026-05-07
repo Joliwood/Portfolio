@@ -75,7 +75,7 @@ const Contact = () => {
           src="/images/profilePicture.png"
           width={500}
           height={500}
-          alt="profile"
+          alt="Photo de profil de Guillaume Jolibois, développeur Full Stack"
           title="profile"
           className={`${homeStyles.homeProfilePicture} ${homeStyles.unselectable}`}
           priority

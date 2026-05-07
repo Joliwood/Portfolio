@@ -35,7 +35,7 @@ const competencesData = [
 
 const Competences = () => {
   return (
-    <div className={competencesStyles.competencesArea} id="competencesArea">
+    <section className={competencesStyles.competencesArea} id="competencesArea" aria-label="Compétences">
       <div className="separationEnsemble">
         <div className="separationbar" />
         <h2>Compétences</h2>
@@ -71,7 +71,7 @@ const Competences = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

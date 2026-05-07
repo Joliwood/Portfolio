@@ -42,7 +42,7 @@ const MyProjects = () => {
   }, [selectedProject, showModal]);
 
   return (
-    <div className={myProjectsStyles.myProjectsArea} id="myProjectsArea">
+    <section className={myProjectsStyles.myProjectsArea} id="myProjectsArea" aria-label="Projets">
       <div className="separationEnsemble">
         <div className="separationbar" />
         <h2>Mes projets</h2>
@@ -136,7 +136,7 @@ const MyProjects = () => {
       </div>
 
       {projectModalJSX}
-    </div>
+    </section>
   );
 };
 

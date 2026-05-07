@@ -39,7 +39,7 @@ const HeaderBar = () => {
   }, [toggleMenu]);
 
   return (
-    <div className={headerBarStyles.headerBarArea}>
+    <header className={headerBarStyles.headerBarArea}>
       <div className={headerBarStyles.headerBarMain}>
         <ScrollLink to="homeArea" spy smooth offset={-250} duration={500}>
           <Logo />
@@ -83,7 +83,8 @@ const HeaderBar = () => {
         </div>
       </div>
 
-      <div
+      <nav
+        aria-label="Navigation principale"
         className={`
           ${headerBarStyles.headerBarButtonsEnsemble}
           ${animatedMenu ? animationsStyles.headerBarAnimationOn : ""}
@@ -162,8 +163,8 @@ const HeaderBar = () => {
             />
           )}
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 

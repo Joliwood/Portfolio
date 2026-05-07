@@ -86,6 +86,25 @@ export const backCompetences: CompetenceType[] = [
   },
 ];
 
+export const devopsCompetences: CompetenceType[] = [
+  {
+    name: "Docker",
+    img: "/images/competence/dockerLogo.png",
+  },
+  {
+    name: "Kubernetes",
+    img: "/images/competence/kubernetesLogo.png",
+  },
+  {
+    name: "Cloudflare",
+    img: "/images/competence/cloudflareLogo.png",
+  },
+  {
+    name: "Nginx",
+    img: "/images/competence/nginxLogo.png",
+  },
+];
+
 export const toolsCompetences: CompetenceType[] = [
   {
     name: "Figma",

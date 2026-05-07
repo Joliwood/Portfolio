@@ -1,4 +1,4 @@
-// Reset CSS Part
+/* Reset CSS Part */
 html,
 body,
 div,
@@ -124,9 +124,9 @@ table {
   border-spacing: 0;
 }
 
-// Up -> Reset CSS Part
+/* Up -> Reset CSS Part */
 
-// To avoid conflicts between react-bootstrap & aos animations, create right vertical empty bar
+/* To avoid conflicts between react-bootstrap & aos animations, create right vertical empty bar */
 html, body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -137,7 +137,7 @@ html, body {
   margin: 0;
 }
 
-// Dark theme
+/* Dark theme */
 :root {
   --theme-dark-color: #161919;
   --theme-semi-dark-color: #181b22;
@@ -153,13 +153,13 @@ html, body {
   --theme-headerBar: #16171977;
 
   --theme-color-B64: 
-    // --theme-special-color in base 64 image
+    /* --theme-special-color in base 64 image */
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjWNud+B8ABhsCmY7eXlAAAAAASUVORK5CYII="),
 
-    // --theme-special-color in base 64 image
+    /* --theme-special-color in base 64 image */
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjWNud+B8ABhsCmY7eXlAAAAAASUVORK5CYII="),
 
-    // Must be like background
+    /* Must be like background */
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAA1JREFUGFdjEBOX/A8AAdMBRlnf4dMAAAAASUVORK5CYII=");
 }
 
@@ -167,7 +167,7 @@ html, body {
   --theme-dark-color: #ffffff;
   --theme-semi-dark-color: var(--theme-dark-color);
 
-  // Experimentations
+  /* Experimentations */
   --theme-special-color: #778da9;
   --theme-special-color: #e26d5c;
   --theme-special-color: #a3a380;
@@ -204,7 +204,7 @@ html {
 
 ::-webkit-scrollbar {
   width: 0px;
-  background: transparent; // Make scrollbar transparent
+  background: transparent; /* Make scrollbar transparent */
 }
 
 @font-face {
@@ -310,7 +310,7 @@ a {
   color: unset;
 }
 
-// Shared designs
+/* Shared designs */
 
 .separationEnsemble {
   width: 80vw;
@@ -346,7 +346,7 @@ a {
   }
 }
 
-// animation: 1s linearap 0.5s forwards;
+/* animation: 1s linearap 0.5s forwards; */
 
 @keyframes linearap {
   from {

@@ -1,7 +1,6 @@
-import React from "react";
-
 import {
   backCompetences,
+  devopsCompetences,
   frontCompetences,
   languages,
   toolsCompetences,
@@ -23,6 +22,10 @@ const competencesData = [
   {
     title: "Back End",
     competences: backCompetences,
+  },
+  {
+    title: "DevOps",
+    competences: devopsCompetences,
   },
   {
     title: "Les outils que j'utilise",

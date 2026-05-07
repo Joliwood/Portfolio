@@ -13,22 +13,15 @@ const nextConfig = {
   },
   outputFileTracingRoot: process.cwd(),
 
-  // Optimisations pour Next.js 15
+  // Next.js 15 Optimization
   experimental: {
     optimizePackageImports: ["react-icons", "react-bootstrap"],
   },
 
-  // Configuration TypeScript plus stricte
   typescript: {
     ignoreBuildErrors: false,
   },
 
-  // Configuration ESLint
-  eslint: {
-    dirs: ["pages", "components", "lib", "src"],
-  },
-
-  // Optimisations de build
   poweredByHeader: false,
 };
 

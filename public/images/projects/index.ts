@@ -11,7 +11,7 @@ const projectImages = [
   "/images/projects/soloDevSaasTemplateProject.png",
   "/images/projects/soundyProject.png",
   "/images/projects/sqlShowcaseProject.png",
-  "/images/projects/guild_simulator.png",
+  "/images/projects/guildSimulatorProject.png",
 ];
 
 export const [

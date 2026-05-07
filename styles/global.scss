@@ -1,5 +1,4 @@
 /* Reset CSS Part */
-
 html,
 body,
 div,
@@ -127,6 +126,13 @@ table {
 
 /* Up -> Reset CSS Part */
 
+/* To avoid conflicts between react-bootstrap & aos animations, create right vertical empty bar */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
 * {
   margin: 0;
 }
@@ -161,7 +167,7 @@ table {
   --theme-dark-color: #ffffff;
   --theme-semi-dark-color: var(--theme-dark-color);
 
-  /* Some experimentations */
+  /* Experimentations */
   --theme-special-color: #778da9;
   --theme-special-color: #e26d5c;
   --theme-special-color: #a3a380;

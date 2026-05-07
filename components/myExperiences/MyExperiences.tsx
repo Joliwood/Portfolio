@@ -37,9 +37,10 @@ const MyExperiences = () => {
   };
 
   return (
-    <div
+    <section
       className={myExperiencesStyles.myExperiencesArea}
       id="myExperienceArea"
+      aria-label="Parcours"
     >
       <div className="separationEnsemble">
         <div className="separationbar" />
@@ -90,7 +91,12 @@ const MyExperiences = () => {
 
               <div className={myExperiencesStyles.myExperiencesLinksContainer}>
                 {experience.projectCreated.map((project) => (
-                  <a href={project.link} target="blank" key={project.title}>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={project.title}
+                  >
                     <button
                       type="button"
                       className={myExperiencesStyles.myExperiencesLinkButton}
@@ -147,7 +153,7 @@ const MyExperiences = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

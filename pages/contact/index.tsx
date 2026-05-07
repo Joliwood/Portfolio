@@ -1,13 +1,18 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
+import React, { useState } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 
-import Footer from '../../components/Footer';
+import Footer from "../../components/Footer";
 
-import { homeStyles, contactStyles, myExperiencesStyles } from '#styles';
+import { homeStyles, contactStyles, myExperiencesStyles } from "#styles";
 
 const Contact = () => {
+  // Base64 encoded phone number to prevent scraping by bots
+  const [phone] = useState(() =>
+    typeof window === "undefined" ? "" : atob("MDYgNjQgMzYgMjEgNzk="),
+  );
+
   return (
     <div className={contactStyles.contactArea}>
       <Head>
@@ -34,7 +39,8 @@ const Contact = () => {
             <address className={contactStyles.contactLinks}>
               <a
                 href="https://www.linkedin.com/in/guillaume-jolibois-430426119/"
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <p>Linkedin</p>
               </a>
@@ -42,9 +48,7 @@ const Contact = () => {
                 <p>jolibois.contact@gmail.com</p>
               </a>
               <p>
-                <span className={contactStyles.phoneNumber}>
-                  06 64 36 21 79
-                </span>
+                <span className={contactStyles.phoneNumber}>{phone}</span>
               </p>
             </address>
 
@@ -71,7 +75,7 @@ const Contact = () => {
           src="/images/profilePicture.png"
           width={500}
           height={500}
-          alt="profile"
+          alt="Photo de profil de Guillaume Jolibois, développeur Full Stack"
           title="profile"
           className={`${homeStyles.homeProfilePicture} ${homeStyles.unselectable}`}
           priority

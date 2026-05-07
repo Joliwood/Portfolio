@@ -12,16 +12,6 @@ The website is to show a basic website, but well made, in ergonomy, responsivnes
 
 The repository will be updated as needed to continue to show my skills and learning throughout my career.
 
-## How to read commits in this project
-
-:zap: = Minor correction / debug \
-:construction: = Work in progress \
-:card_file_box: = Datas or contents updated \
-:hammer: = New functionnality / component \
-:memo: = Readme / Code comments / Documentations \
-:rotating_light: = Security \
-:sparkles: = Clean code
-
 ## How to access to this project
 
 [Link to my portfolio website](https://guillaume-jolibois.fr/)

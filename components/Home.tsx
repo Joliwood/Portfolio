@@ -6,7 +6,7 @@ import { GithubLogo, LinkedinLogo } from "#svg";
 
 const Home = () => {
   return (
-    <div className={homeStyles.homeArea} id="homeArea">
+    <section className={homeStyles.homeArea} id="homeArea" aria-label="Présentation">
       <div className={homeStyles.homeDescriptionContainer}>
         <div className={homeStyles.homeDescription}>
           <h1>Guillaume Jolibois</h1>
@@ -50,12 +50,12 @@ const Home = () => {
         src="/images/profilePicture.png"
         width={500}
         height={500}
-        alt="profile"
+        alt="Photo de profil de Guillaume Jolibois, développeur Full Stack"
         title="profile"
         className={`${homeStyles.homeProfilePicture} ${homeStyles.unselectable}`}
         priority
       />
-    </div>
+    </section>
   );
 };
 

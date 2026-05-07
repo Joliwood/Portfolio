@@ -136,7 +136,7 @@
     mask: radial-gradient(circle, transparent calc(74% - 5px), black calc(74% - 5px));
     -webkit-mask: radial-gradient(circle, transparent calc(74% - 5px), black calc(74% - 5px));
     
-    // Glow effect
+    /* Glow effect */
     box-shadow: 
       0 0 1px var(--theme-special-enhanced-color),
       0 0 1px var(--theme-semi-dark-color),

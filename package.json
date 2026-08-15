@@ -46,6 +46,7 @@
   "repository": "https://github.com/Joliwood/Portfolio.git",
   "author": "Joliwood <jolibois.contact@gmail.com>",
   "license": "MIT",
+  "packageManager": "pnpm@11.21.0",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@next/eslint-plugin-next": "^16.3.1",
